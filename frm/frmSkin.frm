@@ -181,7 +181,7 @@ Attribute VB_Exposed = False
 '*
 '* Verseion     : 2.0.0
 '*
-'* J.Nakim's form skin used.
+'* J.Nakim's form skin is used.
 '*************************************************************************************************
 Const nowver = "2.0.0"
 Dim Skku_Link(50) As String

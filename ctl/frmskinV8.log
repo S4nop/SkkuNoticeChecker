@@ -1,0 +1,12 @@
+11 행: cmdMinimize 컨트롤의 prjFrmSkinV8.LunaButton 클래스는 로드한 컨트롤 클래스가 아닙니다.
+23 행: cmdUnload 컨트롤의 prjFrmSkinV8.LunaButton 클래스는 로드한 컨트롤 클래스가 아닙니다.
+17 행: cmdMinimize의 _ExtentX 속성 이름이 잘못되었습니다. 
+18 행: cmdMinimize의 _ExtentY 속성 이름이 잘못되었습니다. 
+20 행: cmdMinimize의 MouseOverPicture 속성 이름이 잘못되었습니다. 
+21 행: cmdMinimize의 MouseDownPicture 속성 이름이 잘못되었습니다. 
+11 행: cmdMinimize의 Picture 속성을 설정할 수 없습니다.
+29 행: cmdUnload의 _ExtentX 속성 이름이 잘못되었습니다. 
+30 행: cmdUnload의 _ExtentY 속성 이름이 잘못되었습니다. 
+32 행: cmdUnload의 MouseOverPicture 속성 이름이 잘못되었습니다. 
+33 행: cmdUnload의 MouseDownPicture 속성 이름이 잘못되었습니다. 
+23 행: cmdUnload의 Picture 속성을 설정할 수 없습니다.

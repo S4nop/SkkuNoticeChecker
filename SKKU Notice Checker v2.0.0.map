@@ -1,0 +1,1886 @@
+ SKKU Notice Checker v2.0.0
+
+ Timestamp is 5c28fa5c (Mon Dec 31 02:03:24 2018)
+
+ Preferred load address is 00400000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000002a4H .idata$5                CODE
+ 0001:000002a8 000014acH .rdata                  CODE
+ 0001:00001760 0001b430H .text                   CODE
+ 0001:0001cb90 00000004H .text$0                 CODE
+ 0001:0001cba0 00028ff5H .text$1                 CODE
+ 0001:00045ba0 00000004H .text$2                 CODE
+ 0001:00045ba4 00000014H .idata$2                CODE
+ 0001:00045bb8 00000014H .idata$3                CODE
+ 0001:00045bcc 000002a4H .idata$4                CODE
+ 0001:00045e70 00000910H .idata$6                CODE
+ 0001:00046780 00000000H .edata                  CODE
+ 0002:00000000 00000004H .data                   DATA
+ 0002:00000008 00004844H .bss                    DATA
+ 0003:00000000 00000148H .rsrc$01                DATA
+ 0003:00000150 00003e20H .rsrc$02                DATA
+
+  Address         Publics by Value              Rva+Base     Lib:Object
+
+ 0001:00000004       __imp_@__vbaStrI2          00401004     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000004       __imp____vbaStrI2          00401004     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000008       __imp_@__vbaVargParmRef    00401008     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000008       __imp____vbaVargParmRef    00401008     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000000c       __imp___CIcos              0040100c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000010       __imp___adj_fptan          00401010     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000014       __imp_@__vbaStrI4          00401014     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000014       __imp____vbaStrI4          00401014     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000018       __imp____vbaVarMove        00401018     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000018       __imp_@__vbaVarMove        00401018     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000001c       __imp_@__vbaVarVargNofree  0040101c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000001c       __imp____vbaVarVargNofree  0040101c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000020       __imp_@__vbaAryMove        00401020     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000020       __imp____vbaAryMove        00401020     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000024       __imp_@__vbaFreeVar        00401024     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000024       __imp____vbaFreeVar        00401024     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000028       __imp____vbaLateIdCall     00401028     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000028       __imp_@__vbaLateIdCall     00401028     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000002c       __imp____vba@067D4014      0040102c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000002c       __imp_@__vba@067D4014      0040102c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000030       __imp____vbaStrVarMove     00401030     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000030       __imp_@__vbaStrVarMove     00401030     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000034       __imp_@__vbaLenBstr        00401034     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000034       __imp____vbaLenBstr        00401034     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000038       __imp_@__vbaLineInputStr   00401038     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000038       __imp____vbaLineInputStr   00401038     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000003c       __imp_@__vbaEnd            0040103c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000003c       __imp____vbaEnd            0040103c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000040       __imp_@__vbaFreeVarList    00401040     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000040       __imp____vbaFreeVarList    00401040     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000044       __imp___adj_fdiv_m64       00401044     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000004c       __imp____vbaRaiseEvent     0040104c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000004c       __imp_@__vbaRaiseEvent     0040104c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000050       __imp____vbaFreeObjList    00401050     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000050       __imp_@__vbaFreeObjList    00401050     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000054       __imp____vba@067D42E8      00401054     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000054       __imp_@__vba@067D42E8      00401054     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000058       __imp___adj_fprem1         00401058     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000005c       __imp_@__vbaRecAnsiToUni   0040105c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000005c       __imp____vbaRecAnsiToUni   0040105c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000060       __imp_@__vbaVarSetVarAddref 00401060     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000060       __imp____vbaVarSetVarAddref 00401060     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000064       __imp_@__vbaCopyBytes      00401064     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000064       __imp____vbaCopyBytes      00401064     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000068       __imp____vbaVarCmpNe       00401068     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000068       __imp_@__vbaVarCmpNe       00401068     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000006c       __imp____vbaForEachCollAd  0040106c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000006c       __imp_@__vbaForEachCollAd  0040106c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000070       __imp____vbaStrCat         00401070     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000070       __imp_@__vbaStrCat         00401070     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000074       __imp____vbaLsetFixstr     00401074     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000074       __imp_@__vbaLsetFixstr     00401074     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000078       __imp_@__vbaRecDestruct    00401078     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000078       __imp____vbaRecDestruct    00401078     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000007c       __imp____vbaSetSystemError 0040107c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000007c       __imp_@__vbaSetSystemError 0040107c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000080       __imp____vbaHresultCheckObj 00401080     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000080       __imp_@__vbaHresultCheckObj 00401080     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000084       __imp___adj_fdiv_m32       00401084     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000088       __imp____vbaAryVar         00401088     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000088       __imp_@__vbaAryVar         00401088     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000090       __imp____vbaAryDestruct    00401090     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000090       __imp_@__vbaAryDestruct    00401090     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000094       __imp____vbaVarIndexLoadRefLock 00401094     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000094       __imp_@__vbaVarIndexLoadRefLock 00401094     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000098       __imp_@__vbaLateMemSt      00401098     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000098       __imp____vbaLateMemSt      00401098     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000009c       __imp____vbaVarForInit     0040109c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000009c       __imp_@__vbaVarForInit     0040109c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000000a0       __imp____vbaExitProc       004010a0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000000a0       __imp_@__vbaExitProc       004010a0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000000a8       __imp_@__vba@066DEB64      004010a8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000000a8       __imp____vba@066DEB64      004010a8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000000ac       __imp____vbaOnError        004010ac     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000000ac       __imp_@__vbaOnError        004010ac     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000000b0       __imp_@__vbaObjSet         004010b0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000000b0       __imp____vbaObjSet         004010b0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000000b4       __imp___adj_fdiv_m16i      004010b4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000000bc       __imp____vbaObjSetAddref   004010bc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000000bc       __imp_@__vbaObjSetAddref   004010bc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000000c0       __imp___adj_fdivr_m16i     004010c0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000000c4       __imp_@__vba@067D42B0      004010c4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000000c4       __imp____vba@067D42B0      004010c4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000000c8       __imp____vbaVarIndexLoad   004010c8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000000c8       __imp_@__vbaVarIndexLoad   004010c8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000000cc       __imp____vbaFpR4           004010cc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000000cc       __imp_@__vbaFpR4           004010cc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000000d0       __imp_@__vba@067D4278      004010d0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000000d0       __imp____vba@067D4278      004010d0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000000d8       __imp____vbaBoolVar        004010d8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000000d8       __imp_@__vbaBoolVar        004010d8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000000dc       __imp____vba@066DF820      004010dc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000000dc       __imp_@__vba@066DF820      004010dc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000000e4       __imp____vbaFpR8           004010e4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000000e4       __imp_@__vbaFpR8           004010e4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000000e8       __imp_@__vbaBoolVarNull    004010e8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000000e8       __imp____vbaBoolVarNull    004010e8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000000ec       __imp___CIsin              004010ec     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000000f0       __imp____vba@067D4320      004010f0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000000f0       __imp_@__vba@067D4320      004010f0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000000f4       __imp____vbaErase          004010f4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000000f4       __imp_@__vbaErase          004010f4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000000f8       __imp____vba@066DF7E8      004010f8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000000f8       __imp_@__vba@066DF7E8      004010f8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000000fc       __imp____vbaChkstk         004010fc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000100       __imp____vbaFileClose      00401100     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000100       __imp_@__vbaFileClose      00401100     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000108       __imp_@__vbaGenerateBoundsError 00401108     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000108       __imp____vbaGenerateBoundsError 00401108     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000010c       __imp____vbaStrCmp         0040110c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000010c       __imp_@__vbaStrCmp         0040110c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000110       __imp____vbaAryConstruct2  00401110     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000110       __imp_@__vbaAryConstruct2  00401110     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000114       __imp_@__vbaVarTstEq       00401114     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000114       __imp____vbaVarTstEq       00401114     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000118       __imp_@__vbaObjVar         00401118     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000118       __imp____vbaObjVar         00401118     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000011c       __imp____vbaI2I4           0040111c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000011c       __imp_@__vbaI2I4           0040111c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000124       __imp____vbaVarOr          00401124     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000124       __imp_@__vbaVarOr          00401124     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000128       __imp_@__vba@068D3018      00401128     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000128       __imp____vba@068D3018      00401128     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000012c       __imp____vbaFpUI1          0040112c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000012c       __imp_@__vbaFpUI1          0040112c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000130       __imp____vbaCastObjVar     00401130     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000130       __imp_@__vbaCastObjVar     00401130     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000134       __imp____vbaRedimPreserve  00401134     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000134       __imp_@__vbaRedimPreserve  00401134     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000138       __imp____vbaLbound         00401138     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000138       __imp_@__vbaLbound         00401138     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000013c       __imp___adj_fpatan         0040113c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000140       __imp____vbaLateIdCallLd   00401140     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000140       __imp_@__vbaLateIdCallLd   00401140     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000148       __imp_@__vbaRedim          00401148     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000148       __imp____vbaRedim          00401148     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000014c       __imp_@__vbaRecUniToAnsi   0040114c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000014c       __imp____vbaRecUniToAnsi   0040114c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000154       __imp____vbaNew            00401154     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000154       __imp_@__vbaNew            00401154     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000158       __imp____vbaUI1I2          00401158     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000158       __imp_@__vbaUI1I2          00401158     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000015c       __imp___CIsqrt             0040115c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000160       __imp_@__vbaObjIs          00401160     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000160       __imp____vbaObjIs          00401160     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000164       __imp_@__vbaVarAnd         00401164     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000164       __imp____vbaVarAnd         00401164     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000016c       __imp____vbaUI1I4          0040116c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000016c       __imp_@__vbaUI1I4          0040116c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000170       __imp____vbaExceptHandler  00401170     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000174       __imp_@__vba@066DE0C4      00401174     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000174       __imp____vba@066DE0C4      00401174     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000178       __imp_@__vbaStrToUnicode   00401178     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000178       __imp____vbaStrToUnicode   00401178     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000017c       __imp_@__vba@066DD36C      0040117c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000017c       __imp____vba@066DD36C      0040117c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000180       __imp_@__vbaPrintFile      00401180     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000180       __imp____vbaPrintFile      00401180     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000184       __imp____vba@068D47B0      00401184     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000184       __imp_@__vba@068D47B0      00401184     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000188       __imp___adj_fprem          00401188     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000018c       __imp___adj_fdivr_m64      0040118c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000190       __imp____vbaI2Str          00401190     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000190       __imp_@__vbaI2Str          00401190     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000194       __imp_@__vba@067D519C      00401194     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000194       __imp____vba@067D519C      00401194     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000198       __imp____vbaFPException    00401198     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000019c       __imp_@__vba@067D7F0C      0040119c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000019c       __imp____vba@067D7F0C      0040119c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001a0       __imp_@__vbaInStrVar       004011a0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001a0       __imp____vbaInStrVar       004011a0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001a8       __imp_@__vbaStrVarVal      004011a8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001a8       __imp____vbaStrVarVal      004011a8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001ac       __imp_@__vbaUbound         004011ac     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001ac       __imp____vbaUbound         004011ac     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001b0       __imp_@__vbaVarCat         004011b0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001b0       __imp____vbaVarCat         004011b0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001b4       __imp____vba@067D4094      004011b4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001b4       __imp_@__vba@067D4094      004011b4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001b8       __imp____vbaCheckType      004011b8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001b8       __imp_@__vbaCheckType      004011b8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001bc       __imp____vbaI2Var          004011bc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001bc       __imp_@__vbaI2Var          004011bc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001c0       __imp____vba@068D30D0      004011c0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001c0       __imp_@__vba@068D30D0      004011c0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001c4       __imp_@__vba@066DE7FC      004011c4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001c4       __imp____vba@066DE7FC      004011c4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001c8       __imp___CIlog              004011c8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001cc       __imp_@__vbaErrorOverflow  004011cc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001cc       __imp____vbaErrorOverflow  004011cc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001d0       __imp____vbaFileOpen       004011d0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001d0       __imp_@__vbaFileOpen       004011d0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001d4       __imp_@__vbaVar2Vec        004011d4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001d4       __imp____vbaVar2Vec        004011d4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001d8       __imp____vbaR8Str          004011d8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001d8       __imp_@__vbaR8Str          004011d8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001dc       __imp_@__vbaNew2           004011dc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001dc       __imp____vbaNew2           004011dc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001e0       __imp_@__vbaInStr          004011e0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001e0       __imp____vbaInStr          004011e0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001e4       __imp_@__vba@066DE834      004011e4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001e4       __imp____vba@066DE834      004011e4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001e8       __imp____vba@067D64DC      004011e8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001e8       __imp_@__vba@067D64DC      004011e8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001ec       __imp___adj_fdiv_m32i      004011ec     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001f0       __imp___adj_fdivr_m32i     004011f0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001f4       __imp_@__vbaStrCopy        004011f4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001f4       __imp____vbaStrCopy        004011f4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001f8       __imp_@__vba@067D182C      004011f8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001f8       __imp____vba@067D182C      004011f8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001fc       __imp____vbaVarNot         004011fc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000001fc       __imp_@__vbaVarNot         004011fc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000200       __imp____vbaFreeStrList    00401200     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000200       __imp_@__vbaFreeStrList    00401200     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000204       __imp___adj_fdivr_m32      00401204     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000208       __imp___adj_fdiv_r         00401208     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000020c       __imp____vba@068D3098      0040120c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000020c       __imp_@__vba@068D3098      0040120c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000214       __imp____vbaVarTstNe       00401214     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000214       __imp_@__vbaVarTstNe       00401214     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000218       __imp____vbaVarSetVar      00401218     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000218       __imp_@__vbaVarSetVar      00401218     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000021c       __imp____vbaI4Var          0040121c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000021c       __imp_@__vbaI4Var          0040121c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000220       __imp____vbaVarCmpEq       00401220     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000220       __imp_@__vbaVarCmpEq       00401220     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000224       __imp____vbaVarAdd         00401224     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000224       __imp_@__vbaVarAdd         00401224     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000228       __imp_@__vbaLateMemCall    00401228     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000228       __imp____vbaLateMemCall    00401228     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000022c       __imp_@__vbaAryLock        0040122c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000022c       __imp____vbaAryLock        0040122c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000234       __imp_@__vbaStrToAnsi      00401234     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000234       __imp____vbaStrToAnsi      00401234     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000238       __imp____vbaStrComp        00401238     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000238       __imp_@__vbaStrComp        00401238     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000023c       __imp____vbaVarDup         0040123c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000023c       __imp_@__vbaVarDup         0040123c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000244       __imp____vbaFpI2           00401244     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000244       __imp_@__vbaFpI2           00401244     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000248       __imp_@__vbaFpI4           00401248     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000248       __imp____vbaFpI4           00401248     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000024c       __imp_@__vbaVarLateMemCallLd 0040124c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000024c       __imp____vbaVarLateMemCallLd 0040124c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000250       __imp_@__vba@068D4778      00401250     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000250       __imp____vba@068D4778      00401250     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000254       __imp____vbaVarCopy        00401254     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000254       __imp_@__vbaVarCopy        00401254     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000258       __imp____vbaLateMemCallLd  00401258     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000258       __imp_@__vbaLateMemCallLd  00401258     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000025c       __imp_@__vbaRecDestructAnsi 0040125c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000025c       __imp____vbaRecDestructAnsi 0040125c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000260       __imp_@__vba@068D684C      00401260     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000260       __imp____vba@068D684C      00401260     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000264       __imp___CIatan             00401264     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000268       __imp_@__vbaStrMove        00401268     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000268       __imp____vbaStrMove        00401268     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000026c       __imp_@__vbaAryCopy        0040126c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000026c       __imp____vbaAryCopy        0040126c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000270       __imp_@__vbaCastObj        00401270     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000270       __imp____vbaCastObj        00401270     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000274       __imp___allmul             00401274     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000278       __imp_@__vbaLateIdSt       00401278     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000278       __imp____vbaLateIdSt       00401278     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000027c       __imp___CItan              0040127c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000280       __imp_@__vbaNextEachCollAd 00401280     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000280       __imp____vbaNextEachCollAd 00401280     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000284       __imp_@__vbaUI1Var         00401284     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000284       __imp____vbaUI1Var         00401284     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000288       __imp____vbaAryUnlock      00401288     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000288       __imp_@__vbaAryUnlock      00401288     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000028c       __imp____vbaVarForNext     0040128c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000028c       __imp_@__vbaVarForNext     0040128c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000290       __imp___CIexp              00401290     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000294       __imp____vbaFreeObj        00401294     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000294       __imp_@__vbaFreeObj        00401294     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000298       __imp_@__vbaFreeStr        00401298     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000298       __imp____vbaFreeStr        00401298     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000029c       __imp____vba@068D6884      0040129c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000029c       __imp_@__vba@068D6884      0040129c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00000448       __real@8@40008000000000000000 00401448     frmSkin.OBJ
+ 0001:000004a8       __real@4@4009a500000000000000 004014a8     frmskinV8.OBJ
+ 0001:000004ac       __real@4@4001a000000000000000 004014ac     frmskinV8.OBJ
+ 0001:000004b0       __real@4@4007bb80000000000000 004014b0     frmskinV8.OBJ
+ 0001:000004b4       __real@4@4008c6c0000000000000 004014b4     frmskinV8.OBJ
+ 0001:000004b8       __real@4@400997e0000000000000 004014b8     frmskinV8.OBJ
+ 0001:00000850       __real@8@4006ff00000000000000 00401850     clsShadow.OBJ
+ 0001:00000960       __real@8@3ffbe147ae147ae14800 00401960     jcButton.OBJ
+ 0001:00000968       __real@8@3ffe970a3d70a3d70800 00401968     jcButton.OBJ
+ 0001:00000970       __real@8@3ffd9999999999999800 00401970     jcButton.OBJ
+ 0001:00000978       __real@8@3ffec000000000000000 00401978     jcButton.OBJ
+ 0001:000009d0       __real@8@bffbccccccccccccd000 004019d0     jcButton.OBJ
+ 0001:000009d8       __real@4@40028000000000000000 004019d8     jcButton.OBJ
+ 0001:000009e0       __real@8@4001e000000000000000 004019e0     jcButton.OBJ
+ 0001:000009e8       __real@8@40028000000000000000 004019e8     jcButton.OBJ
+ 0001:000009f0       __real@4@40018000000000000000 004019f0     jcButton.OBJ
+ 0001:00000bb0       __real@8@bffaccccccccccccd000 00401bb0     jcButton.OBJ
+ 0001:00000bb8       __real@8@bff9a3d70a3d70a3d800 00401bb8     jcButton.OBJ
+ 0001:00000bc0       __real@8@bffcccccccccccccd000 00401bc0     jcButton.OBJ
+ 0001:00000dc8       __real@8@3ffcccccccccccccd000 00401dc8     jcButton.OBJ
+ 0001:00000dd0       __real@8@3ffca3d70a3d70a3d800 00401dd0     jcButton.OBJ
+ 0001:00000dd8       __real@8@3ffc9999999999999800 00401dd8     jcButton.OBJ
+ 0001:00000de0       __real@8@3ffba3d70a3d70a3d800 00401de0     jcButton.OBJ
+ 0001:00000de8       __real@8@3ff8a3d70a3d70a3d800 00401de8     jcButton.OBJ
+ 0001:00000df0       __real@8@3ffaccccccccccccd000 00401df0     jcButton.OBJ
+ 0001:00000df8       __real@8@3ffbb851eb851eb85000 00401df8     jcButton.OBJ
+ 0001:00000e00       __real@8@3ffbccccccccccccd000 00401e00     jcButton.OBJ
+ 0001:00000e08       __real@8@bffba3d70a3d70a3d800 00401e08     jcButton.OBJ
+ 0001:00000e10       __real@8@bff8a3d70a3d70a3d800 00401e10     jcButton.OBJ
+ 0001:00000e18       __real@8@bffbf5c28f5c28f5c000 00401e18     jcButton.OBJ
+ 0001:00000e20       __real@8@bffd8000000000000000 00401e20     jcButton.OBJ
+ 0001:00000e28       __real@8@bffdccccccccccccd000 00401e28     jcButton.OBJ
+ 0001:00000e30       __real@8@bffceb851eb851eb8800 00401e30     jcButton.OBJ
+ 0001:00000e38       __real@8@bffda8f5c28f5c28f800 00401e38     jcButton.OBJ
+ 0001:00000e40       __real@8@bffd8f5c28f5c28f6000 00401e40     jcButton.OBJ
+ 0001:00000e48       __real@8@bffdb851eb851eb85000 00401e48     jcButton.OBJ
+ 0001:00000e50       __real@8@bff9f5c28f5c28f5c000 00401e50     jcButton.OBJ
+ 0001:00000e58       __real@8@3fffd999999999999800 00401e58     jcButton.OBJ
+ 0001:00000e60       __real@8@3fffc000000000000000 00401e60     jcButton.OBJ
+ 0001:00000e68       __real@8@bffc9999999999999800 00401e68     jcButton.OBJ
+ 0001:00000e70       __real@8@3fff8000000000000000 00401e70     jcButton.OBJ
+ 0001:00000e78       __real@8@bffdae147ae147ae1800 00401e78     jcButton.OBJ
+ 0001:00000e80       __real@8@4000acccccccccccd000 00401e80     jcButton.OBJ
+ 0001:00000ea8       __real@4@00000000000000000000 00401ea8     jcButton.OBJ
+ 0001:00000eac       __real@4@4006ff00000000000000 00401eac     jcButton.OBJ
+ 0001:00000f58       __real@4@4006dc00000000000000 00401f58     jcButton.OBJ
+ 0001:00001590       __real@8@4008fa00000000000000 00402590     modFade.OBJ
+ 0001:00001598       __real@8@4001c000000000000000 00402598     modFade.OBJ
+ 0001:000016f8       __real@8@00000000000000000000 004026f8     FrmSetting.OBJ
+ 0001:00001760       ___vbaChkstk               00402760     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001760       VB@TEXT                    00402760     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001766       ___vbaExceptHandler        00402766     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000176c       ___vbaFPException          0040276c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001772       __adj_fdiv_m16i            00402772     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001778       __adj_fdiv_m32             00402778     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000177e       __adj_fdiv_m32i            0040277e     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001784       __adj_fdiv_m64             00402784     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000178a       __adj_fdiv_r               0040278a     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001790       __adj_fdivr_m16i           00402790     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001796       __adj_fdivr_m32            00402796     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000179c       __adj_fdivr_m32i           0040279c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000017a2       __adj_fdivr_m64            004027a2     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000017a8       __adj_fpatan               004027a8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000017ae       __adj_fprem                004027ae     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000017b4       __adj_fprem1               004027b4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000017ba       __adj_fptan                004027ba     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000017c0       __CIatan                   004027c0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000017c6       __CIcos                    004027c6     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000017cc       __CIexp                    004027cc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000017d2       __CIlog                    004027d2     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000017d8       __CIsin                    004027d8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000017de       __CIsqrt                   004027de     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000017e4       __CItan                    004027e4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000017ea       __allmul                   004027ea     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000017f6       @__vbaVarCopy              004027f6     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000017f6       ___vbaVarCopy              004027f6     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000017fc       @__vbaNew                  004027fc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000017fc       ___vbaNew                  004027fc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001802       ___vbaFpI2                 00402802     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001802       @__vbaFpI2                 00402802     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001808       ___vbaPrintFile            00402808     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001808       @__vbaPrintFile            00402808     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000180e       @__vbaFileClose            0040280e     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000180e       ___vbaFileClose            0040280e     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001814       @__vbaLineInputStr         00402814     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001814       ___vbaLineInputStr         00402814     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000181a       @__vbaI2Var                0040281a     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000181a       ___vbaI2Var                0040281a     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001820       @__vbaFileOpen             00402820     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001820       ___vbaFileOpen             00402820     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001826       @__vba@066DE7FC            00402826     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001826       ___vba@066DE7FC            00402826     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000182c       ___vba@066DE834            0040282c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000182c       @__vba@066DE834            0040282c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001832       @__vbaFreeObjList          00402832     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001832       ___vbaFreeObjList          00402832     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001838       ___vbaCastObj              00402838     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001838       @__vbaCastObj              00402838     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000183e       ___vbaObjSetAddref         0040283e     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000183e       @__vbaObjSetAddref         0040283e     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001844       @__vbaInStrVar             00402844     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001844       ___vbaInStrVar             00402844     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000184a       @__vbaVarTstEq             0040284a     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000184a       ___vbaVarTstEq             0040284a     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001850       ___vba@066DD36C            00402850     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001850       @__vba@066DD36C            00402850     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001856       @__vbaInStr                00402856     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001856       ___vbaInStr                00402856     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000185c       @__vbaErrorOverflow        0040285c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000185c       ___vbaErrorOverflow        0040285c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001862       ___vbaAryDestruct          00402862     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001862       @__vbaAryDestruct          00402862     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001868       ___vbaExitProc             00402868     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001868       @__vbaExitProc             00402868     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000186e       @__vbaVarForNext           0040286e     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000186e       ___vbaVarForNext           0040286e     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001874       ___vbaLenBstr              00402874     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001874       @__vbaLenBstr              00402874     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000187a       ___vba@066DF7E8            0040287a     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000187a       @__vba@066DF7E8            0040287a     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001880       ___vba@066DF820            00402880     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001880       @__vba@066DF820            00402880     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001886       ___vbaStrCmp               00402886     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001886       @__vbaStrCmp               00402886     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000188c       @__vbaVarCmpEq             0040288c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000188c       ___vbaVarCmpEq             0040288c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001892       ___vbaVarAnd               00402892     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001892       @__vbaVarAnd               00402892     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001898       ___vbaBoolVarNull          00402898     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001898       @__vbaBoolVarNull          00402898     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000189e       ___vbaStrVarMove           0040289e     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000189e       @__vbaStrVarMove           0040289e     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000018a4       ___vbaGenerateBoundsError  004028a4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000018a4       @__vbaGenerateBoundsError  004028a4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000018aa       ___vbaVarIndexLoad         004028aa     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000018aa       @__vbaVarIndexLoad         004028aa     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000018b0       ___vbaUbound               004028b0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000018b0       @__vbaUbound               004028b0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000018b6       @__vbaI2I4                 004028b6     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000018b6       ___vbaI2I4                 004028b6     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000018bc       ___vbaVarDup               004028bc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000018bc       @__vbaVarDup               004028bc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000018c2       @__vba@066DE0C4            004028c2     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000018c2       ___vba@066DE0C4            004028c2     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000018c8       @__vbaAryVar               004028c8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000018c8       ___vbaAryVar               004028c8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000018ce       @__vbaAryCopy              004028ce     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000018ce       ___vbaAryCopy              004028ce     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000018d4       @__vbaFreeStr              004028d4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000018d4       ___vbaFreeStr              004028d4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000018da       @__vbaVarCat               004028da     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000018da       ___vbaVarCat               004028da     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000018e0       ___vbaStrVarVal            004028e0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000018e0       @__vbaStrVarVal            004028e0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000018e6       ___vbaVarForInit           004028e6     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000018e6       @__vbaVarForInit           004028e6     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000018ec       ___vbaFreeObj              004028ec     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000018ec       @__vbaFreeObj              004028ec     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000018f2       ___vbaObjSet               004028f2     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000018f2       @__vbaObjSet               004028f2     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000018f8       @__vbaVarMove              004028f8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000018f8       ___vbaVarMove              004028f8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000018fe       @__vbaOnError              004028fe     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000018fe       ___vbaOnError              004028fe     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001904       @__vbaFreeVar              00402904     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001904       ___vbaFreeVar              00402904     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000190a       @__vbaNew2                 0040290a     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000190a       ___vbaNew2                 0040290a     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001910       ___vbaFreeVarList          00402910     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001910       @__vbaFreeVarList          00402910     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001916       ___vbaFreeStrList          00402916     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001916       @__vbaFreeStrList          00402916     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000191c       ___vbaStrI2                0040291c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000191c       @__vbaStrI2                0040291c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001922       ___vbaStrMove              00402922     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001922       @__vbaStrMove              00402922     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001928       ___vbaStrCat               00402928     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001928       @__vbaStrCat               00402928     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000192e       ___vba@066DEB64            0040292e     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000192e       @__vba@066DEB64            0040292e     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001934       @__vbaStrCopy              00402934     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001934       ___vbaStrCopy              00402934     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000193a       @__vbaHresultCheckObj      0040293a     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000193a       ___vbaHresultCheckObj      0040293a     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001940       ___vbaSetSystemError       00402940     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001940       @__vbaSetSystemError       00402940     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001946       @__vbaLateIdSt             00402946     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001946       ___vbaLateIdSt             00402946     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000194c       @__vbaBoolVar              0040294c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000194c       ___vbaBoolVar              0040294c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001952       ___vbaCastObjVar           00402952     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001952       @__vbaCastObjVar           00402952     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001958       @__vbaRaiseEvent           00402958     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001958       ___vbaRaiseEvent           00402958     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000195e       @__vbaStrToUnicode         0040295e     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000195e       ___vbaStrToUnicode         0040295e     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001964       ___vbaVarVargNofree        00402964     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001964       @__vbaVarVargNofree        00402964     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000196a       ___vbaI4Var                0040296a     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000196a       @__vbaI4Var                0040296a     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001970       @__vbaAryUnlock            00402970     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001970       ___vbaAryUnlock            00402970     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001976       ___vbaAryLock              00402976     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001976       @__vbaAryLock              00402976     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000197c       ___vbaVargParmRef          0040297c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000197c       @__vbaVargParmRef          0040297c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001982       @__vba@068D3018            00402982     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001982       ___vba@068D3018            00402982     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001988       ___vbaLbound               00402988     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001988       @__vbaLbound               00402988     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000198e       ___vba@068D3098            0040298e     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000198e       @__vba@068D3098            0040298e     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001994       ___vba@068D30D0            00402994     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001994       @__vba@068D30D0            00402994     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000199a       ___vbaStrI4                0040299a     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000199a       @__vbaStrI4                0040299a     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000019a0       @__vbaObjIs                004029a0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000019a0       ___vbaObjIs                004029a0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000019a6       @__vbaAryConstruct2        004029a6     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000019a6       ___vbaAryConstruct2        004029a6     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000019ac       @__vbaFpUI1                004029ac     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000019ac       ___vbaFpUI1                004029ac     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000019b2       @__vbaStrComp              004029b2     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000019b2       ___vbaStrComp              004029b2     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000019b8       ___vba@068D4778            004029b8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000019b8       @__vba@068D4778            004029b8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000019be       ___vba@068D47B0            004029be     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000019be       @__vba@068D47B0            004029be     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000019c4       @__vbaUI1I2                004029c4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000019c4       ___vbaUI1I2                004029c4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000019ca       ___vbaStrToAnsi            004029ca     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000019ca       @__vbaStrToAnsi            004029ca     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000019d0       ___vbaRecAnsiToUni         004029d0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000019d0       @__vbaRecAnsiToUni         004029d0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000019d6       ___vbaRecUniToAnsi         004029d6     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000019d6       @__vbaRecUniToAnsi         004029d6     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000019dc       @__vbaErase                004029dc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000019dc       ___vbaErase                004029dc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000019e2       @__vbaRedim                004029e2     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000019e2       ___vbaRedim                004029e2     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000019e8       ___vbaUI1I4                004029e8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000019e8       @__vbaUI1I4                004029e8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000019ee       ___vba@068D684C            004029ee     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000019ee       @__vba@068D684C            004029ee     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000019f4       ___vba@068D6884            004029f4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000019f4       @__vba@068D6884            004029f4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000019fa       @__vbaRedimPreserve        004029fa     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000019fa       ___vbaRedimPreserve        004029fa     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a00       @__vbaVarSetVarAddref      00402a00     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a00       ___vbaVarSetVarAddref      00402a00     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a06       ___vbaUI1Var               00402a06     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a06       @__vbaUI1Var               00402a06     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a0c       @__vbaRecDestruct          00402a0c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a0c       ___vbaRecDestruct          00402a0c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a12       @__vbaVarTstNe             00402a12     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a12       ___vbaVarTstNe             00402a12     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a18       ___vbaRecDestructAnsi      00402a18     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a18       @__vbaRecDestructAnsi      00402a18     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a1e       ___vba@067D4278            00402a1e     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a1e       @__vba@067D4278            00402a1e     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a24       ___vba@067D42B0            00402a24     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a24       @__vba@067D42B0            00402a24     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a2a       @__vba@067D42E8            00402a2a     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a2a       ___vba@067D42E8            00402a2a     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a30       @__vba@067D4320            00402a30     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a30       ___vba@067D4320            00402a30     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a36       @__vbaNextEachCollAd       00402a36     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a36       ___vbaNextEachCollAd       00402a36     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a3c       @__vbaLateMemSt            00402a3c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a3c       ___vbaLateMemSt            00402a3c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a42       ___vbaVarNot               00402a42     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a42       @__vbaVarNot               00402a42     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a48       ___vbaVarLateMemCallLd     00402a48     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a48       @__vbaVarLateMemCallLd     00402a48     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a4e       @__vbaCheckType            00402a4e     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a4e       ___vbaCheckType            00402a4e     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a54       ___vbaLateMemCallLd        00402a54     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a54       @__vbaLateMemCallLd        00402a54     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a5a       @__vbaObjVar               00402a5a     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a5a       ___vbaObjVar               00402a5a     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a60       ___vbaForEachCollAd        00402a60     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a60       @__vbaForEachCollAd        00402a60     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a66       ___vbaVarCmpNe             00402a66     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a66       @__vbaVarCmpNe             00402a66     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a6c       @__vbaFpR8                 00402a6c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a6c       ___vbaFpR8                 00402a6c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a72       @__vbaVarOr                00402a72     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a72       ___vbaVarOr                00402a72     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a78       ___vbaLsetFixstr           00402a78     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a78       @__vbaLsetFixstr           00402a78     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a7e       @__vbaCopyBytes            00402a7e     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a7e       ___vbaCopyBytes            00402a7e     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a84       @__vba@067D182C            00402a84     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a84       ___vba@067D182C            00402a84     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a8a       ___vbaFpI4                 00402a8a     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a8a       @__vbaFpI4                 00402a8a     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a90       ___vbaLateIdCallLd         00402a90     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a90       @__vbaLateIdCallLd         00402a90     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a96       @__vba@067D4014            00402a96     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a96       ___vba@067D4014            00402a96     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a9c       @__vbaFpR4                 00402a9c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001a9c       ___vbaFpR4                 00402a9c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001aa2       @__vba@067D4094            00402aa2     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001aa2       ___vba@067D4094            00402aa2     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001aa8       @__vbaEnd                  00402aa8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001aa8       ___vbaEnd                  00402aa8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001aae       @__vbaLateMemCall          00402aae     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001aae       ___vbaLateMemCall          00402aae     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001ab4       @__vbaLateIdCall           00402ab4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001ab4       ___vbaLateIdCall           00402ab4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001aba       @__vbaR8Str                00402aba     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001aba       ___vbaR8Str                00402aba     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001ac0       ___vbaVarAdd               00402ac0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001ac0       @__vbaVarAdd               00402ac0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001ac6       @__vba@067D64DC            00402ac6     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001ac6       ___vba@067D64DC            00402ac6     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001acc       @__vbaI2Str                00402acc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001acc       ___vbaI2Str                00402acc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001ad2       ___vba@067D7F0C            00402ad2     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001ad2       @__vba@067D7F0C            00402ad2     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001ad8       ___vbaVar2Vec              00402ad8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001ad8       @__vbaVar2Vec              00402ad8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001ade       ___vbaAryMove              00402ade     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001ade       @__vbaAryMove              00402ade     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001ae4       @__vbaVarIndexLoadRefLock  00402ae4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001ae4       ___vbaVarIndexLoadRefLock  00402ae4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001aea       @__vba@067D519C            00402aea     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001aea       ___vba@067D519C            00402aea     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001af0       ___vbaVarSetVar            00402af0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001af0       @__vbaVarSetVar            00402af0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00001b50       ___vbaS                    00402b50     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000060b4       ___vba@0AE5B224            004070b4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000060ec       ___vba@0AE5D8EC            004070ec     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000612c       ___vba@0AE5B46C            0040712c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00006170       ___vba@0AE5E69C            00407170     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000061b8       ___vba@0AE5EB2C            004071b8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00006734       ___vba@066DF914            00407734     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00006cf4       ___vba@0AE5CFCC            00407cf4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000706c       ___vba@0AE5C464            0040806c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000073ec       ___vba@0AE5E8E4            004083ec     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000077c4       ___vba@0AE5DB34            004087c4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000080ac       ___vba@0AE5DD7C            004090ac     SKKU Notice Checker v2.0.0.OBJ
+ 0001:000086e8       ___vba@0AE5DDF8            004096e8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00008706       ___vba@0AE5DE24            00409706     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00008724       ___vba@0AE5DE50            00409724     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00008742       ___vba@0AE5DE7C            00409742     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00008760       ___vba@0AE5DEA8            00409760     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000877e       ___vba@0AE5DED4            0040977e     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00008888       ___vba@0AE5C6AC            00409888     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000919c       ___vba@0AE5CB3C            0040a19c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00009724       ___vba@0AE5CBB8            0040a724     SKKU Notice Checker v2.0.0.OBJ
+ 0001:00009fac       ___vba@0AE5B8FC            0040afac     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000a828       ___vba@0AE5B954            0040b828     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000a830       ___vba@0AE5B960            0040b830     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000a83c       ___vba@0AE5B970            0040b83c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000a848       ___vba@0AE5B980            0040b848     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000a854       ___vba@0AE5B990            0040b854     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000a860       ___vba@0AE5B9A0            0040b860     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000a868       ___vba@0AE5B9AC            0040b868     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000a878       ___vba@0AE5B9C0            0040b878     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000a880       ___vba@0AE5B9CC            0040b880     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000a888       ___vba@0AE5B9D8            0040b888     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000a894       ___vba@0AE5B9E8            0040b894     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000a8a0       ___vba@0AE5B9F8            0040b8a0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000a8a8       ___vba@0AE5BA04            0040b8a8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000a8b8       ___vba@0AE5BA18            0040b8b8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000a8cc       ___vba@0AE5BA2C            0040b8cc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000a8f4       ___vba@0AE5BA58            0040b8f4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000a900       ___vba@0AE5BA6C            0040b900     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000a910       ___vba@0AE5BA80            0040b910     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000a920       ___vba@0AE5BA94            0040b920     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000a930       ___vba@0AE5BAA8            0040b930     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000a940       ___vba@0AE5BABC            0040b940     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000a950       ___vba@0AE5BAD0            0040b950     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000a954       ___vba@0AE5BAD8            0040b954     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000a964       ___vba@0AE611F4            0040b964     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000a9a0       ___vba@0AE61234            0040b9a0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000a9a4       ___vba@0AE6123C            0040b9a4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000a9cc       ___vba@0AE61268            0040b9cc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000a9dc       ___vba@0AE6127C            0040b9dc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000a9ec       ___vba@0AE61290            0040b9ec     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000a9fc       ___vba@0AE612A4            0040b9fc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000aa04       ___vba@0AE612B0            0040ba04     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000aa0c       ___vba@0AE612BC            0040ba0c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000aa1c       ___vba@0AE612D0            0040ba1c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000aa28       ___vba@0AE612E0            0040ba28     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000aa30       ___vba@0AE612EC            0040ba30     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000aa3c       ___vba@0AE612FC            0040ba3c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000aa4c       ___vba@0AE61310            0040ba4c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000aa54       ___vba@0AE6131C            0040ba54     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000aa64       ___vba@0AE61330            0040ba64     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000aa6c       ___vba@0AE6133C            0040ba6c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000aa7c       ___vba@0AE61350            0040ba7c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000aa84       ___vba@0AE6135C            0040ba84     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000aa94       ___vba@0AE61370            0040ba94     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000aaa4       ___vba@0AE61384            0040baa4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000aab4       ___vba@0AE61398            0040bab4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000aac0       ___vba@0AE613A8            0040bac0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000aacc       ___vba@0AE613B8            0040bacc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000aadc       ___vba@0AE613C8            0040badc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000aae8       ___vba@0AE613D8            0040bae8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000aafc       ___vba@0AE6068C            0040bafc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ab84       ___vba@0AE60714            0040bb84     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ab9c       ___vba@0AE60730            0040bb9c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000aba8       ___vba@0AE60740            0040bba8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000abc0       ___vba@0AE6075C            0040bbc0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000abd8       ___vba@0AE6077C            0040bbd8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000abe8       ___vba@0AE60790            0040bbe8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000abf8       ___vba@0AE607A4            0040bbf8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ac08       ___vba@0AE607B8            0040bc08     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ac18       ___vba@0AE607CC            0040bc18     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ac28       ___vba@0AE607E0            0040bc28     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ac30       ___vba@0AE607EC            0040bc30     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ac40       ___vba@0AE60800            0040bc40     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ac44       ___vba@0AE60808            0040bc44     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ac4c       ___vba@0AE60814            0040bc4c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ac58       ___vba@0AE60824            0040bc58     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ac60       ___vba@0AE60830            0040bc60     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ac68       ___vba@0AE6083C            0040bc68     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000accc       ___vba@0AE608D4            0040bccc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ace8       ___vba@0AE6090C            0040bce8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000acf0       ___vba@0AE60918            0040bcf0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000acf8       ___vba@0AE60924            0040bcf8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ad20       ___vba@0AE60950            0040bd20     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ad34       ___vba@0AE60964            0040bd34     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ad40       ___vba@0AE60974            0040bd40     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ae08       ___vba@0AE60A40            0040be08     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ae0c       ___vba@0AE60A4C            0040be0c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ae1c       ___vba@0AE60A60            0040be1c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ae2c       ___vba@0AE60A74            0040be2c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ae3c       ___vba@0AE60A88            0040be3c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ae4c       ___vba@0AE60A9C            0040be4c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ae5c       ___vba@0AE60AB0            0040be5c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ae70       ___vba@0AE60AC4            0040be70     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ae78       ___vba@066DB934            0040be78     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ae8c       ___vba@066DB948            0040be8c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000aeb4       ___vba@066DB974            0040beb4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000af00       ___vba@066DB9C4            0040bf00     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000af30       ___vba@066DB9F8            0040bf30     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000af78       ___vba@066DBA44            0040bf78     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000afd0       ___vba@066DBAA0            0040bfd0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000aff4       ___vba@066DBAC8            0040bff4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b040       ___vba@066DBB18            0040c040     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b04c       ___vba@066DBB2C            0040c04c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b054       ___vba@066DDDB4            0040c054     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b16c       ___vba@066DDED0            0040c16c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b184       ___vba@066DDEEC            0040c184     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b194       ___vba@066DDF00            0040c194     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b1a4       ___vba@066DDF14            0040c1a4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b1b4       ___vba@066DDF28            0040c1b4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b1c4       ___vba@066DDF3C            0040c1c4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b1e4       ___vba@066DDF60            0040c1e4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b1ec       ___vba@066DDF6C            0040c1ec     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b21c       ___vba@066DDFA0            0040c21c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b22c       ___vba@066DC00C            0040c22c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b248       ___vba@066DC02C            0040c248     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b25c       ___vba@066DC044            0040c25c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b2a8       ___vba@066DC094            0040c2a8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b2c4       ___vba@066DC0B4            0040c2c4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b3d0       ___vba@066DC1C4            0040c3d0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b3d8       ___vba@066DC1D0            0040c3d8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b3e4       ___vba@066DC1E0            0040c3e4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b3ec       ___vba@066DC1EC            0040c3ec     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b3f4       ___vba@066DC1F8            0040c3f4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b3f8       ___vba@066DC204            0040c3f8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b400       ___vba@066DBB7C            0040c400     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b428       ___vba@066DBBA8            0040c428     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b4c4       ___vba@066DBC48            0040c4c4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b52c       ___vba@066DBCB4            0040c52c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b53c       ___vba@066DBCC8            0040c53c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b590       ___vba@066DBD20            0040c590     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b5b8       ___vba@066DBD50            0040c5b8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b5cc       ___vba@066DBD64            0040c5cc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b5e0       ___vba@066DB4A4            0040c5e0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b68c       ___vba@066DB554            0040c68c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b764       ___vba@066DB634            0040c764     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b774       ___vba@066DB648            0040c774     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b784       ___vba@066DB65C            0040c784     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b794       ___vba@066DB670            0040c794     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b7a4       ___vba@066DB684            0040c7a4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b7b4       ___vba@066DBDC4            0040c7b4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b7d4       ___vba@066DBDE8            0040c7d4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b7e0       ___vba@066DBDF8            0040c7e0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b808       ___vba@066DBE24            0040c808     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b818       ___vba@066DBE34            0040c818     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b864       ___vba@066DBE84            0040c864     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b8c0       ___vba@066DBEE4            0040c8c0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b910       ___vba@066DBF38            0040c910     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b928       ___vba@066DBF54            0040c928     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b944       ___vba@066DBF74            0040c944     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b950       ___vba@066DBF84            0040c950     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b964       ___vba@066DBF9C            0040c964     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b97c       ___vba@066DB25C            0040c97c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b9e4       ___vba@066DB2CC            0040c9e4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000b9f8       ___vba@066DB2E0            0040c9f8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ba10       ___vba@066DB300            0040ca10     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ba20       ___vba@066DB314            0040ca20     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ba30       ___vba@066DB328            0040ca30     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ba40       ___vba@066DB33C            0040ca40     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ba50       ___vba@066DB350            0040ca50     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ba58       ___vba@066DB35C            0040ca58     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ba60       ___vba@066DB368            0040ca60     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ba70       ___vba@066DB37C            0040ca70     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ba78       ___vba@066DB388            0040ca78     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ba88       ___vba@066DB39C            0040ca88     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ba98       ___vba@066DB3AC            0040ca98     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000baa8       ___vba@066DB3C0            0040caa8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bad0       ___vba@066DB3D8            0040cad0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000baf0       ___vba@066DB410            0040caf0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bb00       ___vba@066DB428            0040cb00     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bb0c       ___vba@066DB438            0040cb0c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bb18       ___vba@066DB448            0040cb18     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bb40       ___vba@066DD924            0040cb40     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bb60       ___vba@066DD95C            0040cb60     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bb94       ___vba@066DD980            0040cb94     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bbb0       ___vba@066DD9B8            0040cbb0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bbbc       ___vba@066DD9C8            0040cbbc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bbcc       ___vba@066DD9DC            0040cbcc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bbdc       ___vba@066DD9F0            0040cbdc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bbec       ___vba@066DDA04            0040cbec     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bc00       ___vba@066DDA18            0040cc00     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bc14       ___vba@066DDA34            0040cc14     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bc24       ___vba@066DDA48            0040cc24     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bc34       ___vba@066DDA5C            0040cc34     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bc44       ___vba@066DDA70            0040cc44     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bc54       ___vba@066DDA84            0040cc54     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bc64       ___vba@066DDA98            0040cc64     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bc6c       ___vba@066DDAA4            0040cc6c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bc7c       ___vba@066DDAB8            0040cc7c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bca0       ___vba@066DDAE0            0040cca0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bca8       ___vba@066DDAEC            0040cca8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bcd0       ___vba@066DC254            0040ccd0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bce8       ___vba@066DC270            0040cce8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bcf4       ___vba@066DC280            0040ccf4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bd00       ___vba@066DC290            0040cd00     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bd10       ___vba@066DC2A0            0040cd10     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bd20       ___vba@066DC2B4            0040cd20     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bd48       ___vba@066DC2CC            0040cd48     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bd68       ___vba@066DC304            0040cd68     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bd90       ___vba@066DC31C            0040cd90     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bdb0       ___vba@066DC354            0040cdb0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bdd8       ___vba@066DC36C            0040cdd8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bdf8       ___vba@066DC3A4            0040cdf8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000be1c       ___vba@066DC3B8            0040ce1c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000be3c       ___vba@066DC3F0            0040ce3c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000be68       ___vba@066DC40C            0040ce68     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000be84       ___vba@066DC444            0040ce84     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000be94       ___vba@066DC49C            0040ce94     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bec0       ___vba@066DC4B8            0040cec0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bee0       ___vba@066DC4F0            0040cee0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bf08       ___vba@066DC508            0040cf08     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bf28       ___vba@066DC540            0040cf28     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bf54       ___vba@066DC55C            0040cf54     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bf74       ___vba@066DC594            0040cf74     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bf80       ___vba@066DC5A4            0040cf80     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bfb4       ___vba@066DC5C8            0040cfb4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bfd4       ___vba@066DC600            0040cfd4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000bff8       ___vba@066DC614            0040cff8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c018       ___vba@066DC64C            0040d018     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c040       ___vba@066DC664            0040d040     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c074       ___vba@066DEDAC            0040d074     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c094       ___vba@066DEDE4            0040d094     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c0bc       ___vba@066DEDFC            0040d0bc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c0dc       ___vba@066DEE34            0040d0dc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c0e8       ___vba@066DEE44            0040d0e8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c114       ___vba@066DEE60            0040d114     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c134       ___vba@066DEE98            0040d134     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c160       ___vba@066DEEB4            0040d160     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c180       ___vba@066DEEEC            0040d180     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c1a8       ___vba@066DEF04            0040d1a8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c1c8       ___vba@066DEF3C            0040d1c8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c1ec       ___vba@066DEF50            0040d1ec     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c20c       ___vba@066DEF88            0040d20c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c234       ___vba@066DC92C            0040d234     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c254       ___vba@066DC964            0040d254     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c278       ___vba@066DC978            0040d278     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c298       ___vba@066DC9B0            0040d298     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c2a8       ___vba@066DC9C4            0040d2a8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c2d4       ___vba@066DC9E0            0040d2d4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c2f4       ___vba@066DCA18            0040d2f4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c314       ___vba@066DCA28            0040d314     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c334       ___vba@066DCA60            0040d334     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c35c       ___vba@066DCA78            0040d35c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c37c       ___vba@066DCAB0            0040d37c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c3a0       ___vba@066DCAC4            0040d3a0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c3c0       ___vba@066DCAFC            0040d3c0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c3e0       ___vba@066DCB24            0040d3e0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c3fc       ___vba@066DCB74            0040d3fc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c41c       ___vba@066DCBAC            0040d41c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c444       ___vba@066DCBC4            0040d444     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c464       ___vba@066DCBFC            0040d464     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c48c       ___vba@066DCC14            0040d48c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c4ac       ___vba@066DCC4C            0040d4ac     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c4d4       ___vba@066DCC64            0040d4d4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c4f4       ___vba@066DCC9C            0040d4f4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c518       ___vba@066DCCB0            0040d518     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c538       ___vba@066DCCE8            0040d538     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c560       ___vba@066DCD00            0040d560     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c580       ___vba@066DCD38            0040d580     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c590       ___vba@066DCD4C            0040d590     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c5a0       ___vba@066DCD64            0040d5a0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c5c4       ___vba@066DEFF4            0040d5c4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c5e4       ___vba@066DF02C            0040d5e4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c610       ___vba@066DF048            0040d610     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c630       ___vba@066DF080            0040d630     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c644       ___vba@066DF098            0040d644     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c664       ___vba@066DF0A8            0040d664     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c680       ___vba@066DF0E0            0040d680     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c688       ___vba@066DF0EC            0040d688     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c690       ___vba@066DF0F8            0040d690     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c6a0       ___vba@066DF10C            0040d6a0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c6a8       ___vba@066DF118            0040d6a8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c6bc       ___vba@066DF12C            0040d6bc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c6c4       ___vba@066DF138            0040d6c4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c6e0       ___vba@066DF194            0040d6e0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c6ec       ___vba@066DF1DC            0040d6ec     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c704       ___vba@066DF23C            0040d704     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c804       ___vba@066DF344            0040d804     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c810       ___vba@066DF354            0040d810     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c81c       ___vba@066DF364            0040d81c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c828       ___vba@066DF3AC            0040d828     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c838       ___vba@066DF3F8            0040d838     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c848       ___vba@066DF40C            0040d848     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c85c       ___vba@066DF424            0040d85c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c864       ___vba@066DF430            0040d864     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c86c       ___vba@066DE70C            0040d86c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c880       ___vba@066DE75C            0040d880     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c88c       ___vba@066DE7A4            0040d88c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c8a4       ___vba@066DE86C            0040d8a4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c8b8       ___vba@066DE8BC            0040d8b8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c8cc       ___vba@066DD284            0040d8cc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c8e0       ___vba@066DD2D4            0040d8e0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c8f0       ___vba@066DD320            0040d8f0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c900       ___vba@066DD3A4            0040d900     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c90c       ___vba@066DD3EC            0040d90c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c920       ___vba@066DD43C            0040d920     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c92c       ___vba@066DF704            0040d92c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c93c       ___vba@066DF750            0040d93c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c94c       ___vba@066DF79C            0040d94c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c95c       ___vba@066DF858            0040d95c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c968       ___vba@066DF8A0            0040d968     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c978       ___vba@066DF8B4            0040d978     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c980       ___vba@066DF8C0            0040d980     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c988       ___vba@066DD4CC            0040d988     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c994       ___vba@066DD514            0040d994     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c9a8       ___vba@066DD564            0040d9a8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c9b8       ___vba@066DD5B0            0040d9b8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c9d4       ___vba@066DD608            0040d9d4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c9e8       ___vba@066DD658            0040d9e8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000c9f4       ___vba@066DD668            0040d9f4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ca04       ___vba@066DD67C            0040da04     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ca18       ___vba@066DE034            0040da18     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ca24       ___vba@066DE07C            0040da24     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ca30       ___vba@066DE0FC            0040da30     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ca3c       ___vba@066DE144            0040da3c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ca4c       ___vba@066DE190            0040da4c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ca5c       ___vba@066DE1DC            0040da5c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ca68       ___vba@066DE1EC            0040da68     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ca74       ___vba@066DE27C            0040da74     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ca84       ___vba@066DE2C8            0040da84     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ca94       ___vba@066DE314            0040da94     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000caa4       ___vba@066DE360            0040daa4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cab0       ___vba@066DE3A8            0040dab0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cac0       ___vba@066DE3F4            0040dac0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cad0       ___vba@066DE954            0040dad0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cadc       ___vba@066DE99C            0040dadc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000caf0       ___vba@066DE9EC            0040daf0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cb04       ___vba@066DEA3C            0040db04     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cb10       ___vba@066DEA84            0040db10     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cb20       ___vba@066DEAD0            0040db20     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cb2c       ___vba@066DEB9C            0040db2c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cb3c       ___vba@066DEBE8            0040db3c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cb54       ___vba@066DEC3C            0040db54     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cb64       ___vba@066DEC50            0040db64     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cb74       ___vba@066DEC64            0040db74     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cb84       ___vba@066DEC78            0040db84     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cb94       ___vba@066DEC8C            0040db94     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cba4       ___vba@066DECA0            0040dba4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cbb4       ___vba@066DECB4            0040dbb4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cbc0       ___vba@066DECC4            0040dbc0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cbcc       ___vba@066DECD4            0040dbcc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cbdc       ___vba@066DECE8            0040dbdc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cbe8       ___vba@066DECF8            0040dbe8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cbf0       ___vba@066DED04            0040dbf0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cbfc       ___vba@066DED14            0040dbfc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cc04       ___vba@066DED20            0040dc04     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cc0c       ___vba@066DED2C            0040dc0c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cc1c       ___vba@066DED40            0040dc1c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cc28       ___vba@066DED50            0040dc28     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cc50       ___vba@066E090C            0040dc50     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cc70       ___vba@066E0944            0040dc70     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cc98       ___vba@066E095C            0040dc98     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ccb4       ___vba@066E0994            0040dcb4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ccbc       ___vba@066E09A0            0040dcbc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ccd4       ___vba@066E09B8            0040dcd4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cce4       ___vba@066E09D0            0040dce4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ccf4       ___vba@066E09E4            0040dcf4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cd04       ___vba@066E09F8            0040dd04     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cd14       ___vba@066E0A0C            0040dd14     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cd28       ___vba@066E0A5C            0040dd28     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cd38       ___vba@066E0AA8            0040dd38     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cd48       ___vba@066E0ABC            0040dd48     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cd58       ___vba@066E0AD0            0040dd58     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cd68       ___vba@066E0AE4            0040dd68     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cd78       ___vba@066E0AF8            0040dd78     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cda0       ___vba@066E047C            0040dda0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cdc0       ___vba@066E04B4            0040ddc0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cde8       ___vba@066E04CC            0040dde8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ce04       ___vba@066E0504            0040de04     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ce0c       ___vba@066E0510            0040de0c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ce14       ___vba@066E051C            0040de14     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ce24       ___vba@066E0530            0040de24     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ce44       ___vba@066E0554            0040de44     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ce4c       ___vba@066E0560            0040de4c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ce74       ___vba@066E058C            0040de74     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ce84       ___vba@066E05A0            0040de84     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ce98       ___vba@066E05B8            0040de98     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cea8       ___vba@066E05CC            0040dea8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cebc       ___vba@066E05E4            0040debc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cec4       ___vba@066E05F0            0040dec4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cecc       ___vba@066E05FC            0040decc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ced8       ___vba@066E060C            0040ded8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cee0       ___vba@066E0618            0040dee0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ceec       ___vba@066E0628            0040deec     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cef8       ___vba@066E0638            0040def8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cf08       ___vba@066E0648            0040df08     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cf1c       ___vba@066E0660            0040df1c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cf2c       ___vba@066E1B4C            0040df2c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cf54       ___vba@066E1B78            0040df54     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cf78       ___vba@066E1BA0            0040df78     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cfa0       ___vba@066E1BCC            0040dfa0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cfb0       ___vba@066E1BE4            0040dfb0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cfc0       ___vba@066E1BF8            0040dfc0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cfd0       ___vba@066E1C44            0040dfd0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cfe0       ___vba@066E1C90            0040dfe0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000cff4       ___vba@066E1CDC            0040dff4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d004       ___vba@066E1CF4            0040e004     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d014       ___vba@066E1D08            0040e014     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d024       ___vba@066E1D1C            0040e024     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d038       ___vba@066E1D30            0040e038     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d040       ___vba@066E28FC            0040e040     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d0ac       ___vba@066E296C            0040e0ac     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d0bc       ___vba@066E2984            0040e0bc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d0d8       ___vba@066E29A0            0040e0d8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d0f4       ___vba@066E29C0            0040e0f4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d0fc       ___vba@066E29CC            0040e0fc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d114       ___vba@066E29E8            0040e114     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d124       ___vba@066E29FC            0040e124     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d144       ___vba@066E2A20            0040e144     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d174       ___vba@066E2A54            0040e174     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d1cc       ___vba@066E2AB0            0040e1cc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d204       ___vba@066E2D8C            0040e204     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d218       ___vba@066E2DA4            0040e218     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d22c       ___vba@066E2DBC            0040e22c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d24c       ___vba@066E2DE0            0040e24c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d264       ___vba@066E2DFC            0040e264     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d280       ___vba@066E2E1C            0040e280     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d2a0       ___vba@066E2E40            0040e2a0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d2b8       ___vba@066E2E5C            0040e2b8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d2d0       ___vba@066E2E78            0040e2d0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d2f4       ___vba@066E2EA0            0040e2f4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d318       ___vba@066E2EC8            0040e318     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d33c       ___vba@066E2EF0            0040e33c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d360       ___vba@066E2F18            0040e360     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d39c       ___vba@066E2F5C            0040e39c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d3ac       ___vba@066E2F70            0040e3ac     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d3c0       ___vba@068D0634            0040e3c0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d400       ___vba@068D0678            0040e400     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d44c       ___vba@068D06C8            0040e44c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d468       ___vba@068D06E8            0040e468     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d47c       ___vba@068D0700            0040e47c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d57c       ___vba@068D0804            0040e57c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d5a0       ___vba@068D2194            0040e5a0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d5d8       ___vba@068D21D0            0040e5d8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d5fc       ___vba@068D21F8            0040e5fc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d63c       ___vba@068D223C            0040e63c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d660       ___vba@068D2264            0040e660     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d680       ___vba@068D228C            0040e680     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d694       ___vba@068D22DC            0040e694     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d6a8       ___vba@068D232C            0040e6a8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d6b4       ___vba@068D2374            0040e6b4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d6c4       ___vba@068D2F7C            0040e6c4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d6d4       ___vba@068D2FC8            0040e6d4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d6e8       ___vba@068D3050            0040e6e8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d6f4       ___vba@068D3108            0040e6f4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d700       ___vba@068D3118            0040e700     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d710       ___vba@068D312C            0040e710     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d724       ___vba@068D464C            0040e724     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d730       ___vba@068D4694            0040e730     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d744       ___vba@068D46E4            0040e744     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d750       ___vba@068D472C            0040e750     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d760       ___vba@068D47E8            0040e760     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d76c       ___vba@068D47F8            0040e76c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d77c       ___vba@068D4894            0040e77c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d78c       ___vba@068D48E0            0040e78c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d7a0       ___vba@068D4930            0040e7a0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d7b4       ___vba@068D4980            0040e7b4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d7c0       ___vba@068D49C8            0040e7c0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d7cc       ___vba@068D4A10            0040e7cc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d7d8       ___vba@068D4184            0040e7d8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d7e8       ___vba@068D4198            0040e7e8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d7f8       ___vba@068D41AC            0040e7f8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d800       ___vba@068D41B8            0040e800     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d820       ___vba@068D41DC            0040e820     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d82c       ___vba@068D41EC            0040e82c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d83c       ___vba@068D4200            0040e83c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d848       ___vba@068D4210            0040e848     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d860       ___vba@068D422C            0040e860     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d86c       ___vba@068D423C            0040e86c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d878       ___vba@068D424C            0040e878     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d888       ___vba@068D425C            0040e888     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d8b4       ___vba@068D4278            0040e8b4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d8d4       ___vba@068D42B0            0040e8d4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d8f8       ___vba@068D42C4            0040e8f8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d918       ___vba@068D42FC            0040e918     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d93c       ___vba@068D4310            0040e93c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d95c       ___vba@068D4348            0040e95c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d970       ___vba@068D4364            0040e970     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d998       ___vba@068D1D04            0040e998     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d9b8       ___vba@068D1D3C            0040e9b8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000d9e0       ___vba@068D1D54            0040e9e0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000da00       ___vba@068D1D8C            0040ea00     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000da30       ___vba@068D1DAC            0040ea30     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000da50       ___vba@068D1DE4            0040ea50     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000da60       ___vba@068D1DF8            0040ea60     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000da88       ___vba@068D1E10            0040ea88     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000dabc       ___vba@068D1E48            0040eabc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000dadc       ___vba@068D1E80            0040eadc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000db00       ___vba@068D1E94            0040eb00     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000db20       ___vba@068D1ECC            0040eb20     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000db28       ___vba@068D1EDC            0040eb28     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000db38       ___vba@068D1EF0            0040eb38     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000db60       ___vba@068D162C            0040eb60     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000db80       ___vba@068D1664            0040eb80     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000dbac       ___vba@068D1680            0040ebac     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000dbcc       ___vba@068D16B8            0040ebcc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000dbf0       ___vba@068D16CC            0040ebf0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000dc10       ___vba@068D1704            0040ec10     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000dc34       ___vba@068D1718            0040ec34     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000dc54       ___vba@068D1750            0040ec54     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000dc7c       ___vba@068D1768            0040ec7c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000dc9c       ___vba@068D17A0            0040ec9c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000dcc4       ___vba@068D17B8            0040ecc4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000dce4       ___vba@068D17F0            0040ece4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000dcf4       ___vba@068D1808            0040ecf4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000dd04       ___vba@068D181C            0040ed04     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000dd28       ___vba@068D0AC4            0040ed28     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000dd48       ___vba@068D0AFC            0040ed48     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000dd5c       ___vba@068D0B14            0040ed5c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000dd88       ___vba@068D0B30            0040ed88     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000dda8       ___vba@068D0B68            0040eda8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ddc8       ___vba@068D0B78            0040edc8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000dde8       ___vba@068D0BB0            0040ede8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000de10       ___vba@068D0BC8            0040ee10     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000de30       ___vba@068D0C00            0040ee30     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000de5c       ___vba@068D0C1C            0040ee5c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000de7c       ___vba@068D0C54            0040ee7c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000dea0       ___vba@068D0C68            0040eea0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000dec0       ___vba@068D0CA0            0040eec0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000decc       ___vba@068D0CB4            0040eecc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000def0       ___vba@068D361C            0040eef0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000df10       ___vba@068D3654            0040ef10     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000df34       ___vba@068D3668            0040ef34     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000df54       ___vba@068D36A0            0040ef54     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000df78       ___vba@068D36B4            0040ef78     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000df98       ___vba@068D36EC            0040ef98     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000dfc0       ___vba@068D3704            0040efc0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000dfe0       ___vba@068D373C            0040efe0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e008       ___vba@068D3754            0040f008     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e028       ___vba@068D378C            0040f028     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e04c       ___vba@068D37A0            0040f04c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e06c       ___vba@068D37D8            0040f06c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e074       ___vba@068D37E8            0040f074     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e080       ___vba@068D37F8            0040f080     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e08c       ___vba@068D3808            0040f08c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e0ac       ___vba@068D2624            0040f0ac     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e0cc       ___vba@068D265C            0040f0cc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e0dc       ___vba@068D2670            0040f0dc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e104       ___vba@068D2688            0040f104     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e124       ___vba@068D26C0            0040f124     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e148       ___vba@068D26D4            0040f148     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e168       ___vba@068D270C            0040f168     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e190       ___vba@068D2724            0040f190     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e1b0       ___vba@068D275C            0040f1b0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e1d8       ___vba@068D2774            0040f1d8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e1f8       ___vba@068D27AC            0040f1f8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e21c       ___vba@068D27C0            0040f21c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e23c       ___vba@068D27F8            0040f23c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e248       ___vba@068D280C            0040f248     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e274       ___vba@068D0F54            0040f274     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e294       ___vba@068D0F8C            0040f294     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e2a4       ___vba@068D0FA0            0040f2a4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e2cc       ___vba@068D0FB8            0040f2cc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e2ec       ___vba@068D0FF0            0040f2ec     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e314       ___vba@068D1008            0040f314     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e334       ___vba@068D1040            0040f334     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e35c       ___vba@068D1058            0040f35c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e37c       ___vba@068D1090            0040f37c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e3a4       ___vba@068D10A8            0040f3a4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e3c4       ___vba@068D10E0            0040f3c4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e3ec       ___vba@068D10F8            0040f3ec     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e40c       ___vba@068D1130            0040f40c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e434       ___vba@068D1ABC            0040f434     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e454       ___vba@068D1AF4            0040f454     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e480       ___vba@068D1B10            0040f480     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e4a0       ___vba@068D1B48            0040f4a0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e4d4       ___vba@068D1B6C            0040f4d4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e4f4       ___vba@068D1BA4            0040f4f4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e518       ___vba@068D1BB8            0040f518     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e54c       ___vba@068D1BF0            0040f54c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e56c       ___vba@068D1C28            0040f56c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e590       ___vba@068D1C3C            0040f590     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e5b0       ___vba@068D1C74            0040f5b0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e5bc       ___vba@068D1C88            0040f5bc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e5cc       ___vba@068D1C9C            0040f5cc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e5f8       ___vba@068D3864            0040f5f8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e618       ___vba@068D389C            0040f618     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e63c       ___vba@068D38B0            0040f63c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e65c       ___vba@068D38E8            0040f65c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e680       ___vba@068D38FC            0040f680     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e6a0       ___vba@068D3934            0040f6a0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e6c4       ___vba@068D3948            0040f6c4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e6e4       ___vba@068D3980            0040f6e4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e708       ___vba@068D3994            0040f708     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e728       ___vba@068D39CC            0040f728     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e74c       ___vba@068D39E0            0040f74c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e76c       ___vba@068D3A18            0040f76c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e77c       ___vba@068D3A30            0040f77c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e790       ___vba@068D3A48            0040f790     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e798       ___vba@068D3A54            0040f798     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e7bc       ___vba@068D03EC            0040f7bc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e7dc       ___vba@068D0424            0040f7dc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e7ec       ___vba@068D0438            0040f7ec     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e818       ___vba@068D0454            0040f818     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e838       ___vba@068D048C            0040f838     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e85c       ___vba@068D04A0            0040f85c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e87c       ___vba@068D04D8            0040f87c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e8a0       ___vba@068D04EC            0040f8a0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e8bc       ___vba@068D0524            0040f8bc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e8d0       ___vba@068D053C            0040f8d0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e8e0       ___vba@068D0550            0040f8e0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e8f0       ___vba@068D0564            0040f8f0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e8fc       ___vba@068D0574            0040f8fc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e904       ___vba@068D0580            0040f904     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e910       ___vba@068D0590            0040f910     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e91c       ___vba@068D05A0            0040f91c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e92c       ___vba@068D05B4            0040f92c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e93c       ___vba@068D05C8            0040f93c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e950       ___vba@068D6CDC            0040f950     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e960       ___vba@068D6CF0            0040f960     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e974       ___vba@068D6D08            0040f974     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e988       ___vba@068D6D20            0040f988     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e99c       ___vba@068D6D38            0040f99c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e9ac       ___vba@068D6D4C            0040f9ac     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e9c4       ___vba@068D6D68            0040f9c4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e9d0       ___vba@068D6D78            0040f9d0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e9e0       ___vba@068D6D8C            0040f9e0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000e9f0       ___vba@068D6DA0            0040f9f0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ea00       ___vba@068D6DB4            0040fa00     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ea08       ___vba@068D6DC0            0040fa08     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ea18       ___vba@068D6DD4            0040fa18     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ea20       ___vba@068D6DE0            0040fa20     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ea34       ___vba@068D6DF8            0040fa34     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ea40       ___vba@068D6E08            0040fa40     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ea4c       ___vba@068D6E18            0040fa4c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ea58       ___vba@068D6E28            0040fa58     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ea64       ___vba@068D6E38            0040fa64     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ea70       ___vba@068D6E48            0040fa70     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ea7c       ___vba@068D6E58            0040fa7c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ea88       ___vba@068D6E68            0040fa88     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ea90       ___vba@068D6E74            0040fa90     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ea98       ___vba@068D6E80            0040fa98     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000eaa8       ___vba@068D6E90            0040faa8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000eac4       ___vba@068D6EB0            0040fac4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ead4       ___vba@068D6EC8            0040fad4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000eae4       ___vba@068D8164            0040fae4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000eb98       ___vba@068D8218            0040fb98     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000eba8       ___vba@068D8230            0040fba8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ebb8       ___vba@068D8244            0040fbb8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ebc8       ___vba@068D8258            0040fbc8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ebdc       ___vba@068D8270            0040fbdc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ebf0       ___vba@068D8288            0040fbf0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ebfc       ___vba@068D8298            0040fbfc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ec08       ___vba@068D82A8            0040fc08     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ec18       ___vba@068D82B8            0040fc18     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ec1c       ___vba@068D82C4            0040fc1c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ec30       ___vba@068D82D8            0040fc30     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ec44       ___vba@068D82F0            0040fc44     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ec6c       ___vba@068D831C            0040fc6c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ec80       ___vba@068D8338            0040fc80     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ec9c       ___vba@068D4F34            0040fc9c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ecb0       ___vba@068D4F4C            0040fcb0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ecc0       ___vba@068D4F60            0040fcc0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ecdc       ___vba@068D4F80            0040fcdc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ecfc       ___vba@068D4FA4            0040fcfc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ed0c       ___vba@068D4FB8            0040fd0c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ed24       ___vba@068D4FD4            0040fd24     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ed34       ___vba@068D4FE8            0040fd34     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ed54       ___vba@068D500C            0040fd54     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ed70       ___vba@068D502C            0040fd70     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ed88       ___vba@068D5048            0040fd88     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000eda8       ___vba@068D506C            0040fda8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000edc4       ___vba@068D508C            0040fdc4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ede0       ___vba@068D50AC            0040fde0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ee00       ___vba@068D50D0            0040fe00     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ee24       ___vba@068D50F8            0040fe24     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ee54       ___vba@068D5F2C            0040fe54     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ee80       ___vba@068D5F5C            0040fe80     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000eeac       ___vba@068D5F8C            0040feac     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000eed8       ___vba@068D5FBC            0040fed8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ef04       ___vba@068D5FEC            0040ff04     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ef1c       ___vba@068D6008            0040ff1c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ef3c       ___vba@068D602C            0040ff3c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ef60       ___vba@068D6054            0040ff60     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ef70       ___vba@068D6068            0040ff70     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ef90       ___vba@068D608C            0040ff90     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000efb0       ___vba@068D60B0            0040ffb0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000efc8       ___vba@068D60CC            0040ffc8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000efec       ___vba@068D60F4            0040ffec     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f014       ___vba@068D63BC            00410014     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f034       ___vba@068D63E0            00410034     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f048       ___vba@068D63F8            00410048     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f064       ___vba@068D6418            00410064     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f080       ___vba@068D6438            00410080     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f0a8       ___vba@068D6464            004100a8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f0c4       ___vba@068D6484            004100c4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f0e8       ___vba@068D64AC            004100e8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f104       ___vba@068D64CC            00410104     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f128       ___vba@068D64F4            00410128     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f13c       ___vba@068D650C            0041013c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f164       ___vba@068D6538            00410164     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f178       ___vba@068D6554            00410178     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f190       ___vba@068D656C            00410190     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f1a4       ___vba@068D6588            004101a4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f1b0       ___vba@068D6598            004101b0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f1c4       ___vba@068D6604            004101c4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f1d4       ___vba@068D6618            004101d4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f1f8       ___vba@068D6640            004101f8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f22c       ___vba@068D6678            0041022c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f270       ___vba@068D66C0            00410270     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f2e4       ___vba@068D6738            004102e4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f2f4       ___vba@068D674C            004102f4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f31c       ___vba@068D6778            0041031c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f338       ___vba@068D6798            00410338     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f348       ___vba@068D67AC            00410348     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f350       ___vba@068D67BC            00410350     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f398       ___vba@07D6667C            00410398     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f6bc       ___vba@068D68BC            004106bc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f6d0       ___vba@068D690C            004106d0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f6e8       ___vba@068D6960            004106e8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f6f4       ___vba@068D69A8            004106f4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f708       ___vba@068D69F8            00410708     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f718       ___vba@067D4224            00410718     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f730       ___vba@067D4358            00410730     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f744       ___vba@067D43A8            00410744     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f754       ___vba@067D43F4            00410754     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f760       ___vba@067D4404            00410760     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f76c       ___vba@067D34AC            0041076c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f784       ___vba@067D3500            00410784     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f794       ___vba@067D354C            00410794     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f7a8       ___vba@067D359C            004107a8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f7b4       ___vba@067D35E4            004107b4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f7c8       ___vba@067D3634            004107c8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f7dc       ___vba@067D3648            004107dc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f7f4       ___vba@067D1704            004107f4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f800       ___vba@067D174C            00410800     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f80c       ___vba@067D1794            0041080c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f81c       ___vba@067D17E0            0041081c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f82c       ___vba@067D1864            0041082c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f838       ___vba@067D18AC            00410838     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f84c       ___vba@067D404C            0041084c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f85c       ___vba@067D40CC            0041085c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f880       ___vba@067D40E0            00410880     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f8b4       ___vba@067D4118            004108b4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f8d4       ___vba@067D4150            004108d4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f8e8       ___vba@067D4168            004108e8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f914       ___vba@067D4198            00410914     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f930       ___vba@067D41BC            00410930     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f958       ___vba@067D0244            00410958     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f978       ___vba@067D027C            00410978     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f9a0       ___vba@067D0294            004109a0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f9d4       ___vba@067D02CC            004109d4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000f9f0       ___vba@067D0304            004109f0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fa24       ___vba@067D0338            00410a24     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fa50       ___vba@067D0368            00410a50     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fac4       ___vba@067D03E4            00410ac4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fad0       ___vba@067D042C            00410ad0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fae4       ___vba@067D4B44            00410ae4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000faf8       ___vba@067D4B94            00410af8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fb08       ___vba@067D4BE0            00410b08     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fb1c       ___vba@067D4BF4            00410b1c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fb3c       ___vba@067D4C18            00410b3c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fb5c       ___vba@067D4C3C            00410b5c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fb80       ___vba@067D4C64            00410b80     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fba8       ___vba@067D4C90            00410ba8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fbb4       ___vba@067D4CA0            00410bb4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fbd0       ___vba@067D4CC0            00410bd0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fbf0       ___vba@067D4CE4            00410bf0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fc10       ___vba@067D4D08            00410c10     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fc30       ___vba@067D4D30            00410c30     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fc40       ___vba@067D6494            00410c40     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fc4c       ___vba@067D6514            00410c4c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fc5c       ___vba@067D655C            00410c5c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fc70       ___vba@067D6574            00410c70     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fc94       ___vba@067D6588            00410c94     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fcb4       ___vba@067D65C0            00410cb4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fcdc       ___vba@067D65D8            00410cdc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fcfc       ___vba@067D6610            00410cfc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fd20       ___vba@067D6624            00410d20     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fd40       ___vba@067D7D74            00410d40     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fd68       ___vba@067D7D8C            00410d68     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fd88       ___vba@067D7DC4            00410d88     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fdac       ___vba@067D7DD8            00410dac     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fdcc       ___vba@067D7E10            00410dcc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fdf4       ___vba@067D7E28            00410df4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fe14       ___vba@067D7E60            00410e14     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fe3c       ___vba@067D7E78            00410e3c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fe5c       ___vba@067D7EB0            00410e5c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fe84       ___vba@067D7EC8            00410e84     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fea4       ___vba@067D7F00            00410ea4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fea8       ___vba@067D7F44            00410ea8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000feb8       ___vba@067D7F58            00410eb8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fec8       ___vba@067D500C            00410ec8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fed8       ___vba@067D5058            00410ed8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000fef8       ___vba@067D50B0            00410ef8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ff18       ___vba@067D50D4            00410f18     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ff8c       ___vba@067D514C            00410f8c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ff94       ___vba@067D5158            00410f94     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ffa0       ___vba@067D516C            00410fa0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0000ffb4       ___vba@067D5184            00410fb4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001af84       ___vba@0AE5DFC4            0041bf84     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001afc4       ___vba@0AE5BD8C            0041bfc4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001b004       ___vba@0AE5C8F4            0041c004     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001b044       ___vba@0AE5D45C            0041c044     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001b084       ___vba@066DD6DC            0041c084     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001b0c4       ___vba@0AE5C21C            0041c0c4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001b144       ___vba@0AE5E454            0041c144     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001b184       ___vba@0AE5AB4C            0041c184     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001ba04       ___vba@0AE5B6B4            0041ca04     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001ba2c       ___vba@0AE5B6E0            0041ca2c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001ba38       ___vba@0AE5B6F0            0041ca38     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001ba44       ___vba@0AE5B700            0041ca44     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001ba50       ___vba@0AE5B710            0041ca50     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001ba5c       ___vba@0AE5B720            0041ca5c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001ba68       ___vba@0AE5B730            0041ca68     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001ba74       ___vba@0AE5B740            0041ca74     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001ba80       ___vba@0AE5B750            0041ca80     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001ba88       ___vba@0AE5B75C            0041ca88     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001ba90       ___vba@0AE5B768            0041ca90     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001ba98       ___vba@0AE5B774            0041ca98     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001baa0       ___vba@0AE5B780            0041caa0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001baa8       ___vba@0AE5B78C            0041caa8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bab0       ___vba@0AE5B798            0041cab0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bab4       ___vba@0AE5B7A0            0041cab4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001babc       ___vba@0AE5B7AC            0041cabc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bac8       ___vba@0AE5B7BC            0041cac8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bad4       ___vba@0AE5B7CC            0041cad4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bad8       ___vba@0AE5B7D4            0041cad8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001badc       ___vba@0AE5B7DC            0041cadc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bae8       ___vba@0AE5B7EC            0041cae8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001baf4       ___vba@0AE5B7FC            0041caf4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bb00       ___vba@0AE5B80C            0041cb00     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bb0c       ___vba@0AE5B81C            0041cb0c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bb18       ___vba@0AE5B82C            0041cb18     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bb24       ___vba@0AE5B83C            0041cb24     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bb28       ___vba@0AE5B844            0041cb28     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bb34       ___vba@0AE5B854            0041cb34     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bb40       ___vba@0AE5B864            0041cb40     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bb4c       ___vba@0AE5B874            0041cb4c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bb50       ___vba@0AE5B87C            0041cb50     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bb5c       ___vba@0AE5B88C            0041cb5c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bb68       ___vba@0AE5B89C            0041cb68     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bb74       ___vba@0AE5B8AC            0041cb74     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bb78       ___vba@066E1474            0041cb78     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bb80       ___vba@066E1480            0041cb80     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bb88       ___vba@066E148C            0041cb88     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bb90       ___vba@066E1498            0041cb90     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bb94       ___vba@066E14A0            0041cb94     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bba0       ___vba@066E14B0            0041cba0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bba8       ___vba@066E14BC            0041cba8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bbb4       ___vba@066E14CC            0041cbb4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bbbc       ___vba@066E14D8            0041cbbc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bbc4       ___vba@066E14E4            0041cbc4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bbcc       ___vba@066E14F0            0041cbcc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bbd4       ___vba@066E14FC            0041cbd4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bbdc       ___vba@066E1508            0041cbdc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bbe4       ___vba@066E1514            0041cbe4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bbec       ___vba@066E1520            0041cbec     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bbf4       ___vba@066E152C            0041cbf4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bc00       ___vba@066E153C            0041cc00     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bc24       ___vba@066E1564            0041cc24     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bc60       ___vba@066E15A4            0041cc60     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bc6c       ___vba@066E15B4            0041cc6c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bc90       ___vba@066E15DC            0041cc90     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bcc8       ___vba@066E1618            0041ccc8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bd00       ___vba@066E1654            0041cd00     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bd0c       ___vba@068D3F3C            0041cd0c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bd1c       ___vba@068D3F50            0041cd1c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bd64       ___vba@068D3F9C            0041cd64     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bd74       ___vba@068D3FB0            0041cd74     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bda4       ___vba@068D3FE4            0041cda4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bdac       ___vba@068D3FF0            0041cdac     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bdb8       ___vba@068D4000            0041cdb8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bde4       ___vba@068D4030            0041cde4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bdf0       ___vba@068D4040            0041cdf0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001be04       ___vba@068D4058            0041ce04     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001be44       ___vba@068D409C            0041ce44     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001be50       ___vba@068D40AC            0041ce50     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001be90       ___vba@068D40F0            0041ce90     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001be9c       ___vba@068D4100            0041ce9c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001beb0       ___vba@068D7A8C            0041ceb0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bef8       ___vba@068D7AD8            0041cef8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bf04       ___vba@068D7AE8            0041cf04     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bf50       ___vba@068D7B38            0041cf50     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bf5c       ___vba@068D7B48            0041cf5c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bf68       ___vba@068D7B58            0041cf68     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bf74       ___vba@068D7B68            0041cf74     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bfb0       ___vba@068D7BA8            0041cfb0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bfb8       ___vba@068D7BB4            0041cfb8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bfc4       ___vba@068D7BC4            0041cfc4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001bfd4       ___vba@068D7BD8            0041cfd4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c008       ___vba@068D7C10            0041d008     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c018       ___vba@068D7C24            0041d018     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c06c       ___vba@068D7844            0041d06c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c0d0       ___vba@068D78AC            0041d0d0     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c0d8       ___vba@068D78B8            0041d0d8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c0e8       ___vba@068D78CC            0041d0e8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c120       ___vba@068D7908            0041d120     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c160       ___vba@068D794C            0041d160     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c170       ___vba@068D7960            0041d170     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c1ac       ___vba@068D79A0            0041d1ac     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c1d8       ___vba@068D79D0            0041d1d8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c1e4       ___vba@068D79E0            0041d1e4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c234       ___vba@068D7A34            0041d234     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c240       ___vba@068D6A94            0041d240     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c280       ___vba@068D6AD8            0041d280     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c28c       ___vba@068D6AE8            0041d28c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c2d4       ___vba@068D6B34            0041d2d4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c2dc       ___vba@068D6B40            0041d2dc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c338       ___vba@068D6BA0            0041d338     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c344       ___vba@068D6BB0            0041d344     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c390       ___vba@068D6C00            0041d390     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c3a4       ___vba@068D6C18            0041d3a4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c3e8       ___vba@068D6C60            0041d3e8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c3f4       ___vba@068D6174            0041d3f4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c448       ___vba@068D61CC            0041d448     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c454       ___vba@068D61DC            0041d454     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c4a4       ___vba@068D6230            0041d4a4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c500       ___vba@068D6290            0041d500     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c508       ___vba@068D629C            0041d508     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c54c       ___vba@068D62E4            0041d54c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c558       ___vba@068D62F4            0041d558     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c5b8       ___vba@068D6358            0041d5b8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c5c4       ___vba@068D6F24            0041d5c4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c60c       ___vba@068D6F70            0041d60c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c644       ___vba@068D6FAC            0041d644     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c650       ___vba@068D6FBC            0041d650     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c694       ___vba@068D7004            0041d694     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c6a8       ___vba@068D701C            0041d6a8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c710       ___vba@068D7088            0041d710     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c724       ___vba@068D70A0            0041d724     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c754       ___vba@068D70D4            0041d754     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c794       ___vba@068D53C4            0041d794     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c7dc       ___vba@068D5410            0041d7dc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c7e8       ___vba@068D5420            0041d7e8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c81c       ___vba@068D5458            0041d81c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c828       ___vba@068D5468            0041d828     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c838       ___vba@068D547C            0041d838     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c874       ___vba@068D54BC            0041d874     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c89c       ___vba@068D54E8            0041d89c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c8a8       ___vba@068D54F8            0041d8a8     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c8ec       ___vba@068D5540            0041d8ec     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c93c       ___vba@068D560C            0041d93c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c970       ___vba@068D5644            0041d970     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c9b4       ___vba@068D568C            0041d9b4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001c9ec       ___vba@068D56C8            0041d9ec     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001ca1c       ___vba@068D56FC            0041da1c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001ca6c       ___vba@068D5750            0041da6c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001cabc       ___vba@068D57A4            0041dabc     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001cac4       ___vba@068D57B0            0041dac4     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001cb08       ___vba@068D7F1C            0041db08     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001cb4c       ___vba@068D7F64            0041db4c     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001cb58       ___vba@068D7F74            0041db58     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001cb90       VB@BTXT                    0041db90     SKKU Notice Checker v2.0.0.OBJ
+ 0001:0001cba0       ?getAllNotice@frmSkin@@AAGXXZ 0041dba0 f   frmSkin.OBJ
+ 0001:0001cf00       ?GetSkkuNotice@frmSkin@@AAGXXZ 0041df00 f   frmSkin.OBJ
+ 0001:0001e290       ?GetSoftNotice@frmSkin@@AAGXXZ 0041f290 f   frmSkin.OBJ
+ 0001:0001f130       ?GetSkkuHTML@frmSkin@@AAGXXZ 00420130 f   frmSkin.OBJ
+ 0001:0001f820       ?GetSoftHTML@frmSkin@@AAGXXZ 00420820 f   frmSkin.OBJ
+ 0001:00020050       ?cboLst_Click@frmSkin@@AAGXXZ 00421050 f   frmSkin.OBJ
+ 0001:00020230       ?cmdQ_Click@frmSkin@@AAGXXZ 00421230 f   frmSkin.OBJ
+ 0001:00020300       ?cmdr_Click@frmSkin@@AAGXXZ 00421300 f   frmSkin.OBJ
+ 0001:000203b0       ?cmds_Click@frmSkin@@AAGXXZ 004213b0 f   frmSkin.OBJ
+ 0001:000204a0       ?Command1_Click@frmSkin@@AAGXXZ 004214a0 f   frmSkin.OBJ
+ 0001:00020560       ?Form_Initialize@frmSkin@@AAGXXZ 00421560 f   frmSkin.OBJ
+ 0001:000207e0       ?form_load@frmSkin@@AAGXXZ 004217e0 f   frmSkin.OBJ
+ 0001:00020dc0       ?Form_Resize@frmSkin@@AAGXXZ 00421dc0 f   frmSkin.OBJ
+ 0001:00020f10       ?form_unload@frmSkin@@AAGXXZ 00421f10 f   frmSkin.OBJ
+ 0001:00021220       ?jcbutton1_Click@frmSkin@@AAGXXZ 00422220 f   frmSkin.OBJ
+ 0001:00021300       ?lstSkkuData_DblClick@frmSkin@@AAGXXZ 00422300 f   frmSkin.OBJ
+ 0001:00021550       ?lstSoftData_DblClick@frmSkin@@AAGXXZ 00422550 f   frmSkin.OBJ
+ 0001:000217a0       ?TmrRef_Timer@frmSkin@@AAGXXZ 004227a0 f   frmSkin.OBJ
+ 0001:00021880       ?cmdMinimize_Click@frmSkinV8@@AAGXXZ 00422880 f   frmskinV8.OBJ
+ 0001:00021910       ?cmdUnload_Click@frmSkinV8@@AAGXXZ 00422910 f   frmskinV8.OBJ
+ 0001:000219f0       ?UserControl_ReadProperties@frmSkinV8@@AAGXXZ 004229f0 f   frmskinV8.OBJ
+ 0001:00021c30       ?UserControl_Resize@frmSkinV8@@AAGXXZ 00422c30 f   frmskinV8.OBJ
+ 0001:00022620       ?lblDrag_MouseMove@frmSkinV8@@AAGXXZ 00423620 f   frmskinV8.OBJ
+ 0001:000226e0       ?UserControl_WriteProperties@frmSkinV8@@AAGXXZ 004236e0 f   frmskinV8.OBJ
+ 0001:000227b0       ?Caption__Get@frmSkinV8@@AAGXXZ 004237b0 f   frmskinV8.OBJ
+ 0001:00022840       ?Caption__Let@frmSkinV8@@AAGXXZ 00423840 f   frmskinV8.OBJ
+ 0001:00022940       ?hWnd__Get@LunaButton@@AAGXXZ 00423940 f   LunaButton.OBJ
+ 0001:000229d0       ?Picture__Get@LunaButton@@AAGXXZ 004239d0 f   LunaButton.OBJ
+ 0001:00022af0       ?Picture__Set@LunaButton@@AAGXXZ 00423af0 f   LunaButton.OBJ
+ 0001:00022d00       ?MouseOverPicture__Get@LunaButton@@AAGXXZ 00423d00 f   LunaButton.OBJ
+ 0001:00022e20       ?MouseOverPicture__Set@LunaButton@@AAGXXZ 00423e20 f   LunaButton.OBJ
+ 0001:00022f80       ?DisablePicture__Get@LunaButton@@AAGXXZ 00423f80 f   LunaButton.OBJ
+ 0001:000230a0       ?DisablePicture__Set@LunaButton@@AAGXXZ 004240a0 f   LunaButton.OBJ
+ 0001:00023200       ?MouseDownPicture__Get@LunaButton@@AAGXXZ 00424200 f   LunaButton.OBJ
+ 0001:00023320       ?MouseDownPicture__Set@LunaButton@@AAGXXZ 00424320 f   LunaButton.OBJ
+ 0001:00023480       ?Enabled__Get@LunaButton@@AAGXXZ 00424480 f   LunaButton.OBJ
+ 0001:00023520       ?Enabled__Let@LunaButton@@AAGXXZ 00424520 f   LunaButton.OBJ
+ 0001:00023750       ?Timer1_Timer@LunaButton@@AAGXXZ 00424750 f   LunaButton.OBJ
+ 0001:00023bf0       ?UserControl_Click@LunaButton@@AAGXXZ 00424bf0 f   LunaButton.OBJ
+ 0001:00023c70       ?UserControl_InitProperties@LunaButton@@AAGXXZ 00424c70 f   LunaButton.OBJ
+ 0001:00023d30       ?UserControl_MouseDown@LunaButton@@AAGXXZ 00424d30 f   LunaButton.OBJ
+ 0001:00023f30       ?UserControl_MouseMove@LunaButton@@AAGXXZ 00424f30 f   LunaButton.OBJ
+ 0001:00023ff0       ?UserControl_MouseUp@LunaButton@@AAGXXZ 00424ff0 f   LunaButton.OBJ
+ 0001:00024200       ?UserControl_ReadProperties@LunaButton@@AAGXXZ 00425200 f   LunaButton.OBJ
+ 0001:000245a0       ?UserControl_WriteProperties@LunaButton@@AAGXXZ 004255a0 f   LunaButton.OBJ
+ 0001:00024970       ?Class_Initialize@clsShadow@@AAGXXZ 00425970 f   clsShadow.OBJ
+ 0001:000249f0       ?Class_Terminate@clsShadow@@AAGXXZ 004259f0 f   clsShadow.OBJ
+ 0001:00024a80       ?Color__Get@clsShadow@@AAGXXZ 00425a80 f   clsShadow.OBJ
+ 0001:00024af0       ?Color__Let@clsShadow@@AAGXXZ 00425af0 f   clsShadow.OBJ
+ 0001:00024b80       ?Depth__Get@clsShadow@@AAGXXZ 00425b80 f   clsShadow.OBJ
+ 0001:00024bf0       ?Depth__Let@clsShadow@@AAGXXZ 00425bf0 f   clsShadow.OBJ
+ 0001:00024c60       ?Transparency__Get@clsShadow@@AAGXXZ 00425c60 f   clsShadow.OBJ
+ 0001:00024cd0       ?Transparency__Let@clsShadow@@AAGXXZ 00425cd0 f   clsShadow.OBJ
+ 0001:00024d40       ?Shadow@clsShadow@@AAGXXZ  00425d40 f   clsShadow.OBJ
+ 0001:00025010       ?CheckEnvironment@clsShadow@@AAGXXZ 00426010 f   clsShadow.OBJ
+ 0001:000250f0       ?CreateWindows@clsShadow@@AAGXXZ 004260f0 f   clsShadow.OBJ
+ 0001:000252e0       ?DisplayShadows@clsShadow@@AAGXXZ 004262e0 f   clsShadow.OBJ
+ 0001:00025380       ?DisplayShadowSub@clsShadow@@AAGXXZ 00426380 f   clsShadow.OBJ
+ 0001:000267f0       ?IsLuna@clsShadow@@AAGXXZ  004277f0 f   clsShadow.OBJ
+ 0001:00026a10       ?MakeBGRA@clsShadow@@AAGXXZ 00427a10 f   clsShadow.OBJ
+ 0001:00026b30       ?Show@clsShadow@@AAGXXZ    00427b30 f   clsShadow.OBJ
+ 0001:00026ba0       ?SizePos@clsShadow@@AAGXXZ 00427ba0 f   clsShadow.OBJ
+ 0001:00026cc0       ?ssc_Subclass@clsShadow@@AAGXXZ 00427cc0 f   clsShadow.OBJ
+ 0001:00027950       ?ssc_Terminate@clsShadow@@AAGXXZ 00428950 f   clsShadow.OBJ
+ 0001:00027970       ?ssc_AddMsg@clsShadow@@AAGXXZ 00428970 f   clsShadow.OBJ
+ 0001:00027bb0       ?zAddMsg@clsShadow@@AAGXXZ 00428bb0 f   clsShadow.OBJ
+ 0001:00027d10       ?zDelMsg@clsShadow@@AAGXXZ 00428d10 f   clsShadow.OBJ
+ 0001:00027dc0       ?zMap_VFunction@clsShadow@@AAGXXZ 00428dc0 f   clsShadow.OBJ
+ 0001:00028080       ?zData__Get@clsShadow@@AAGXXZ 00429080 f   clsShadow.OBJ
+ 0001:000280d0       ?zData__Let@clsShadow@@AAGXXZ 004290d0 f   clsShadow.OBJ
+ 0001:00028110       ?zError@clsShadow@@AAGXXZ  00429110 f   clsShadow.OBJ
+ 0001:00028170       ?zFnAddr@clsShadow@@AAGXXZ 00429170 f   clsShadow.OBJ
+ 0001:000282d0       ?zAddressOf@clsShadow@@AAGXXZ 004292d0 f   clsShadow.OBJ
+ 0001:000284f0       ?zProbe@clsShadow@@AAGXXZ  004294f0 f   clsShadow.OBJ
+ 0001:000285d0       ?zInIDE@clsShadow@@AAGXXZ  004295d0 f   clsShadow.OBJ
+ 0001:000285d0       ?Subclass_SetTrue@jcbutton@@AAGXXZ 004295d0 f   clsShadow.OBJ
+ 0001:000285f0       ?zUnThunk@clsShadow@@AAGXXZ 004295f0 f   clsShadow.OBJ
+ 0001:000287d0       ?zTerminateThunks@clsShadow@@AAGXXZ 004297d0 f   clsShadow.OBJ
+ 0001:000289a0       ?myWndProc@clsShadow@@AAGXXZ 004299a0 f   clsShadow.OBJ
+ 0001:00028ab0       ?DrawLineApi@jcbutton@@AAGXXZ 00429ab0 f   jcButton.OBJ
+ 0001:00028be0       ?BlendColorEx@jcbutton@@AAGXXZ 00429be0 f   jcButton.OBJ
+ 0001:00028d30       ?BlendColors@jcbutton@@AAGXXZ 00429d30 f   jcButton.OBJ
+ 0001:00028e90       ?DrawRectangle@jcbutton@@AAGXXZ 00429e90 f   jcButton.OBJ
+ 0001:00028f50       ?DrawFocusRectangle@jcbutton@@AAGXXZ 00429f50 f   jcButton.OBJ
+ 0001:00028fe0       ?TransBlt@jcbutton@@AAGXXZ 00429fe0 f   jcButton.OBJ
+ 0001:0002a980       ?TransBlt32@jcbutton@@AAGXXZ 0042b980 f   jcButton.OBJ
+ 0001:0002c170       ?Lighten@jcbutton@@AAGXXZ  0042d170 f   jcButton.OBJ
+ 0001:0002c1d0       ?Darken@jcbutton@@AAGXXZ   0042d1d0 f   jcButton.OBJ
+ 0001:0002c210       ?DrawGradientEx@jcbutton@@AAGXXZ 0042d210 f   jcButton.OBJ
+ 0001:0002cb70       ?TranslateColor@jcbutton@@AAGXXZ 0042db70 f   jcButton.OBJ
+ 0001:0002cbc0       ?RedrawButton@jcbutton@@AAGXXZ 0042dbc0 f   jcButton.OBJ
+ 0001:0002ce60       ?CreateRegion@jcbutton@@AAGXXZ 0042de60 f   jcButton.OBJ
+ 0001:0002d020       ?DrawSymbol@jcbutton@@AAGXXZ 0042e020 f   jcButton.OBJ
+ 0001:0002d160       ?BuildSymbolFont@jcbutton@@AAGXXZ 0042e160 f   jcButton.OBJ
+ 0001:0002d260       ?DrawPicwithCaption@jcbutton@@AAGXXZ 0042e260 f   jcButton.OBJ
+ 0001:0002e280       ?CalcPicRects@jcbutton@@AAGXXZ 0042f280 f   jcButton.OBJ
+ 0001:0002e6c0       ?DrawPicture@jcbutton@@AAGXXZ 0042f6c0 f   jcButton.OBJ
+ 0001:0002e900       ?DrawPicShadow@jcbutton@@AAGXXZ 0042f900 f   jcButton.OBJ
+ 0001:0002ea90       ?DrawCaptionEffect@jcbutton@@AAGXXZ 0042fa90 f   jcButton.OBJ
+ 0001:0002ef30       ?DrawCaptionEx@jcbutton@@AAGXXZ 0042ff30 f   jcButton.OBJ
+ 0001:0002f290       ?UncheckAllValues@jcbutton@@AAGXXZ 00430290 f   jcButton.OBJ
+ 0001:0002f560       ?SetAccessKey@jcbutton@@AAGXXZ 00430560 f   jcButton.OBJ
+ 0001:0002f820       ?DrawCorners@jcbutton@@AAGXXZ 00430820 f   jcButton.OBJ
+ 0001:0002f9c0       ?DrawStandardButton@jcbutton@@AAGXXZ 004309c0 f   jcButton.OBJ
+ 0001:00030780       ?DrawXPToolbar@jcbutton@@AAGXXZ 00431780 f   jcButton.OBJ
+ 0001:000311f0       ?DrawWinXPButton@jcbutton@@AAGXXZ 004321f0 f   jcButton.OBJ
+ 0001:000333a0       ?DrawOfficeXP@jcbutton@@AAGXXZ 004343a0 f   jcButton.OBJ
+ 0001:00033770       ?DrawInstallShieldButton@jcbutton@@AAGXXZ 00434770 f   jcButton.OBJ
+ 0001:000341b0       ?DrawGelButton@jcbutton@@AAGXXZ 004351b0 f   jcButton.OBJ
+ 0001:00034a20       ?DrawVistaToolbarStyle@jcbutton@@AAGXXZ 00435a20 f   jcButton.OBJ
+ 0001:00034ef0       ?DrawVistaButton@jcbutton@@AAGXXZ 00435ef0 f   jcButton.OBJ
+ 0001:00036160       ?DrawOutlook2007@jcbutton@@AAGXXZ 00437160 f   jcButton.OBJ
+ 0001:00036ae0       ?DrawOffice2003@jcbutton@@AAGXXZ 00437ae0 f   jcButton.OBJ
+ 0001:00036f60       ?WindowsThemeButton@jcbutton@@AAGXXZ 00437f60 f   jcButton.OBJ
+ 0001:000370b0       ?DrawTheme@jcbutton@@AAGXXZ 004380b0 f   jcButton.OBJ
+ 0001:00037280       ?PaintRect@jcbutton@@AAGXXZ 00438280 f   jcButton.OBJ
+ 0001:00037360       ?ShowPopupMenu@jcbutton@@AAGXXZ 00438360 f   jcButton.OBJ
+ 0001:00037750       ?ShiftColor@jcbutton@@AAGXXZ 00438750 f   jcButton.OBJ
+ 0001:000378a0       ?UserControl_AccessKeyPress@jcbutton@@AAGXXZ 004388a0 f   jcButton.OBJ
+ 0001:000379b0       ?UserControl_AmbientChanged@jcbutton@@AAGXXZ 004389b0 f   jcButton.OBJ
+ 0001:00037ad0       ?UserControl_DblClick@jcbutton@@AAGXXZ 00438ad0 f   jcButton.OBJ
+ 0001:00037c10       ?UserControl_GotFocus@jcbutton@@AAGXXZ 00438c10 f   jcButton.OBJ
+ 0001:00037c80       ?UserControl_Hide@jcbutton@@AAGXXZ 00438c80 f   jcButton.OBJ
+ 0001:00037d70       ?UserControl_Initialize@jcbutton@@AAGXXZ 00438d70 f   jcButton.OBJ
+ 0001:00037f50       ?UserControl_InitProperties@jcbutton@@AAGXXZ 00438f50 f   jcButton.OBJ
+ 0001:00038200       ?UserControl_KeyDown@jcbutton@@AAGXXZ 00439200 f   jcButton.OBJ
+ 0001:000384b0       ?UserControl_KeyPress@jcbutton@@AAGXXZ 004394b0 f   jcButton.OBJ
+ 0001:00038550       ?UserControl_KeyUp@jcbutton@@AAGXXZ 00439550 f   jcButton.OBJ
+ 0001:000386b0       ?UserControl_LostFocus@jcbutton@@AAGXXZ 004396b0 f   jcButton.OBJ
+ 0001:00038770       ?UserControl_MouseDown@jcbutton@@AAGXXZ 00439770 f   jcButton.OBJ
+ 0001:00038910       ?CreateToolTip@jcbutton@@AAGXXZ 00439910 f   jcButton.OBJ
+ 0001:000390d0       ?InitThemeColors@jcbutton@@AAGXXZ 0043a0d0 f   jcButton.OBJ
+ 0001:00039130       ?SetThemeColors@jcbutton@@AAGXXZ 0043a130 f   jcButton.OBJ
+ 0001:000394d0       ?UserControl_MouseMove@jcbutton@@AAGXXZ 0043a4d0 f   jcButton.OBJ
+ 0001:00039650       ?UserControl_MouseUp@jcbutton@@AAGXXZ 0043a650 f   jcButton.OBJ
+ 0001:000398b0       ?UserControl_Resize@jcbutton@@AAGXXZ 0043a8b0 f   jcButton.OBJ
+ 0001:000399e0       ?UserControl_Paint@jcbutton@@AAGXXZ 0043a9e0 f   jcButton.OBJ
+ 0001:00039a50       ?UserControl_ReadProperties@jcbutton@@AAGXXZ 0043aa50 f   jcButton.OBJ
+ 0001:0003be70       ?UserControl_Show@jcbutton@@AAGXXZ 0043ce70 f   jcButton.OBJ
+ 0001:0003bf50       ?UserControl_Terminate@jcbutton@@AAGXXZ 0043cf50 f   jcButton.OBJ
+ 0001:0003c0d0       ?UserControl_WriteProperties@jcbutton@@AAGXXZ 0043d0d0 f   jcButton.OBJ
+ 0001:0003d490       ?Is32BitBMP@jcbutton@@AAGXXZ 0043e490 f   jcButton.OBJ
+ 0001:0003d5a0       ?IsDLLPresent@jcbutton@@AAGXXZ 0043e5a0 f   jcButton.OBJ
+ 0001:0003d680       ?IsThemed__Get@jcbutton@@AAGXXZ 0043e680 f   jcButton.OBJ
+ 0001:0003d7c0       ?HasUxTheme__Get@jcbutton@@AAGXXZ 0043e7c0 f   jcButton.OBJ
+ 0001:0003d890       ?IsFunctionSupported@jcbutton@@AAGXXZ 0043e890 f   jcButton.OBJ
+ 0001:0003d9d0       ?TrackMouseLeave@jcbutton@@AAGXXZ 0043e9d0 f   jcButton.OBJ
+ 0001:0003da20       ?Subclass_WndProc@jcbutton@@AAGXXZ 0043ea20 f   jcButton.OBJ
+ 0001:0003db70       ?SetPopupMenu@jcbutton@@AAGXXZ 0043eb70 f   jcButton.OBJ
+ 0001:0003dc80       ?UnsetPopupMenu@jcbutton@@AAGXXZ 0043ec80 f   jcButton.OBJ
+ 0001:0003dd60       ?OpenWebsite@jcbutton@@AAGXXZ 0043ed60 f   jcButton.OBJ
+ 0001:0003de70       ?About@jcbutton@@AAGXXZ    0043ee70 f   jcButton.OBJ
+ 0001:0003e030       ?BackColor__Get@jcbutton@@AAGXXZ 0043f030 f   jcButton.OBJ
+ 0001:0003e0a0       ?BackColor__Let@jcbutton@@AAGXXZ 0043f0a0 f   jcButton.OBJ
+ 0001:0003e160       ?ButtonStyle__Get@jcbutton@@AAGXXZ 0043f160 f   jcButton.OBJ
+ 0001:0003e1d0       ?ButtonStyle__Let@jcbutton@@AAGXXZ 0043f1d0 f   jcButton.OBJ
+ 0001:0003e2a0       ?Caption__Get@jcbutton@@AAGXXZ 0043f2a0 f   jcButton.OBJ
+ 0001:0003e330       ?Caption__Let@jcbutton@@AAGXXZ 0043f330 f   jcButton.OBJ
+ 0001:0003e410       ?CaptionAlign__Get@jcbutton@@AAGXXZ 0043f410 f   jcButton.OBJ
+ 0001:0003e480       ?CaptionAlign__Let@jcbutton@@AAGXXZ 0043f480 f   jcButton.OBJ
+ 0001:0003e530       ?DropDownSymbol__Get@jcbutton@@AAGXXZ 0043f530 f   jcButton.OBJ
+ 0001:0003e5a0       ?DropDownSymbol__Let@jcbutton@@AAGXXZ 0043f5a0 f   jcButton.OBJ
+ 0001:0003e650       ?DropDownSeparator__Get@jcbutton@@AAGXXZ 0043f650 f   jcButton.OBJ
+ 0001:0003e6c0       ?DropDownSeparator__Let@jcbutton@@AAGXXZ 0043f6c0 f   jcButton.OBJ
+ 0001:0003e770       ?DisabledPictureMode__Get@jcbutton@@AAGXXZ 0043f770 f   jcButton.OBJ
+ 0001:0003e7e0       ?DisabledPictureMode__Let@jcbutton@@AAGXXZ 0043f7e0 f   jcButton.OBJ
+ 0001:0003e890       ?Enabled__Get@jcbutton@@AAGXXZ 0043f890 f   jcButton.OBJ
+ 0001:0003e900       ?Enabled__Let@jcbutton@@AAGXXZ 0043f900 f   jcButton.OBJ
+ 0001:0003e9e0       ?Font__Get@jcbutton@@AAGXXZ 0043f9e0 f   jcButton.OBJ
+ 0001:0003eaa0       ?Font__Set@jcbutton@@AAGXXZ 0043faa0 f   jcButton.OBJ
+ 0001:0003ebf0       ?mFont_FontChanged@jcbutton@@AAGXXZ 0043fbf0 f   jcButton.OBJ
+ 0001:0003ed70       ?ForeColor__Get@jcbutton@@AAGXXZ 0043fd70 f   jcButton.OBJ
+ 0001:0003ede0       ?ForeColor__Let@jcbutton@@AAGXXZ 0043fde0 f   jcButton.OBJ
+ 0001:0003eeb0       ?ForeColorHover__Get@jcbutton@@AAGXXZ 0043feb0 f   jcButton.OBJ
+ 0001:0003ef20       ?ForeColorHover__Let@jcbutton@@AAGXXZ 0043ff20 f   jcButton.OBJ
+ 0001:0003eff0       ?HandPointer__Get@jcbutton@@AAGXXZ 0043fff0 f   jcButton.OBJ
+ 0001:0003f060       ?HandPointer__Let@jcbutton@@AAGXXZ 00440060 f   jcButton.OBJ
+ 0001:0003f140       ?hWnd__Get@jcbutton@@AAGXXZ 00440140 f   jcButton.OBJ
+ 0001:0003f1d0       ?MaskColor__Get@jcbutton@@AAGXXZ 004401d0 f   jcButton.OBJ
+ 0001:0003f240       ?MaskColor__Let@jcbutton@@AAGXXZ 00440240 f   jcButton.OBJ
+ 0001:0003f2f0       ?Mode__Get@jcbutton@@AAGXXZ 004402f0 f   jcButton.OBJ
+ 0001:0003f360       ?Mode__Let@jcbutton@@AAGXXZ 00440360 f   jcButton.OBJ
+ 0001:0003f460       ?MouseIcon__Get@jcbutton@@AAGXXZ 00440460 f   jcButton.OBJ
+ 0001:0003f530       ?MouseIcon__Set@jcbutton@@AAGXXZ 00440530 f   jcButton.OBJ
+ 0001:0003f800       ?MousePointer__Get@jcbutton@@AAGXXZ 00440800 f   jcButton.OBJ
+ 0001:0003f8a0       ?MousePointer__Let@jcbutton@@AAGXXZ 004408a0 f   jcButton.OBJ
+ 0001:0003f970       ?PictureNormal__Get@jcbutton@@AAGXXZ 00440970 f   jcButton.OBJ
+ 0001:0003fa00       ?PictureNormal__Set@jcbutton@@AAGXXZ 00440a00 f   jcButton.OBJ
+ 0001:0003fbe0       ?PictureHot__Get@jcbutton@@AAGXXZ 00440be0 f   jcButton.OBJ
+ 0001:0003fc70       ?PictureHot__Set@jcbutton@@AAGXXZ 00440c70 f   jcButton.OBJ
+ 0001:0003fda0       ?PictureDown__Get@jcbutton@@AAGXXZ 00440da0 f   jcButton.OBJ
+ 0001:0003fe30       ?PictureDown__Set@jcbutton@@AAGXXZ 00440e30 f   jcButton.OBJ
+ 0001:0003ff60       ?PictureAlign__Get@jcbutton@@AAGXXZ 00440f60 f   jcButton.OBJ
+ 0001:0003ffd0       ?PictureAlign__Let@jcbutton@@AAGXXZ 00440fd0 f   jcButton.OBJ
+ 0001:00040090       ?PictureShadow__Get@jcbutton@@AAGXXZ 00441090 f   jcButton.OBJ
+ 0001:00040100       ?PictureShadow__Let@jcbutton@@AAGXXZ 00441100 f   jcButton.OBJ
+ 0001:000401b0       ?PictureEffectOnOver__Get@jcbutton@@AAGXXZ 004411b0 f   jcButton.OBJ
+ 0001:00040220       ?PictureEffectOnOver__Let@jcbutton@@AAGXXZ 00441220 f   jcButton.OBJ
+ 0001:000402d0       ?PictureEffectOnDown__Get@jcbutton@@AAGXXZ 004412d0 f   jcButton.OBJ
+ 0001:00040340       ?PictureEffectOnDown__Let@jcbutton@@AAGXXZ 00441340 f   jcButton.OBJ
+ 0001:000403f0       ?PicturePushOnHover__Get@jcbutton@@AAGXXZ 004413f0 f   jcButton.OBJ
+ 0001:00040460       ?PicturePushOnHover__Let@jcbutton@@AAGXXZ 00441460 f   jcButton.OBJ
+ 0001:00040510       ?PictureOpacity__Get@jcbutton@@AAGXXZ 00441510 f   jcButton.OBJ
+ 0001:00040580       ?PictureOpacity__Let@jcbutton@@AAGXXZ 00441580 f   jcButton.OBJ
+ 0001:00040630       ?PictureOpacityOnOver__Get@jcbutton@@AAGXXZ 00441630 f   jcButton.OBJ
+ 0001:000406a0       ?PictureOpacityOnOver__Let@jcbutton@@AAGXXZ 004416a0 f   jcButton.OBJ
+ 0001:00040750       ?RightToLeft__Get@jcbutton@@AAGXXZ 00441750 f   jcButton.OBJ
+ 0001:000407c0       ?RightToLeft__Let@jcbutton@@AAGXXZ 004417c0 f   jcButton.OBJ
+ 0001:00040880       ?CaptionEffects__Get@jcbutton@@AAGXXZ 00441880 f   jcButton.OBJ
+ 0001:000408f0       ?CaptionEffects__Let@jcbutton@@AAGXXZ 004418f0 f   jcButton.OBJ
+ 0001:000409a0       ?ShowFocusRect__Get@jcbutton@@AAGXXZ 004419a0 f   jcButton.OBJ
+ 0001:00040a10       ?ShowFocusRect__Let@jcbutton@@AAGXXZ 00441a10 f   jcButton.OBJ
+ 0001:00040ac0       ?UseMaskColor__Get@jcbutton@@AAGXXZ 00441ac0 f   jcButton.OBJ
+ 0001:00040b30       ?UseMaskColor__Let@jcbutton@@AAGXXZ 00441b30 f   jcButton.OBJ
+ 0001:00040c00       ?Value__Get@jcbutton@@AAGXXZ 00441c00 f   jcButton.OBJ
+ 0001:00040c70       ?Value__Let@jcbutton@@AAGXXZ 00441c70 f   jcButton.OBJ
+ 0001:00040d40       ?TooltipTitle__Get@jcbutton@@AAGXXZ 00441d40 f   jcButton.OBJ
+ 0001:00040dd0       ?TooltipTitle__Let@jcbutton@@AAGXXZ 00441dd0 f   jcButton.OBJ
+ 0001:00040ea0       ?ToolTip__Get@jcbutton@@AAGXXZ 00441ea0 f   jcButton.OBJ
+ 0001:00040f30       ?ToolTip__Let@jcbutton@@AAGXXZ 00441f30 f   jcButton.OBJ
+ 0001:00041000       ?TooltipBackColor__Get@jcbutton@@AAGXXZ 00442000 f   jcButton.OBJ
+ 0001:00041070       ?TooltipBackColor__Let@jcbutton@@AAGXXZ 00442070 f   jcButton.OBJ
+ 0001:00041120       ?ToolTipIcon__Let@jcbutton@@AAGXXZ 00442120 f   jcButton.OBJ
+ 0001:000411d0       ?ToolTipIcon__Get@jcbutton@@AAGXXZ 004421d0 f   jcButton.OBJ
+ 0001:00041240       ?ToolTipType__Get@jcbutton@@AAGXXZ 00442240 f   jcButton.OBJ
+ 0001:000412b0       ?ToolTipType__Let@jcbutton@@AAGXXZ 004422b0 f   jcButton.OBJ
+ 0001:00041360       ?ColorScheme__Get@jcbutton@@AAGXXZ 00442360 f   jcButton.OBJ
+ 0001:000413d0       ?ColorScheme__Let@jcbutton@@AAGXXZ 004423d0 f   jcButton.OBJ
+ 0001:00041490       ?Subclass_AddrFunc@jcbutton@@AAGXXZ 00442490 f   jcButton.OBJ
+ 0001:00041590       ?Subclass_Index@jcbutton@@AAGXXZ 00442590 f   jcButton.OBJ
+ 0001:00041680       ?Subclass_InIDE@jcbutton@@AAGXXZ 00442680 f   jcButton.OBJ
+ 0001:00041690       ?Subclass_Initialize@jcbutton@@AAGXXZ 00442690 f   jcButton.OBJ
+ 0001:00041b10       ?Subclass_AddMsg@jcbutton@@AAGXXZ 00442b10 f   jcButton.OBJ
+ 0001:00041c20       ?Subclass_DelMsg@jcbutton@@AAGXXZ 00442c20 f   jcButton.OBJ
+ 0001:00041d30       ?Subclass_DoAddMsg@jcbutton@@AAGXXZ 00442d30 f   jcButton.OBJ
+ 0001:00042140       ?Subclass_DoDelMsg@jcbutton@@AAGXXZ 00443140 f   jcButton.OBJ
+ 0001:00042250       ?Subclass_PatchRel@jcbutton@@AAGXXZ 00443250 f   jcButton.OBJ
+ 0001:00042290       ?Subclass_PatchVal@jcbutton@@AAGXXZ 00443290 f   jcButton.OBJ
+ 0001:000422c0       ?Subclass_Stop@jcbutton@@AAGXXZ 004432c0 f   jcButton.OBJ
+ 0001:000423f0       ?Subclass_Terminate@jcbutton@@AAGXXZ 004433f0 f   jcButton.OBJ
+ 0001:000424b0       ?FadeIN@modFade@@AAGXXZ    004434b0 f   modFade.OBJ
+ 0001:000427d0       ?FadeOUT@modFade@@AAGXXZ   004437d0 f   modFade.OBJ
+ 0001:00042a60       ?GoTray@frmTray@@AAGXXZ    00443a60 f   frmTray.OBJ
+ 0001:00042bf0       ?Form_Resize@frmTray@@AAGXXZ 00443bf0 f   frmTray.OBJ
+ 0001:00042d40       ?chkAs_Click@FrmSetting@@AAGXXZ 00443d40 f   frmTray.OBJ
+ 0001:00042d40       ?mopen_Click@frmTray@@AAGXXZ 00443d40 f   frmTray.OBJ
+ 0001:00042d40       ?mabout_Click@frmTray@@AAGXXZ 00443d40 f   frmTray.OBJ
+ 0001:00042d40       ?chkTray_Click@FrmSetting@@AAGXXZ 00443d40 f   frmTray.OBJ
+ 0001:00042d50       ?TrayChk@frmTray@@AAGXXZ   00443d50 f   frmTray.OBJ
+ 0001:00042f10       ?mquit_Click@frmTray@@AAGXXZ 00443f10 f   frmTray.OBJ
+ 0001:00042f20       ?mnuabout_Click@frmTray@@AAGXXZ 00443f20 f   frmTray.OBJ
+ 0001:00043090       ?mnuquit_Click@frmTray@@AAGXXZ 00444090 f   frmTray.OBJ
+ 0001:00043180       ?mnuref_Click@frmTray@@AAGXXZ 00444180 f   frmTray.OBJ
+ 0001:00043250       ?mnushow_Click@frmTray@@AAGXXZ 00444250 f   frmTray.OBJ
+ 0001:000433b0       ?CallbackMsgs@modTray@@AAGXXZ 004443b0 f   modTray.OBJ
+ 0001:000438f0       ?ShowTip@modTray@@AAGXXZ   004448f0 f   modTray.OBJ
+ 0001:00043a60       ?CreatTray@modTray@@AAGXXZ 00444a60 f   modTray.OBJ
+ 0001:00043d50       ?UnloadTray@modTray@@AAGXXZ 00444d50 f   modTray.OBJ
+ 0001:00043e50       ?form_load@frmBrswer@@AAGXXZ 00444e50 f   frmBrswer.OBJ
+ 0001:00044050       ?chk_Click@FrmSetting@@AAGXXZ 00445050 f   FrmSetting.OBJ
+ 0001:000442c0       ?form_load@FrmSetting@@AAGXXZ 004452c0 f   FrmSetting.OBJ
+ 0001:00044d20       ?form_unload@FrmSetting@@AAGXXZ 00445d20 f   FrmSetting.OBJ
+ 0001:00045560       ?Startup@Start_Program@@AAGXXZ 00446560 f   start_program.OBJ
+ 0001:000457c0       ?StartUPDelete@Start_Program@@AAGXXZ 004467c0 f   start_program.OBJ
+ 0001:00045ba0       VB@ETXT                    00446ba0     SKKU Notice Checker v2.0.0.OBJ
+ 0002:00000000       __adjust_fdiv              00448000     VBAEXE6:natsupp.obj
+ 0002:00000008       VB@BSS                     00448008     SKKU Notice Checker v2.0.0.OBJ
+ 0002:00000010       ___vba@0AE5ADF8            00448010     SKKU Notice Checker v2.0.0.OBJ
+ 0002:00000024       ___vba@0AE5AE28            00448024     SKKU Notice Checker v2.0.0.OBJ
+ 0002:00000038       ___vba@0AE5AE70            00448038     SKKU Notice Checker v2.0.0.OBJ
+ 0002:0000004c       ___vba@0AE5AE40            0044804c     SKKU Notice Checker v2.0.0.OBJ
+ 0002:00000060       _modFade                   00448060     SKKU Notice Checker v2.0.0.OBJ
+ 0002:00000070       ___vba@0AE5AE10            00448070     SKKU Notice Checker v2.0.0.OBJ
+ 0002:00000084       ___vba@0AE5ADE0            00448084     SKKU Notice Checker v2.0.0.OBJ
+ 0002:00000098       ___vba@0AE5ADB0            00448098     SKKU Notice Checker v2.0.0.OBJ
+ 0002:000000ac       ___vba@0AE5ADC8            004480ac     SKKU Notice Checker v2.0.0.OBJ
+ 0002:000000c0       _MethodAppIcon             004480c0     SKKU Notice Checker v2.0.0.OBJ
+ 0002:000000d0       _modTray                   004480d0     SKKU Notice Checker v2.0.0.OBJ
+ 0002:00000494       _Start_Program             00448494     SKKU Notice Checker v2.0.0.OBJ
+ 0002:000004a4       _ModReg                    004484a4     SKKU Notice Checker v2.0.0.OBJ
+ 0002:00000d0c       ___vba@066DE7F0            00448d0c     SKKU Notice Checker v2.0.0.OBJ
+ 0002:000010d4       ___vba@0692A5B4            004490d4     SKKU Notice Checker v2.0.0.OBJ
+ 0002:000017dc       ___vba@09A26EB4            004497dc     SKKU Notice Checker v2.0.0.OBJ
+ 0002:00001ef4       ___vba@07D8E974            00449ef4     SKKU Notice Checker v2.0.0.OBJ
+ 0002:00002620       ___vba@0AB1AA14            0044a620     SKKU Notice Checker v2.0.0.OBJ
+ 0002:000026cc       ___vba@068CD3CC            0044a6cc     SKKU Notice Checker v2.0.0.OBJ
+ 0002:00002e48       ___vba@0A8C0F14            0044ae48     SKKU Notice Checker v2.0.0.OBJ
+ 0002:00003618       ___vba@0A6F1D6C            0044b618     SKKU Notice Checker v2.0.0.OBJ
+ 0002:0000405c       ___vba@0A8807CC            0044c05c     SKKU Notice Checker v2.0.0.OBJ
+
+ entry point at        0001:00001b50
+
+ Static symbols
+
+
+ 80 bytes saved through ICF
+

@@ -1,0 +1,1051 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<HTML>
+<HEAD>
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/EP/htdocs/main.css"/>
+<link rel="stylesheet" type="text/css" href="/EP/htdocs/style/green/style.css"/>
+
+<script type="text/javascript" src='/EP/htdocs/prototype-1.5.1.js'></script>
+<script type="text/javascript" src='/EP/htdocs/CM_Header.js'></script>
+
+
+<script language="JavaScript">
+
+</script>
+
+
+
+<script language="JavaScript">
+	var DELIM_1 = "|";
+	var DELIM_2 = "^";
+	var DELIM_3 = "`";
+	var isUTF = false;
+	
+	function jsEncodeURI(sValue) {
+	    var sEncValue = isUTF ? encodeURI(sValue) : sValue;
+	    return sEncValue;
+	}
+	
+	function jsEncodeURIComponent(sValue) {
+	    var sEncValue = isUTF ? encodeURIComponent(sValue) : sValue;
+	    return sEncValue;
+	}
+	
+	function DocContextMenu() {
+	    return false;
+	}
+	
+	function noContextKey() {
+	    if (event.keyCode == 78) {
+	        if (event.ctrlLeft) {
+	            return false;
+	        }
+	    }
+	}
+	
+	function noClick() {
+	    return false;
+	}
+	
+	function getAppValue(key) {
+		var cnt = 0;
+		var isThere = true;
+		var frameObj = parent;
+		while(!frameObj.FR_TOPFIXED) {
+			if(cnt > 20) {
+				isThere = false;
+				break;
+			}
+			frameObj = frameObj.parent;		
+			cnt++;
+		}
+		if(isThere && frameObj.FR_TOPFIXED.topFixedLoaded) {
+			return frameObj.FR_TOPFIXED.getAppValueImpl(key);
+		} else {
+			var url = '/EP/web/common/CM_GetApplicationValue.jsp?key='+key;
+			var appValue = '';
+			new Ajax.Request(url, {
+				method: 'get',
+				asynchronous: false,
+				onSuccess: function(request) {
+					appValue = lineTrim(request.responseText);		
+				}
+			});
+			return appValue;
+		}
+	}
+	
+	function cmCheckSpecialChar( str ) {
+	    var rex = /[\!\@\#\$\%\^\&\*\(\)\-\_\=\+\|\\\{\}\[\]\"\'\:\;\<\>\,\.\/\?]/;
+	    return str.match(rex);
+	}
+	
+	function cmCheckEmail( str ) {
+	    var rex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+	    return str.match(rex);
+	}
+	
+	function cmCheckStrLen(target, maxLen, fieldName) {
+	    var temp;
+	    var code;
+	    var curLen = 0;
+	
+	    if (typeof target == "undefined") {
+	        return true;
+	    }
+	    
+	    var vLen = target.value.length;
+	
+	    tmpstr = "" ;
+	
+	    if (vLen > 0) {
+	      for(var k = 0; k < vLen; k++) {
+	         temp = target.value.charAt(k);
+	         code = target.value.charCodeAt(k);
+	
+	         if (code < 0 || code > 127)
+	            curLen += 2;
+	         else
+	            curLen++;
+	
+	         if (curLen > maxLen) {
+	            alert("최대 입력 범위를 초과하였습니다.");
+	            target.value = tmpstr;
+	            target.focus();
+	            return false;
+	         } else {
+	            tmpstr += temp;
+	         }
+	      }
+	    }
+	    return true;
+	}
+	
+	function cmCheckStrNull(target, fieldName) {
+	    var strVal = target.value;
+	
+	    if (cmTrim(strVal) == "") {
+	        alert(fieldName + "을(를) 입력하십시오.");
+	        target.value = "";
+	        target.focus();
+	        return true;
+	    } else {
+	        target.value = cmTrim(strVal);
+	        return false;
+	    }
+	}
+	
+	function cmCheckSearchName(target) {
+	    var temp;
+	
+	    if (typeof target == "undefined") {
+	        return true;
+	    }
+	
+	    var vLen = target.value.length;
+	
+	    tmpstr = "" ;
+	
+ 	    if (vLen > 0) {
+	      for(var k = 0; k < vLen; k++) {
+	         temp = target.value.charAt(k);
+	
+	         if ((temp == "%") || (temp == "_")) {
+	            alert("특수문자 %,_ 는 입력할 수 없습니다.");
+	            target.value = tmpstr;
+	            target.focus();
+	            return false;
+	         } else {
+	            tmpstr += temp;
+	         }
+	      }
+	    }
+	    return true;
+	}
+	
+	function lineTrim(str) {
+	    return str.replace( /^\s*/, "" ).replace( /\s*$/, "" );
+	}
+</script>
+
+<script language="vbScript">
+function cmTrim(str)
+    cmTrim = Trim(str)
+end function
+</script>
+
+<script language="javascript">
+    function clickBulletin(bullid, nkid, rkid, depth, securityflag) {
+        var frm_view_obj = document.FRM_VIEW;
+        var frm_filter_obj = document.filterList;
+
+        frm_view_obj.bullid.value = bullid;
+        frm_view_obj.nkid.value = nkid;
+        frm_view_obj.rkid.value = rkid;
+        frm_view_obj.ndepth.value = depth;
+
+        frm_view_obj.boardid.value = frm_filter_obj.boardid.value;
+        frm_view_obj.sortby.value = frm_filter_obj.sortby.value;
+        frm_view_obj.orderby.value = frm_filter_obj.orderby.value;
+        frm_view_obj.searchby.value = frm_filter_obj.searchby.value;
+        frm_view_obj.searchname.value = frm_filter_obj.searchname.value;
+        frm_view_obj.searchcondition.value = frm_filter_obj.searchcondition.value;
+        frm_view_obj.selectnum.value = frm_filter_obj.searchcondition.selectedIndex;
+        frm_view_obj.ndays.value = frm_filter_obj.ndays.value;
+        frm_view_obj.nfirst.value = frm_filter_obj.nfirst.value;
+
+        frm_view_obj.category.value = frm_filter_obj.category.value;
+        frm_view_obj.categorynum.value = frm_filter_obj.categorynum.value;
+        frm_view_obj.codenum.value = frm_filter_obj.codenum.value;
+
+        frm_view_obj.reply.value = frm_filter_obj.reply.value;
+
+        if (frm_filter_obj.searchcondition.value == "CATEGORYID") {
+            frm_view_obj.searchname.value = frm_filter_obj.category.value;
+        } else if (frm_filter_obj.searchcondition.value == "REPLY") {
+            frm_view_obj.searchname.value = frm_filter_obj.reply.value;
+        }
+
+        var url = "";
+
+        if(securityflag == "Y") {
+            var srcloc='about:blank';
+            var myWin = acubeWindow.open(srcloc, "popview", {width:300, height:200});
+            myWin.focus();
+            frm_view_obj.target = "popview";
+            frm_view_obj.action = "./BB_CheckSecurity.jsp";
+            frm_view_obj.submit();
+        } else {
+            frm_view_obj.target = "_self";
+            frm_view_obj.action = "./BB_BullView.jsp";
+            frm_view_obj.submit();
+        }
+    }
+
+    function changePage(p) {
+        document.filterList.nfirst.value = p;
+        document.filterList.selectnum.value = document.filterList.searchcondition.selectedIndex;
+        if (document.filterList.searchcondition.value == "CATEGORYID") {
+            document.filterList.searchname.value = document.filterList.category.value;
+        } else if (document.filterList.searchcondition.value == "REPLY") {
+            document.filterList.searchname.value = document.filterList.reply.value;
+        }
+        document.all.filterList.submit();
+    }
+
+
+    function clickSort(sortField) {
+        if ("desc" == "desc") {
+            document.filterList.orderby.value="asc";
+        }else if ("desc" == "asc") {
+            document.filterList.orderby.value="desc";
+        }
+        document.filterList.sortby.value = sortField;
+        document.filterList.selectnum.value = document.filterList.searchcondition.selectedIndex;
+        if (document.filterList.searchcondition.value == "CATEGORYID") {
+            document.filterList.searchname.value = document.filterList.category.value;
+        }else if (document.filterList.searchcondition.value == "REPLY") {
+            document.filterList.searchname.value = document.filterList.reply.value;
+        }
+        document.all.filterList.submit();
+    }
+
+    function search_in()
+    {
+        if (event.keyCode == "13") {
+            search(document.filterList);
+        }
+    }
+
+    function search(form)
+    {
+        document.filterList.orderby.value='desc';
+        document.filterList.sortby.value='';
+        document.filterList.nfirst.value = "1";
+        document.filterList.selectnum.value = document.filterList.searchcondition.selectedIndex;
+        if (document.filterList.searchcondition.value == "CATEGORYID") {
+            document.filterList.searchname.value = document.filterList.category.value;
+        }else if (document.filterList.searchcondition.value == "REPLY") {
+            document.filterList.searchname.value = document.filterList.reply.value;
+        }
+
+        document.filterList.searchname.value=VBTrim(document.filterList.searchname.value);
+
+        document.all.filterList.submit();
+    }
+
+    function NewWin_BB_UserInfo(userid, compid) {
+          var srcloc='../../user/jsp/UM_UsrInfo.jsp?id=' + userid + '&compid=' + compid  ;
+
+          wv_boardsel=acubeWindow.open(srcloc, "wn_userinfo", {width:500, height:400});
+          wv_boardsel.focus();
+    }
+
+    function NewWin_BB_UserInfo_rep(strUrl) {
+
+          wv_boardsel=acubeWindow.open(strUrl, "wn_userinfo", {width:500, height:420});
+          wv_boardsel.focus();
+    }
+
+    var check =0;
+    var check2 =0;
+
+    function showsub() {
+        if (check == 0) {
+            document.all["Layer1"].style.display = "";
+            check = 1;
+        } else {
+            document.all["Layer1"].style.display = "none";
+            check = 0;
+        }
+    }
+
+    function showsub2() {
+        if (check2 == 0) {
+            document.all["Layer1"].style.display = "";
+            check2 = 1;
+        } else {
+            document.all["Layer1"].style.display = "none";
+            check2 = 0;
+        }
+    }
+
+    function ListDuration(day) {
+      document.filterList.ndays.value = day;
+      document.filterList.nfirst.value = "1";
+      document.filterList.selectnum.value = document.filterList.searchcondition.selectedIndex;
+      document.all.filterList.submit();
+    }
+
+    function toggleChild(p, n) {
+
+        nLen = p.length;
+        n = parseInt(n);
+
+        npoint = 0;
+        npoint1 = nLen;
+
+        n2 = n+1
+
+		if(!document.all["ImgChild"+p]) {
+			return;
+		}
+		
+        if (document.all["ImgChild"+p].name == 'Y') {
+
+             document.all["ImgChild"+p].name = 'N';
+             document.all["ImgChild"+p].src = "/EP/image/minus.gif";
+
+             for (i=1;i<document.all.length ;i++) {
+
+                StrId = document.all[i].id ;
+
+                if (StrId.substr(npoint, npoint1) == p && document.all[i].sDepth == n2) {
+                    document.all[StrId].style.display = "";
+                }
+            }
+
+        } else {
+            document.all["ImgChild"+p].name = 'Y';
+            document.all["ImgChild"+p].src = "/EP/image/plus.gif";
+
+            for (i=1;i<document.all.length ;i++) {
+
+                StrId = document.all[i].id ;
+
+                if (StrId.substr(npoint, npoint1) == p && document.all[i].sDepth >= n2) {
+                    document.all[StrId].style.display = "none";
+                    document.all[StrId].name = 'Y';
+
+                    if (document.all["ImgChild"+StrId]) {
+                        document.all["ImgChild"+StrId].name = 'Y';
+                        document.all["ImgChild"+StrId].src = "/EP/image/plus.gif";
+                    }
+                }
+             }
+        }
+    }
+
+    function toggleAllChildren()
+    {
+        if (document.all["Img_reply"].allList=='N') {
+            document.all["Img_reply"].src = "/EP/image/minus.gif";
+            document.all["Img_reply"].allList='Y';
+        } else {
+            document.all["Img_reply"].src = "/EP/image/plus.gif";
+            document.all["Img_reply"].allList='N';
+        }
+
+        for (var i=0; i <document.all.length; i++) {
+
+            if (document.all[i].ImgCheck == "close") {
+                var strImgId=document.all[i].id;
+                document.all[strImgId].src = "/EP/image/minus.gif";
+                document.all[strImgId].name = 'N';
+                document.all[strImgId].ImgCheck = "open";
+
+            } else {
+                if (document.all[i].ImgCheck == "open") {
+                    var strImgId=document.all[i].id;
+                    document.all[strImgId].src = "/EP/image/plus.gif";
+                    document.all[strImgId].name = 'Y';
+                    document.all[strImgId].ImgCheck = "close";
+                }
+            }
+
+            if (document.all[i].CHECK == "close") {
+
+                StrId = document.all[i].id ;
+                document.all[StrId].style.display = "";
+                document.all[StrId].CHECK = "open";
+
+            } else {
+                if (document.all[i].CHECK == "open") {
+
+                        StrId = document.all[i].id ;
+                        document.all[StrId].style.display = "none";
+                        document.all[StrId].CHECK = "close";
+                }
+            }
+        }
+    }
+
+    function win_onLoad() {
+
+        document.filterList.searchcondition[0].selected = true;
+
+        scChanged();
+
+        if (document.filterList.searchcondition.value == "BULLTITLE") {
+            document.filterList.searchname.focus();
+        }
+
+        if ("1" == "1") {
+            document.all.Img_reply.style.visibility = "visible";
+            document.all.Img_reply.style.display = "";
+        }
+
+    
+    }
+
+    function openToChild(childRowID, childDepth, eachIdLength)
+    {
+        for (var i=0; i < childDepth; i++) {
+            toggleChild(childRowID.substring(0, (eachIdLength * (i+1))), i);
+        }
+    }
+
+    function regBulletin(nFlag) {
+        document.filterList.action= "BB_BullReg.jsp?nfileflag="+nFlag;
+        document.filterList.submit();
+    }
+
+    function toggleCheck() {
+        for (var i=0; i<document.filterList.elements.length; i++) {
+            var ele = document.filterList.elements[i];
+            if (ele.name.substring(0, 4) == "ATTO") {
+                if (ele.checked) {
+                    uncheckAll();
+                    break;
+                } else {
+                    checkAll();
+                    break;
+                }   //if
+            }   //if
+        }   //for
+    }
+
+    function checkAll() {
+        for (var i=0; i<document.filterList.elements.length; i++) {
+            var ele = document.filterList.elements[i];
+            if (ele.name.substring(0, 4) == 'ATTO')
+                ele.checked = true;
+        }
+    }
+
+    function uncheckAll() {
+        for (var i=0; i<document.filterList.elements.length; i++) {
+            var ele = document.filterList.elements[i];
+            if (ele.name.substring(0, 4) == 'ATTO')
+                ele.checked = false;
+        }
+    }
+
+    function deleteBulletins() {
+        var sBullidLst = "";
+        for (var i=0; i<document.filterList.elements.length; i++) {
+            var ele = document.filterList.elements[i];
+            if (ele.name.substring(0, 4) == "ATTO") {
+                if (ele.checked) {
+                    sBullidLst += "|" + ele.name.substr(4, ele.name.length);
+                }   //if
+            }   //if
+        }   //for
+
+        sBullidLst = sBullidLst.substring(1, sBullidLst.length);
+        if (sBullidLst == null || sBullidLst == "") {
+            alert("선택된 항목이 없습니다.");
+            return;
+        } else {
+            ans = confirm ("선택된 게시물을 삭제하시겠습니까? \n답변을 가진 게시물은 답변과 함께 삭제됩니다.")
+            if (ans) {
+                document.filterList.bullidlst.value = sBullidLst;
+                document.filterList.action = "./BB_BullDel.jsp";
+                document.filterList.selectnum.value = document.filterList.searchcondition.selectedIndex;
+                document.all.filterList.submit();
+            }else{
+                return;
+            }//if
+        }//if
+    }
+
+    function scChanged() {
+
+        var frm = document.filterList;
+        var idx = frm.searchcondition.selectedIndex;
+
+        if (frm.searchcondition.value == "CATEGORYID") {
+            frm.reply.style.display = "none";
+            frm.searchname.style.display = "none";
+            frm.category.style.display = "";
+            for (i=0;i< frm.length;i++) {
+                if (frm.item(i).name.substring(0, 5)=="CODE_") {
+                    frm.item(i).style.display = "none";
+                }
+            }
+
+        } else if (frm.searchcondition[idx].id.substring(0, 5) == "CODE_") {
+            frm.reply.style.display = "none";
+            frm.searchname.style.display = "none";
+            frm.category.style.display = "none";
+
+            for (i=0;i< frm.length;i++) {
+                if (frm.item(i).name.substring(0, 5)=="CODE_") {
+                    if (frm.item(i).name == frm.searchcondition[idx].id) {
+                        frm.item(i).style.display = "";
+                    } else {
+                        frm.item(i).style.display = "none";
+                    }
+                }
+            }
+
+        } else if (frm.searchcondition.value == "REPLY") {
+            frm.reply.style.display = "";
+            frm.searchname.style.display = "none";
+            frm.category.style.display = "none";
+            for (i=0;i< frm.length;i++) {
+                if (frm.item(i).name.substring(0, 5)=="CODE_") {
+                    frm.item(i).style.display = "none";
+                }
+            }
+        } else {
+            frm.reply.style.display = "none";
+            frm.searchname.style.display = "";
+            frm.category.style.display = "none";
+            frm.category[0].selected = true;
+            for (i=0;i< frm.length;i++) {
+                if (frm.item(i).name.substring(0, 5)=="CODE_") {
+                    frm.item(i).style.display = "none";
+                }
+            }
+        }
+    }
+
+    function selectedChange(selIdx) {
+
+        document.filterList.categorynum.value= selIdx;
+        search(document.filterList);
+    }
+
+    function selectedChangeCode(obj, selIdx) {
+
+        document.filterList.code.value= obj.value;
+        document.filterList.codenum.value= selIdx;
+        document.filterList.searchname.value = obj.value;
+        search(document.filterList);
+    }
+
+</script>
+<SCRIPT LANGUAGE="VBScript">
+    Function VBTrim(str)
+        VBTrim = Trim(str)
+    End Function
+</script>
+
+<TITLE></TITLE>
+</HEAD>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onload="javascript:win_onLoad();">
+<FORM id="filterList"  NAME="filterList" ACTION="BB_BullLst.jsp" METHOD="POST">
+<input NAME="sortby"       TYPE="HIDDEN" VALUE="REGDATE"/>
+<input NAME="orderby"      TYPE="HIDDEN" VALUE="desc"/>
+<input NAME="searchby"     TYPE="HIDDEN" VALUE=""/>
+<input NAME="nfirst"       TYPE="HIDDEN" VALUE="1"/>
+<input NAME="boardid"      TYPE="HIDDEN" VALUE="B200811171325597111029"/>
+<input NAME="ndays"        TYPE="HIDDEN" VALUE="0"/>
+<input NAME="selectnum"    TYPE="HIDDEN"/>
+<input NAME="bullidlst"    TYPE="HIDDEN"/>
+
+<table width="100%" style='' cellspacing='0' cellpadding='0'>
+<tr>
+<td height='10' colspan='3'></td>
+</tr>
+<tr>
+<td width='10'></td>
+<td>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td>
+<!-- title -->
+
+    <table width='100%' border='0' cellspacing='0' cellpadding='0'>
+<tr>
+<td width='30'><img src='/acubeidir/ref/image/title1.gif' width='30' height='30'></td>
+<td background='/acubeidir/ref/image/titlebg.gif'><table border='0' cellspacing='0' cellpadding='0'>
+    <tr>
+      <td class='title'>
+학사공지</td>
+    </tr>
+  </table></td>
+</tr>
+</table>
+
+
+
+    </td>
+</tr>
+
+<tr>
+    <td height='10'></td>
+
+</tr>
+<tr>
+    <td>
+&nbsp;
+
+    </td>
+</tr>
+
+<tr>
+    <td height='2'></td>
+
+</tr>
+
+<tr>
+    <td>
+        <table width='100%' border='0' cellpadding='0' cellspacing='0'>
+<tr>
+<td height='2' bgcolor='#6891CB'></td>
+</tr>
+</table>
+
+    </td>
+</tr>
+
+<tr>
+    <td>
+
+    <table width="100%"  border="0" cellspacing="0" cellpadding="0" > 
+<tr>
+<td height='3' background='/acubeidir/ref/image/dot_search1.gif'></td>
+</tr>
+<tr class='search'>
+<td height='7'></td>
+</tr>
+<tr class='search'>
+<td>
+<table width="100%"
+ border='0' bordercolor='pink' cellspacing='1' cellpadding='0'>
+
+    <tr>
+        <td width='10'></td>
+
+        <td width="100">
+            <SELECT NAME="searchcondition" style="width:100%" onclick="javascript:document.filterList.searchname.value=''" onchange="javascript:scChanged();">
+                <OPTION value="BULLTITLE">제목</option>
+            
+                <OPTION value="REGNAME">작성자</option>
+            
+                <OPTION value="REGDATE">게시일</option>
+            
+            
+                <OPTION value="REPLY">답변여부</option>
+            
+
+        </SELECT>
+     </td>
+     <td width='10'></td>
+
+    <td >
+        <input NAME="searchname" TYPE="TEXT" VALUE=""
+            maxlength=50 STYLE="width:100%;display:none;" class="input_ime"
+            onkeydown="javascript:return search_in();" onkeyup="cmCheckSearchName(this);">
+
+        <select id=id_category name="category" style="width:150;display:none;" onchange="javascript:selectedChange(this.selectedIndex);">
+        
+            <option value="" selected>등록된 카테고리가 없습니다.</option>
+        
+         </select>
+        <input type="hidden" name="code" value="">
+        <input type="hidden" name="categorynum" value="">
+
+        <input type="hidden" name="codenum" value="">
+
+        <select id=id_reply name="reply" style="width:150;display:none;" onchange="javascript:search(this.form);">
+               <option value="" selected>&nbsp;</option>
+               <option value="1" >답변</option>
+               <option value="0" >미답변</option>
+        </select>
+
+        </td>
+        <td width='10'></td>
+
+        <td align="right" width="40">
+            <table border='0' cellpadding='0' cellspacing='0'>
+<tr>
+<td><img src='/acubeidir/ref/image/bu3_search.gif'></td>
+<td background='/acubeidir/ref/image/bu2_bg.gif' class='text_center' style='white-space:nowrap'>
+<a href="javascript:search();" style='width:100%;'>검색</a>
+</td>
+<td><img src='/acubeidir/ref/image/bu2_right.gif' width='8' height='20'></td>
+</tr>
+</table>
+
+
+         </td>
+         <td width='10'></td>
+
+    </tr>
+    </table>
+</td>
+</tr>
+<tr class='search'>
+<td height='7'></td>
+</tr>
+<tr>
+<td height='1' background='/acubeidir/ref/image/dot_search2.gif'></td>
+</tr>
+</table>
+
+    </td>
+</tr>
+
+
+
+<tr>
+    <td height='4'></td>
+
+</tr>
+
+<tr>
+    <td>
+
+<table cellpadding="0" width="100%" cellspacing="1" border="0" class="table" 
+ >
+<tr bgcolor='#ffffff'>
+<td width="20" class="ltb_head"><nobr><a href='JavaScript:toggleCheck()'><img src='/EP/image/icon_allcheck.gif' border=0 width=13 height=14></a></nobr></td>
+<td width="40" class="ltb_head"><nobr>번호</nobr></td>
+<td width="20" class="ltb_head"><nobr><img id='Img_reply' style="display:none;cursor:pointer;visibility:hidden;" src='/EP/image/plus.gif' width='9' height='9' onClick="javascript:toggleAllChildren();" allList='N'>&nbsp;</nobr></td>
+<td width="*" class="ltb_head" style="cursor:pointer;" onClick="javascript:clickSort('BULLTITLE');"><nobr>제목</nobr></td>
+<td width="100" class="ltb_head"><nobr>부서</nobr></td>
+<td width="80" class="ltb_head" style="cursor:pointer;" onClick="javascript:clickSort('REGNAME');"><nobr>게시자</nobr></td>
+<td width="80" class="ltb_head" style="cursor:pointer;" onClick="javascript:clickSort('REGDATE');"><nobr>게시일</nobr></td>
+<td width="40" class="ltb_head"><nobr>조회수</nobr></td>
+<td width="50" class="ltb_head"><nobr>첨부</nobr></td>
+</tr>
+<tr bgcolor='#ffffff' onMouseOut="this.style.backgroundColor=''" onMouseOver="this.style.backgroundColor='#F2F2F4'">
+<td class="ltb_check"><nobr><input type='checkbox' name='ATTOBB201712051024251164297' ></nobr></td>
+<td class="ltb_center" style="height:auto"><nobr><img src='/EP/image/light_icon.gif'></nobr></td>
+<td title="본교&#32;사용&#32;가능&#32;공용&#32;소프트웨어&#32;목록&#32;및&#32;설치&#32;방법" class="ltb_center" colspan="2" style="text-align:left;"><nobr>&nbsp;<A href="javascript:clickBulletin('BB201712051024251164297', 'BB201712051024251164297', 'BB201712051024251164297', '0', 'N');" > <font color=''>본교&#32;사용&#32;가능&#32;공용&#32;소프트웨어&#32;목록&#32;및&#32;설치&#32;방법</font></A></nobr></td>
+<td title="정보통신팀" class="ltb_center" style=""><nobr>정보통신팀</nobr></td>
+<td title="권혁민" class="ltb_center" style=""><nobr>권혁민</nobr></td>
+<td title="2017.12.05" class="ltb_center" style=""><nobr>2017.12.05</nobr></td>
+<td title="" class="ltb_center" style=""><nobr>3365</nobr></td>
+<td title="" class="ltb_center" style=""><nobr><img name=ImgAttach src='/EP/image/icon_clip.gif' width=9 height=12></nobr></td>
+</tr>
+<tr bgcolor='#ffffff' onMouseOut="this.style.backgroundColor=''" onMouseOver="this.style.backgroundColor='#F2F2F4'">
+<td class="ltb_check"><nobr><input type='checkbox' name='ATTOBB201711251215360404541' ></nobr></td>
+<td class="ltb_center" style="height:auto"><nobr><img src='/EP/image/light_icon.gif'></nobr></td>
+<td title="2018학년도&#32;1학기&#32;수강신청&#32;일정&#32;안내" class="ltb_center" colspan="2" style="text-align:left;"><nobr>&nbsp;<A href="javascript:clickBulletin('BB201711251215360404541', 'BB201711251215360404541', 'BB201711251215360404541', '0', 'N');" > <font color=''>2018학년도&#32;1학기&#32;수강신청&#32;일정&#32;안내</font></A></nobr></td>
+<td title="교무팀" class="ltb_center" style=""><nobr>교무팀</nobr></td>
+<td title="박찬우" class="ltb_center" style=""><nobr>박찬우</nobr></td>
+<td title="2017.11.25" class="ltb_center" style=""><nobr>2017.11.25</nobr></td>
+<td title="" class="ltb_center" style=""><nobr>5799</nobr></td>
+<td title="" class="ltb_center" style=""><nobr><img name=ImgAttach src='/EP/image/icon_clip.gif' width=9 height=12></nobr></td>
+</tr>
+<tr bgcolor='#ffffff' onMouseOut="this.style.backgroundColor=''" onMouseOver="this.style.backgroundColor='#F2F2F4'">
+<td class="ltb_check"><nobr><input type='checkbox' name='ATTOBB201711151539043006260' ></nobr></td>
+<td class="ltb_center" style="height:auto"><nobr><img src='/EP/image/light_icon.gif'></nobr></td>
+<td title="2017학년도&#32;2학기&#32;복수전공&#32;신청&#32;안내" class="ltb_center" colspan="2" style="text-align:left;"><nobr>&nbsp;<A href="javascript:clickBulletin('BB201711151539043006260', 'BB201711151539043006260', 'BB201711151539043006260', '0', 'N');" > <font color=''>2017학년도&#32;2학기&#32;복수전공&#32;신청&#32;안내</font></A></nobr></td>
+<td title="교무팀" class="ltb_center" style=""><nobr>교무팀</nobr></td>
+<td title="최재혁" class="ltb_center" style=""><nobr>최재혁</nobr></td>
+<td title="2017.11.15" class="ltb_center" style=""><nobr>2017.11.15</nobr></td>
+<td title="" class="ltb_center" style=""><nobr>2339</nobr></td>
+<td title="" class="ltb_center" style=""><nobr>&nbsp;</nobr></td>
+</tr>
+<tr bgcolor='#ffffff' onMouseOut="this.style.backgroundColor=''" onMouseOver="this.style.backgroundColor='#F2F2F4'">
+<td class="ltb_check"><nobr><input type='checkbox' name='ATTOBB201710270919483586924' ></nobr></td>
+<td class="ltb_center" style="height:auto"><nobr><img src='/EP/image/light_icon.gif'></nobr></td>
+<td title="2017학년도&#32;동계&#32;계절수업&#32;안내" class="ltb_center" colspan="2" style="text-align:left;"><nobr>&nbsp;<A href="javascript:clickBulletin('BB201710270919483586924', 'BB201710270919483586924', 'BB201710270919483586924', '0', 'N');" > <font color=''>2017학년도&#32;동계&#32;계절수업&#32;안내</font></A></nobr></td>
+<td title="교무팀" class="ltb_center" style=""><nobr>교무팀</nobr></td>
+<td title="박찬우" class="ltb_center" style=""><nobr>박찬우</nobr></td>
+<td title="2017.10.27" class="ltb_center" style=""><nobr>2017.10.27</nobr></td>
+<td title="" class="ltb_center" style=""><nobr>13176</nobr></td>
+<td title="" class="ltb_center" style=""><nobr><img name=ImgAttach src='/EP/image/icon_clip.gif' width=9 height=12></nobr></td>
+</tr>
+<tr bgcolor='#ffffff' onMouseOut="this.style.backgroundColor=''" onMouseOver="this.style.backgroundColor='#F2F2F4'">
+<td class="ltb_check"><nobr><input type='checkbox' name='ATTOBB201712291757126778178' ></nobr></td>
+<td class="ltb_center" style="height:auto"><nobr>3095</nobr></td>
+<td title="2018학년도&#32;1학기&#32;본교생&#32;→&#32;타&#32;대학&#32;학점교류&#32;수강안내" class="ltb_center" colspan="2" style="text-align:left;"><nobr>&nbsp;<A href="javascript:clickBulletin('BB201712291757126778178', 'BB201712291757126778178', 'BB201712291757126778178', '0', 'N');" > <font color=''>2018학년도&#32;1학기&#32;본교생&#32;→&#32;타&#32;대학&#32;학점교류&#32;수강안내</font></A></nobr></td>
+<td title="교무팀" class="ltb_center" style=""><nobr>교무팀</nobr></td>
+<td title="박찬우" class="ltb_center" style=""><nobr>박찬우</nobr></td>
+<td title="2017.12.29" class="ltb_center" style=""><nobr>2017.12.29</nobr></td>
+<td title="" class="ltb_center" style=""><nobr>64</nobr></td>
+<td title="" class="ltb_center" style=""><nobr><img name=ImgAttach src='/EP/image/icon_clip.gif' width=9 height=12></nobr></td>
+</tr>
+<tr bgcolor='#ffffff' onMouseOut="this.style.backgroundColor=''" onMouseOver="this.style.backgroundColor='#F2F2F4'">
+<td class="ltb_check"><nobr><input type='checkbox' name='ATTOBB201712260949084075756' ></nobr></td>
+<td class="ltb_center" style="height:auto"><nobr>3094</nobr></td>
+<td title="[공과대학]&#32;2017학년도&#32;2학기&#32;건축학과&#32;복수전공&#32;사전심사&#32;안내" class="ltb_center" colspan="2" style="text-align:left;"><nobr>&nbsp;<A href="javascript:clickBulletin('BB201712260949084075756', 'BB201712260949084075756', 'BB201712260949084075756', '0', 'N');" > <font color=''>[공과대학]&#32;2017학년도&#32;2학기&#32;건축학과&#32;복수전공&#32;사전심사&#32;안내</font></A></nobr></td>
+<td title="공과대학행정실" class="ltb_center" style=""><nobr>공과대학행정실</nobr></td>
+<td title="서호준" class="ltb_center" style=""><nobr>서호준</nobr></td>
+<td title="2017.12.26" class="ltb_center" style=""><nobr>2017.12.26</nobr></td>
+<td title="" class="ltb_center" style=""><nobr>65</nobr></td>
+<td title="" class="ltb_center" style=""><nobr>&nbsp;</nobr></td>
+</tr>
+<tr bgcolor='#ffffff' onMouseOut="this.style.backgroundColor=''" onMouseOver="this.style.backgroundColor='#F2F2F4'">
+<td class="ltb_check"><nobr><input type='checkbox' name='ATTOBB201712121607056765266' ></nobr></td>
+<td class="ltb_center" style="height:auto"><nobr>3093</nobr></td>
+<td title="[예술대학]&#32;복수전공&#32;사전심사&#32;안내(미술,디자인,무용,영상,연기예술,의상학과)" class="ltb_center" colspan="2" style="text-align:left;"><nobr>&nbsp;<A href="javascript:clickBulletin('BB201712121607056765266', 'BB201712121607056765266', 'BB201712121607056765266', '0', 'N');" > <font color=''>[예술대학]&#32;복수전공&#32;사전심사&#32;안내(미술,디자인,무용,영상,연기예술,의상학과)</font></A></nobr></td>
+<td title="사회과학/예술대학행정실" class="ltb_center" style=""><nobr>사회과학/예술대학행정실</nobr></td>
+<td title="이은혜" class="ltb_center" style=""><nobr>이은혜</nobr></td>
+<td title="2017.12.12" class="ltb_center" style=""><nobr>2017.12.12</nobr></td>
+<td title="" class="ltb_center" style=""><nobr>210</nobr></td>
+<td title="" class="ltb_center" style=""><nobr>&nbsp;</nobr></td>
+</tr>
+<tr bgcolor='#ffffff' onMouseOut="this.style.backgroundColor=''" onMouseOver="this.style.backgroundColor='#F2F2F4'">
+<td class="ltb_check"><nobr><input type='checkbox' name='ATTOBB201712110914349267063' ></nobr></td>
+<td class="ltb_center" style="height:auto"><nobr>3092</nobr></td>
+<td title="졸업예정자&#32;및&#32;졸업관련자&#32;동계&#32;계절수업&#32;수강신청&#32;안내" class="ltb_center" colspan="2" style="text-align:left;"><nobr>&nbsp;<A href="javascript:clickBulletin('BB201712110914349267063', 'BB201712110914349267063', 'BB201712110914349267063', '0', 'N');" > <font color=''>졸업예정자&#32;및&#32;졸업관련자&#32;동계&#32;계절수업&#32;수강신청&#32;안내</font></A></nobr></td>
+<td title="교무팀" class="ltb_center" style=""><nobr>교무팀</nobr></td>
+<td title="박찬우" class="ltb_center" style=""><nobr>박찬우</nobr></td>
+<td title="2017.12.11" class="ltb_center" style=""><nobr>2017.12.11</nobr></td>
+<td title="" class="ltb_center" style=""><nobr>541</nobr></td>
+<td title="" class="ltb_center" style=""><nobr>&nbsp;</nobr></td>
+</tr>
+<tr bgcolor='#ffffff' onMouseOut="this.style.backgroundColor=''" onMouseOver="this.style.backgroundColor='#F2F2F4'">
+<td class="ltb_check"><nobr><input type='checkbox' name='ATTOBB201712091104561752206' ></nobr></td>
+<td class="ltb_center" style="height:auto"><nobr>3091</nobr></td>
+<td title="[긴급]동계&#32;방중&#32;&#32;창의품&#32;학내&#32;시행&#32;시험&#32;일정&#32;안내(2018년&#32;2월&#32;졸업예정자&#32;응시가능)-재?店?&#32;일정&#32;약간&#32;조정" class="ltb_center" colspan="2" style="text-align:left;"><nobr>&nbsp;<A href="javascript:clickBulletin('BB201712091104561752206', 'BB201712091104561752206', 'BB201712091104561752206', '0', 'N');" > <font color='red'>[긴급]동계&#32;방중&#32;&#32;창의품&#32;학내&#32;시행&#32;시험&#32;일정&#32;안내(2018년&#32;2월&#32;졸업예정자&#32;응시가능)-재?店?&#32;일정&#32;약간&#32;조정</font></A></nobr></td>
+<td title="정보통신팀" class="ltb_center" style=""><nobr>정보통신팀</nobr></td>
+<td title="권혁민" class="ltb_center" style=""><nobr>권혁민</nobr></td>
+<td title="2017.12.09" class="ltb_center" style=""><nobr>2017.12.09</nobr></td>
+<td title="" class="ltb_center" style=""><nobr>824</nobr></td>
+<td title="" class="ltb_center" style=""><nobr><img name=ImgAttach src='/EP/image/icon_clip.gif' width=9 height=12></nobr></td>
+</tr>
+<tr bgcolor='#ffffff' onMouseOut="this.style.backgroundColor=''" onMouseOver="this.style.backgroundColor='#F2F2F4'">
+<td class="ltb_check"><nobr><input type='checkbox' name='ATTOBB201712081201585771222' ></nobr></td>
+<td class="ltb_center" style="height:auto"><nobr>3090</nobr></td>
+<td title="[학부대학]&#32;2017&#32;동계&#32;계절수업&#32;&lt;일반물리학1&gt;&#32;과목&#32;증원&#32;안내" class="ltb_center" colspan="2" style="text-align:left;"><nobr>&nbsp;<A href="javascript:clickBulletin('BB201712081201585771222', 'BB201712081201585771222', 'BB201712081201585771222', '0', 'N');" > <font color=''>[학부대학]&#32;2017&#32;동계&#32;계절수업&#32;&lt;일반물리학1&gt;&#32;과목&#32;증원&#32;안내</font></A></nobr></td>
+<td title="학부대학/사범대학행정실" class="ltb_center" style=""><nobr>학부대학/사범대학행정실</nobr></td>
+<td title="이기쁨" class="ltb_center" style=""><nobr>이기쁨</nobr></td>
+<td title="2017.12.08" class="ltb_center" style=""><nobr>2017.12.08</nobr></td>
+<td title="" class="ltb_center" style=""><nobr>68</nobr></td>
+<td title="" class="ltb_center" style=""><nobr>&nbsp;</nobr></td>
+</tr>
+<tr bgcolor='#ffffff' onMouseOut="this.style.backgroundColor=''" onMouseOver="this.style.backgroundColor='#F2F2F4'">
+<td class="ltb_check"><nobr><input type='checkbox' name='ATTOBB201712071555089569239' ></nobr></td>
+<td class="ltb_center" style="height:auto"><nobr>3089</nobr></td>
+<td title="킹고(Kingo)&#32;챗봇&#32;서비스&#32;오픈&#32;안내" class="ltb_center" colspan="2" style="text-align:left;"><nobr>&nbsp;<A href="javascript:clickBulletin('BB201712071555089569239', 'BB201712071555089569239', 'BB201712071555089569239', '0', 'N');" > <font color=''>킹고(Kingo)&#32;챗봇&#32;서비스&#32;오픈&#32;안내</font></A></nobr></td>
+<td title="정보통신팀" class="ltb_center" style=""><nobr>정보통신팀</nobr></td>
+<td title="윤대우" class="ltb_center" style=""><nobr>윤대우</nobr></td>
+<td title="2017.12.07" class="ltb_center" style=""><nobr>2017.12.07</nobr></td>
+<td title="" class="ltb_center" style=""><nobr>89</nobr></td>
+<td title="" class="ltb_center" style=""><nobr>&nbsp;</nobr></td>
+</tr>
+<tr bgcolor='#ffffff' onMouseOut="this.style.backgroundColor=''" onMouseOver="this.style.backgroundColor='#F2F2F4'">
+<td class="ltb_check"><nobr><input type='checkbox' name='ATTOBB201712071415339184055' ></nobr></td>
+<td class="ltb_center" style="height:auto"><nobr>3088</nobr></td>
+<td title="2017학년도&#32;동계&#32;계절수업&#32;창의적글쓰기&#32;추가개설&#32;안내" class="ltb_center" colspan="2" style="text-align:left;"><nobr>&nbsp;<A href="javascript:clickBulletin('BB201712071415339184055', 'BB201712071415339184055', 'BB201712071415339184055', '0', 'N');" > <font color=''>2017학년도&#32;동계&#32;계절수업&#32;창의적글쓰기&#32;추가개설&#32;안내</font></A></nobr></td>
+<td title="학부대학/사범대학행정실" class="ltb_center" style=""><nobr>학부대학/사범대학행정실</nobr></td>
+<td title="박수현" class="ltb_center" style=""><nobr>박수현</nobr></td>
+<td title="2017.12.07" class="ltb_center" style=""><nobr>2017.12.07</nobr></td>
+<td title="" class="ltb_center" style=""><nobr>80</nobr></td>
+<td title="" class="ltb_center" style=""><nobr>&nbsp;</nobr></td>
+</tr>
+<tr bgcolor='#ffffff' onMouseOut="this.style.backgroundColor=''" onMouseOver="this.style.backgroundColor='#F2F2F4'">
+<td class="ltb_check"><nobr><input type='checkbox' name='ATTOBB201712061736342047803' ></nobr></td>
+<td class="ltb_center" style="height:auto"><nobr>3087</nobr></td>
+<td title="동계계절수업&#32;선형대수학&#32;증원&#32;안내" class="ltb_center" colspan="2" style="text-align:left;"><nobr>&nbsp;<A href="javascript:clickBulletin('BB201712061736342047803', 'BB201712061736342047803', 'BB201712061736342047803', '0', 'N');" > <font color=''>동계계절수업&#32;선형대수학&#32;증원&#32;안내</font></A></nobr></td>
+<td title="학부대학/사범대학행정실" class="ltb_center" style=""><nobr>학부대학/사범대학행정실</nobr></td>
+<td title="박수현" class="ltb_center" style=""><nobr>박수현</nobr></td>
+<td title="2017.12.06" class="ltb_center" style=""><nobr>2017.12.06</nobr></td>
+<td title="" class="ltb_center" style=""><nobr>93</nobr></td>
+<td title="" class="ltb_center" style=""><nobr>&nbsp;</nobr></td>
+</tr>
+<tr bgcolor='#ffffff' onMouseOut="this.style.backgroundColor=''" onMouseOver="this.style.backgroundColor='#F2F2F4'">
+<td class="ltb_check"><nobr><input type='checkbox' name='ATTOBB201712061151387852118' ></nobr></td>
+<td class="ltb_center" style="height:auto"><nobr>3086</nobr></td>
+<td title="2017학년도&#32;동계&#32;계절수업&#32;교강사&#32;변경안내&#32;(미분적분학&#32;1&#32;42,44분반)" class="ltb_center" colspan="2" style="text-align:left;"><nobr>&nbsp;<A href="javascript:clickBulletin('BB201712061151387852118', 'BB201712061151387852118', 'BB201712061151387852118', '0', 'N');" > <font color=''>2017학년도&#32;동계&#32;계절수업&#32;교강사&#32;변경안내&#32;(미분적분학&#32;1&#32;42,44분반)</font></A></nobr></td>
+<td title="자연과학/약학/생명공학/스포츠과학대학행정실" class="ltb_center" style=""><nobr>자연과학/약학/생명공학/스포츠과학대학행정실</nobr></td>
+<td title="김지영" class="ltb_center" style=""><nobr>김지영</nobr></td>
+<td title="2017.12.06" class="ltb_center" style=""><nobr>2017.12.06</nobr></td>
+<td title="" class="ltb_center" style=""><nobr>70</nobr></td>
+<td title="" class="ltb_center" style=""><nobr>&nbsp;</nobr></td>
+</tr>
+<tr bgcolor='#ffffff' onMouseOut="this.style.backgroundColor=''" onMouseOver="this.style.backgroundColor='#F2F2F4'">
+<td class="ltb_check"><nobr><input type='checkbox' name='ATTOBB201712041643347933317' ></nobr></td>
+<td class="ltb_center" style="height:auto"><nobr>3085</nobr></td>
+<td title="2017학년도&#32;동계&#32;계절수업&#32;폐반&#32;안내" class="ltb_center" colspan="2" style="text-align:left;"><nobr>&nbsp;<A href="javascript:clickBulletin('BB201712041643347933317', 'BB201712041643347933317', 'BB201712041643347933317', '0', 'N');" > <font color=''>2017학년도&#32;동계&#32;계절수업&#32;폐반&#32;안내</font></A></nobr></td>
+<td title="교무팀" class="ltb_center" style=""><nobr>교무팀</nobr></td>
+<td title="박찬우" class="ltb_center" style=""><nobr>박찬우</nobr></td>
+<td title="2017.12.04" class="ltb_center" style=""><nobr>2017.12.04</nobr></td>
+<td title="" class="ltb_center" style=""><nobr>1840</nobr></td>
+<td title="" class="ltb_center" style=""><nobr>&nbsp;</nobr></td>
+</tr>
+<tr align='center'>  <td colspan='9' class='paging_bg'>
+<table width='100%'  border='0' cellspacing='0' cellpadding='0'>
+  <tr>
+    <td width='25%'>
+      <table border='0' cellpadding='0' cellspacing='0'>
+        <tr>
+          <td width='5'></td>
+          <td class='paging_result'>Page:1/207 </td>
+          <td width='5'></td>
+          <td style='padding-bottom:2px;'><input name='userinputpage' id='userinputpage' type='text' class='inputpage' size='3' maxlength='6' style='IME-MODE:inactive;' onkeyup='javascript:if(isNaN(this.value)){ this.value=""; this.focus(); }' onkeydown='javascript:var kc = event.keyCode || event.which; if(kc=="13") { document.getElementById("userinputbutton").onclick();}'></td>
+          <td><a id='userinputbutton' onClick="javascript:if(document.getElementById('userinputpage').value<1) document.getElementById('userinputpage').value=1; if(document.getElementById('userinputpage').value>207) {document.getElementById('userinputpage').value=207;}changePage(document.getElementById('userinputpage').value);" ><img src='/acubeidir/ref/image/btn_pagego.gif' border='0'></a></td>
+        </tr>
+      </table>
+    </td>
+    <td width='50%' class='paging_bg' align='center'>
+<table height='21' border='0'  cellspacing='0' cellpadding='0' width='100%'>
+ <tr>
+   <td style='padding-top:3px;'>
+     <table align='center' border='0' cellspacing='0' cellpadding='0'>
+       <tr class='paging_bg'>
+         <td><img width='20' height='16' border='0' src='/acubeidir/ref/image/btn_pag1.gif'>
+         </td>
+         <td><img width='20' height='16' border='0' src='/acubeidir/ref/image/btn_pag5.gif'>
+         </td>
+         <td><img width='28' height='16' border='0' src='/acubeidir/ref/image/btn_pag2.gif'>
+         </td>
+         <td>
+           <table border='0' cellpadding='0' cellspacing='0'>
+             <tr class='paging_bg'>
+               <td class='paging'>
+<span class='paging_select'>1</span><img src='/acubeidir/ref/image/page_line.gif' width='5' height='10'><a href="javascript:changePage(2);">2</a><img src='/acubeidir/ref/image/page_line.gif' width='5' height='10'><a href="javascript:changePage(3);">3</a><img src='/acubeidir/ref/image/page_line.gif' width='5' height='10'><a href="javascript:changePage(4);">4</a><img src='/acubeidir/ref/image/page_line.gif' width='5' height='10'><a href="javascript:changePage(5);">5</a><img src='/acubeidir/ref/image/page_line.gif' width='5' height='10'><a href="javascript:changePage(6);">6</a><img src='/acubeidir/ref/image/page_line.gif' width='5' height='10'><a href="javascript:changePage(7);">7</a><img src='/acubeidir/ref/image/page_line.gif' width='5' height='10'><a href="javascript:changePage(8);">8</a><img src='/acubeidir/ref/image/page_line.gif' width='5' height='10'><a href="javascript:changePage(9);">9</a><img src='/acubeidir/ref/image/page_line.gif' width='5' height='10'><a href="javascript:changePage(10);">10</a></td>
+             </tr>
+           </table></td>
+         <td><img width='29' height='16' border='0' src='/acubeidir/ref/image/btn_pag3.gif'  style='cursor:pointer'
+		       onClick="changePage('2');"
+              >
+         </td>
+         <td><img width='20' height='16' border='0' src='/acubeidir/ref/image/btn_pag6.gif'  style='cursor:pointer'
+		       onClick="changePage('11');"
+              >
+         </td>
+         <td><img width='20' height='16' border='0' src='/acubeidir/ref/image/btn_pag4.gif'  style='cursor:pointer'
+		       onClick="changePage('207');"
+              >
+         </td>
+       </tr>
+     </table>
+    </td>
+  </tr>
+</table>
+    </td>
+    <td width='25%' align='right'>
+      <table border='0' cellpadding='0' cellspacing='0'>
+        <tr>
+          <td class='paging_result'>Total:3099</td>
+          <td width='5'></td>
+        </tr>
+      </table> 
+    </td>
+  </tr>
+</table>
+
+</td> </tr> </table>
+
+
+  </td>
+</tr>
+
+<tr>
+    <td height='4'></td>
+
+</tr>
+
+</table>
+
+
+
+
+
+</td>
+<td width='10'></td>
+</tr>
+</table>
+
+
+</FORM>
+
+<FORM NAME='FRM_VIEW' METHOD=POST ACTION='' TARGET=''>
+    <input type="hidden" value="" NAME="boardid">
+    <input type="hidden" value="" NAME="bullid">
+    <input type="hidden" value="" NAME="sortby">
+    <input type="hidden" value="" NAME="orderby">
+    <input type="hidden" value="" NAME="searchby">
+    <input type="hidden" value="" NAME="searchname">
+    <input type="hidden" value="" NAME="searchcondition">
+    <input type="hidden" value="" NAME="selectnum">
+    <input type="hidden" value="" NAME="ndays">
+    <input type="hidden" value="" NAME="nkid">
+    <input type="hidden" value="" NAME="rkid">
+    <input type="hidden" value="" NAME="ndepth">
+    <input type="hidden" value="" NAME="nfirst">
+    <input type="hidden" VALUE="1" NAME="sflag">
+    <input type="hidden" name="categorynum" value="">
+    <input type="hidden" name="category" value="">
+    <input type="hidden" name="code" value="">
+    <input type="hidden" name="codenum" value="">
+    <input type="hidden" name="reply" value="">
+</form>
+
+</body>
+</html>

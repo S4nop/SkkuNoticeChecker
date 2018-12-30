@@ -1,0 +1,246 @@
+.input {
+	border: 1px solid rgb(198, 210, 219); border-image: none; height: 19px; color: rgb(69, 69, 69); padding-top: 2px; padding-right: 3px; padding-left: 3px; font-family: Gulim,Dotum,Arial; font-size: 9pt; background-color: rgb(255, 255, 255);
+}
+.input_blue {
+	border: 1px solid rgb(119, 147, 184); border-image: none; height: 19px; color: rgb(69, 69, 69); padding-top: 2px; padding-right: 3px; padding-left: 3px; font-family: Gulim,Dotum,Arial; font-size: 9pt; background-color: rgb(255, 255, 255);
+}
+.input_read {
+	border: 1px solid rgb(198, 210, 219); border-image: none; height: 19px; color: rgb(69, 69, 69); padding-top: 2px; padding-right: 3px; padding-left: 3px; font-family: Gulim,Dotum,Arial; font-size: 9pt; background-color: rgb(241, 241, 241);
+}
+.input_ime {
+	border: 1px solid rgb(198, 210, 219); border-image: none; height: 19px; color: rgb(69, 69, 69); padding-top: 2px; padding-right: 3px; padding-left: 3px; font-family: Gulim,Dotum,Arial; font-size: 9pt; -ms-ime-mode: active; background-color: rgb(255, 255, 255);
+}
+.inputpage {
+	border: 1px solid rgb(173, 190, 215); border-image: none; height: 19px; text-align: center; color: rgb(10, 56, 118); padding-top: 2px; font-family: Gulim,Dotum,Arial; font-size: 9pt; background-color: rgb(255, 255, 255);
+}
+.input_right {
+	border: 1px solid rgb(198, 210, 219); border-image: none; height: 19px; text-align: right; color: rgb(69, 69, 69); padding-top: 2px; padding-right: 3px; padding-left: 3px; font-family: Gulim,Dotum,Arial; font-size: 9pt; background-color: rgb(255, 255, 255);
+}
+.input_read_right {
+	border: 1px solid rgb(198, 210, 219); border-image: none; height: 19px; text-align: right; color: rgb(69, 69, 69); padding-top: 2px; padding-right: 3px; padding-left: 3px; font-family: Gulim,Dotum,Arial; font-size: 9pt; background-color: rgb(241, 241, 241);
+}
+.input_ime_right {
+	border: 1px solid rgb(198, 210, 219); border-image: none; height: 19px; text-align: right; color: rgb(69, 69, 69); padding-top: 2px; padding-right: 3px; padding-left: 3px; font-family: Gulim,Dotum,Arial; font-size: 9pt; -ms-ime-mode: active; background-color: rgb(255, 255, 255);
+}
+.select_9pt {
+	color: rgb(69, 69, 69); font-family: Gulim,Dotum,Arial; font-size: 9pt; background-color: rgb(255, 255, 255);
+}
+select {
+	color: rgb(102, 102, 102); font-family: Dotum; font-size: 8pt; background-color: rgb(255, 255, 255);
+}
+body {
+	color: rgb(69, 69, 69); overflow: auto; font-family: Gulim,Dotum,Arial; font-size: 9pt; -ms-scrollbar-base-color: rgb(255, 255, 255); -ms-scrollbar-face-color: rgb(255, 255, 255); -ms-scrollbar-3dlight-color: rgb(153, 153, 153); -ms-scrollbar-shadow-color: rgb(255, 255, 255); -ms-scrollbar-highlight-color: rgb(255, 255, 255); -ms-scrollbar-darkshadow-color: rgb(153, 153, 153); -ms-scrollbar-arrow-color: rgb(153, 153, 153);
+}
+fieldset {
+	border: 1px solid rgb(198, 210, 219); border-image: none; color: rgb(69, 69, 69); font-family: Gulim,Dotum,Arial; font-size: 8pt; background-color: rgb(255, 255, 255);
+}
+textarea {
+	padding: 3px; border: 1px solid rgb(198, 210, 219); border-image: none; color: rgb(69, 69, 69); overflow: auto; font-family: Gulim,Dotum,Arial; font-size: 9pt; -ms-ime-mode: active; background-color: rgb(255, 255, 255);
+}
+.ppl_green {
+	color: rgb(65, 121, 0); line-height: 18px; font-family: Gulim; font-size: 12px; font-weight: bold;
+}
+.ppl_gray {
+	color: rgb(102, 102, 102); line-height: 18px; font-family: Gulim; font-size: 12px;
+}
+.cal_green {
+	color: rgb(55, 108, 30); font-family: "Arial"; font-size: 11px; font-weight: bold;
+}
+.cal_date {
+	text-align: center; color: rgb(31, 31, 31); font-family: "arial"; font-size: 11px;
+}
+.por_txt {
+	color: rgb(69, 69, 69); line-height: 18px; font-family: Dotum; font-size: 12px;
+}
+.myinfo_gray {
+	color: rgb(51, 51, 51); line-height: 15px; padding-top: 2px; font-family: Dotum; font-size: 12px;
+}
+.myinfo_blue {
+	color: rgb(54, 94, 147); padding-top: 2px; font-family: Dotum; font-size: 12px; font-weight: bold;
+}
+.knw_on {
+	text-align: center; color: rgb(255, 255, 255); letter-spacing: -0.1em; padding-top: 3px; font-family: Gulim; font-size: 13px; font-weight: bold;
+}
+.knw_off {
+	text-align: center; color: rgb(69, 69, 69); letter-spacing: -0.1em; padding-top: 4px; font-family: Gulim; font-size: 12px; font-weight: bold;
+}
+.bd_date {
+	color: rgb(0, 0, 0); line-height: 21px; font-family: Gulim; font-size: 12px;
+}
+.bd_txt {
+	color: rgb(69, 69, 69); line-height: 21px; font-family: Gulim; font-size: 12px;
+}
+.ann_on {
+	color: rgb(86, 135, 0); letter-spacing: -0.1em; font-family: Gulim; font-size: 12px; font-weight: bold;
+}
+.ann_off {
+	color: rgb(0, 0, 0); letter-spacing: -0.1em; font-family: Gulim; font-size: 12px;
+}
+.cal_txt {
+	color: rgb(69, 69, 69); line-height: 16px; font-family: Dotum; font-size: 11px;
+}
+.por_ttl {
+	color: rgb(61, 96, 0); letter-spacing: -0.1em; padding-top: 7px; font-family: "±¼¸²"; font-size: 12px; font-weight: bold;
+}
+.pop_sch_ttl {
+	color: rgb(41, 41, 41); padding-top: 10px; font-family: "±¼¸²"; font-size: 12px; font-weight: bold;
+}
+.myInfo_ttl {
+	color: rgb(0, 0, 0); padding-top: 6px; font-family: "±¼¸²"; font-size: 12px; font-weight: bold;
+}
+.ann_ttl {
+	color: rgb(51, 51, 51); letter-spacing: -0.1em; padding-left: 15px; font-family: "±¼¸²"; font-size: 13px; font-weight: bold;
+}
+.por_ttl_2 {
+	color: rgb(69, 69, 69); letter-spacing: -0.1em; padding-top: 6px; font-family: "±¼¸²"; font-size: 12px; font-weight: bold;
+}
+.man_txt {
+	color: rgb(102, 102, 102); line-height: 19px; font-family: "µ¸¿ò"; font-size: 12px;
+}
+.com_txt {
+	color: rgb(102, 102, 102); letter-spacing: -0.1em; font-family: "µ¸¿ò"; font-size: 11px;
+}
+.we_txt {
+	color: rgb(51, 51, 51); letter-spacing: -0.1em; padding-top: 2px; font-family: "±¼¸²"; font-size: 12px;
+}
+.we_ttl {
+	color: rgb(69, 69, 69); letter-spacing: -0.1em; padding-top: 4px; font-family: "±¼¸²"; font-size: 12px; font-weight: bold;
+}
+.rel_ttl {
+	color: rgb(69, 69, 69); letter-spacing: -0.1em; padding-top: 3px; font-family: "±¼¸²"; font-size: 12px; font-weight: bold;
+}
+.board_ttl {
+	color: rgb(0, 0, 0); letter-spacing: -0.1em; padding-left: 4px; font-family: "Gulim"; font-size: 13px; font-weight: bold;
+}
+.board_date {
+	color: rgb(0, 0, 0); line-height: 20px; font-family: "Gulim"; font-size: 12px;
+}
+.board_txt {
+	color: rgb(69, 69, 69); line-height: 20px; font-family: "Gulim"; font-size: 12px;
+}
+.mi_time {
+	color: rgb(255, 255, 255); letter-spacing: -0.1em; padding-top: 4px; font-family: "Dotum"; font-size: 12px; font-weight: bold;
+}
+.mi_txt1 {
+	color: rgb(0, 0, 0); padding-top: 3px; font-family: "Gulim"; font-size: 12px;
+}
+.mi_num1 {
+	color: rgb(0, 55, 156); font-family: "Gulim"; font-size: 12px;
+}
+.mi_txt2 {
+	color: rgb(69, 69, 69); font-family: "Dotum"; font-size: 11px;
+}
+.mi_num2 {
+	color: rgb(184, 43, 0); font-family: "Dotum"; font-size: 11px;
+}
+.mi_ttl {
+	color: rgb(69, 91, 114); padding-top: 5px; font-family: "Gulim"; font-size: 12px; font-weight: bold;
+}
+.tag_ttl {
+	color: rgb(0, 67, 118); letter-spacing: -0.1em; padding-top: 4px; font-family: "Gulim"; font-size: 12px; font-weight: bold;
+}
+.tag1 {
+	color: rgb(255, 255, 255); letter-spacing: -0.1em; padding-top: 3px; font-family: "Gulim"; font-size: 12px; font-weight: bold;
+}
+.tag1 :link {
+	color: rgb(255, 255, 255); letter-spacing: -0.1em; padding-top: 3px; font-family: "Gulim"; font-size: 12px; font-weight: bold; text-decoration: none;
+}
+.tag1 :visited {
+	color: rgb(255, 255, 255); letter-spacing: -0.1em; padding-top: 3px; font-family: "Gulim"; font-size: 12px; font-weight: bold; text-decoration: none;
+}
+.tag1 :hover {
+	color: rgb(255, 255, 255); letter-spacing: -0.1em; padding-top: 3px; font-family: "Gulim"; font-size: 12px; font-weight: bold; text-decoration: none;
+}
+.tag1 :active {
+	color: rgb(255, 255, 255); letter-spacing: -0.1em; padding-top: 3px; font-family: "Gulim"; font-size: 12px; font-weight: bold; text-decoration: none;
+}
+.tag2 {
+	color: rgb(51, 128, 182); padding-top: 2px; font-family: "Gulim"; font-size: 12px; font-weight: bold;
+}
+.tag2 :link {
+	color: rgb(51, 128, 182); letter-spacing: -0.1em; padding-top: 2px; font-family: "Gulim"; font-size: 12px; font-weight: bold; text-decoration: none;
+}
+.tag2 :visited {
+	color: rgb(51, 128, 182); letter-spacing: -0.1em; padding-top: 2px; font-family: "Gulim"; font-size: 12px; font-weight: bold; text-decoration: none;
+}
+.tag2 :hover {
+	color: rgb(51, 128, 182); letter-spacing: -0.1em; padding-top: 2px; font-family: "Gulim"; font-size: 12px; font-weight: bold; text-decoration: none;
+}
+.tag2 :active {
+	color: rgb(51, 128, 182); letter-spacing: -0.1em; padding-top: 2px; font-family: "Gulim"; font-size: 12px; font-weight: bold; text-decoration: none;
+}
+.tag3 {
+	color: rgb(102, 102, 102); letter-spacing: -0.1em; padding-top: 2px; font-family: "Gulim"; font-size: 12px; font-weight: bold;
+}
+.tag3 :link {
+	color: rgb(102, 102, 102); letter-spacing: -0.1em; padding-top: 2px; font-family: "Gulim"; font-size: 12px; font-weight: bold; text-decoration: none;
+}
+.tag3 :visited {
+	color: rgb(102, 102, 102); letter-spacing: -0.1em; padding-top: 2px; font-family: "Gulim"; font-size: 12px; font-weight: bold; text-decoration: none;
+}
+.tag3 :hover {
+	color: rgb(102, 102, 102); letter-spacing: -0.1em; padding-top: 2px; font-family: "Gulim"; font-size: 12px; font-weight: bold; text-decoration: none;
+}
+.tag3 :active {
+	color: rgb(102, 102, 102); letter-spacing: -0.1em; padding-top: 2px; font-family: "Gulim"; font-size: 12px; font-weight: bold; text-decoration: none;
+}
+.tag4 {
+	color: rgb(102, 102, 102); letter-spacing: -0.1em; padding-top: 2px; font-family: "Gulim"; font-size: 12px;
+}
+.tag4 :link {
+	color: rgb(102, 102, 102); letter-spacing: -0.1em; padding-top: 2px; font-family: "Gulim"; font-size: 12px; text-decoration: none;
+}
+.tag4 :visited {
+	color: rgb(102, 102, 102); letter-spacing: -0.1em; padding-top: 2px; font-family: "Gulim"; font-size: 12px; text-decoration: none;
+}
+.tag4 :hover {
+	color: rgb(102, 102, 102); letter-spacing: -0.1em; padding-top: 2px; font-family: "Gulim"; font-size: 12px; text-decoration: none;
+}
+.tag4 :active {
+	color: rgb(102, 102, 102); letter-spacing: -0.1em; padding-top: 2px; font-family: "Gulim"; font-size: 12px; text-decoration: none;
+}
+.tag1over {
+	color: rgb(26, 71, 142); letter-spacing: -0.1em; padding-top: 3px; font-family: "Gulim"; font-size: 12px; font-weight: bold;
+}
+.tag1over :link {
+	color: rgb(26, 71, 142); letter-spacing: -0.1em; padding-top: 3px; font-family: "Gulim"; font-size: 12px; font-weight: bold; text-decoration: none;
+}
+.tag1over :visited {
+	color: rgb(26, 71, 142); letter-spacing: -0.1em; padding-top: 3px; font-family: "Gulim"; font-size: 12px; font-weight: bold; text-decoration: none;
+}
+.tag1over :hover {
+	color: rgb(26, 71, 142); letter-spacing: -0.1em; padding-top: 3px; font-family: "Gulim"; font-size: 12px; font-weight: bold; text-decoration: none;
+}
+.tag1over :active {
+	color: rgb(26, 71, 142); letter-spacing: -0.1em; padding-top: 3px; font-family: "Gulim"; font-size: 12px; font-weight: bold; text-decoration: none;
+}
+.tag2over {
+	color: rgb(26, 71, 142); letter-spacing: -0.1em; padding-top: 2px; font-family: "Gulim"; font-size: 12px; font-weight: bold;
+}
+.tag2over :link {
+	color: rgb(26, 71, 142); letter-spacing: -0.1em; padding-top: 2px; font-family: "Gulim"; font-size: 12px; font-weight: bold; text-decoration: none;
+}
+.tag2over :visited {
+	color: rgb(26, 71, 142); letter-spacing: -0.1em; padding-top: 2px; font-family: "Gulim"; font-size: 12px; font-weight: bold; text-decoration: none;
+}
+.tag2over :hover {
+	color: rgb(26, 71, 142); letter-spacing: -0.1em; padding-top: 2px; font-family: "Gulim"; font-size: 12px; font-weight: bold; text-decoration: none;
+}
+.tag2over :active {
+	color: rgb(26, 71, 142); letter-spacing: -0.1em; padding-top: 2px; font-family: "Gulim"; font-size: 12px; font-weight: bold; text-decoration: none;
+}
+.ppl_green {
+	color: rgb(46, 135, 73); line-height: 19px; font-family: "Gulim"; font-size: 12px; font-weight: bold;
+}
+.ppl_gray {
+	color: rgb(102, 102, 102); line-height: 19px; font-family: "Gulim"; font-size: 12px;
+}
+.pop_sch_ttl {
+	color: rgb(41, 41, 41); padding-top: 5px; font-family: "Gulim"; font-size: 12px; font-weight: bold;
+}
+.com_txt {
+	color: rgb(69, 69, 69); font-family: "Dotum"; font-size: 11px;
+}
+.tr_txt {
+	color: rgb(69, 98, 151); line-height: 20px; letter-spacing: -0.1em; font-family: "Gulim"; font-size: 12px; font-weight: bold;
+}

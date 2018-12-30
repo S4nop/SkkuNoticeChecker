@@ -1,0 +1,1021 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0093)http://portal.skku.edu/EP/web/collaboration/bbs/BB_BullLst.jsp -->
+<HTML><HEAD><META content="IE=5.0000" http-equiv="X-UA-Compatible">
+ <LINK href="BB_BullLst_files/main.css" rel="stylesheet" type="text/css"> 
+<META http-equiv="Content-Type" 
+content="text/html; charset=ks_c_5601-1987"><LINK href="BB_BullLst_files/style.css" 
+rel="stylesheet" type="text/css"> 
+<SCRIPT src="BB_BullLst_files/prototype-1.5.1.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="BB_BullLst_files/CM_Header.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT language="JavaScript"></SCRIPT>
+ 
+<SCRIPT language="JavaScript">
+	var DELIM_1 = "|";
+	var DELIM_2 = "^";
+	var DELIM_3 = "`";
+	var isUTF = false;
+	
+	function jsEncodeURI(sValue) {
+	    var sEncValue = isUTF ? encodeURI(sValue) : sValue;
+	    return sEncValue;
+	}
+	
+	function jsEncodeURIComponent(sValue) {
+	    var sEncValue = isUTF ? encodeURIComponent(sValue) : sValue;
+	    return sEncValue;
+	}
+	
+	function DocContextMenu() {
+	    return false;
+	}
+	
+	function noContextKey() {
+	    if (event.keyCode == 78) {
+	        if (event.ctrlLeft) {
+	            return false;
+	        }
+	    }
+	}
+	
+	function noClick() {
+	    return false;
+	}
+	
+	function getAppValue(key) {
+		var cnt = 0;
+		var isThere = true;
+		var frameObj = parent;
+		while(!frameObj.FR_TOPFIXED) {
+			if(cnt > 20) {
+				isThere = false;
+				break;
+			}
+			frameObj = frameObj.parent;		
+			cnt++;
+		}
+		if(isThere && frameObj.FR_TOPFIXED.topFixedLoaded) {
+			return frameObj.FR_TOPFIXED.getAppValueImpl(key);
+		} else {
+			var url = '/EP/web/common/CM_GetApplicationValue.jsp?key='+key;
+			var appValue = '';
+			new Ajax.Request(url, {
+				method: 'get',
+				asynchronous: false,
+				onSuccess: function(request) {
+					appValue = lineTrim(request.responseText);		
+				}
+			});
+			return appValue;
+		}
+	}
+	
+	function cmCheckSpecialChar( str ) {
+	    var rex = /[\!\@\#\$\%\^\&\*\(\)\-\_\=\+\|\\\{\}\[\]\"\'\:\;\<\>\,\.\/\?]/;
+	    return str.match(rex);
+	}
+	
+	function cmCheckEmail( str ) {
+	    var rex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+	    return str.match(rex);
+	}
+	
+	function cmCheckStrLen(target, maxLen, fieldName) {
+	    var temp;
+	    var code;
+	    var curLen = 0;
+	
+	    if (typeof target == "undefined") {
+	        return true;
+	    }
+	    
+	    var vLen = target.value.length;
+	
+	    tmpstr = "" ;
+	
+	    if (vLen > 0) {
+	      for(var k = 0; k < vLen; k++) {
+	         temp = target.value.charAt(k);
+	         code = target.value.charCodeAt(k);
+	
+	         if (code < 0 || code > 127)
+	            curLen += 2;
+	         else
+	            curLen++;
+	
+	         if (curLen > maxLen) {
+	            alert("최대 입력 범위를 초과하였습니다.");
+	            target.value = tmpstr;
+	            target.focus();
+	            return false;
+	         } else {
+	            tmpstr += temp;
+	         }
+	      }
+	    }
+	    return true;
+	}
+	
+	function cmCheckStrNull(target, fieldName) {
+	    var strVal = target.value;
+	
+	    if (cmTrim(strVal) == "") {
+	        alert(fieldName + "을(를) 입력하십시오.");
+	        target.value = "";
+	        target.focus();
+	        return true;
+	    } else {
+	        target.value = cmTrim(strVal);
+	        return false;
+	    }
+	}
+	
+	function cmCheckSearchName(target) {
+	    var temp;
+	
+	    if (typeof target == "undefined") {
+	        return true;
+	    }
+	
+	    var vLen = target.value.length;
+	
+	    tmpstr = "" ;
+	
+ 	    if (vLen > 0) {
+	      for(var k = 0; k < vLen; k++) {
+	         temp = target.value.charAt(k);
+	
+	         if ((temp == "%") || (temp == "_")) {
+	            alert("특수문자 %,_ 는 입력할 수 없습니다.");
+	            target.value = tmpstr;
+	            target.focus();
+	            return false;
+	         } else {
+	            tmpstr += temp;
+	         }
+	      }
+	    }
+	    return true;
+	}
+	
+	function lineTrim(str) {
+	    return str.replace( /^\s*/, "" ).replace( /\s*$/, "" );
+	}
+</SCRIPT>
+ 
+<SCRIPT language="vbScript">
+function cmTrim(str)
+    cmTrim = Trim(str)
+end function
+</SCRIPT>
+ 
+<SCRIPT language="javascript">
+    function clickBulletin(bullid, nkid, rkid, depth, securityflag) {
+        var frm_view_obj = document.FRM_VIEW;
+        var frm_filter_obj = document.filterList;
+
+        frm_view_obj.bullid.value = bullid;
+        frm_view_obj.nkid.value = nkid;
+        frm_view_obj.rkid.value = rkid;
+        frm_view_obj.ndepth.value = depth;
+
+        frm_view_obj.boardid.value = frm_filter_obj.boardid.value;
+        frm_view_obj.sortby.value = frm_filter_obj.sortby.value;
+        frm_view_obj.orderby.value = frm_filter_obj.orderby.value;
+        frm_view_obj.searchby.value = frm_filter_obj.searchby.value;
+        frm_view_obj.searchname.value = frm_filter_obj.searchname.value;
+        frm_view_obj.searchcondition.value = frm_filter_obj.searchcondition.value;
+        frm_view_obj.selectnum.value = frm_filter_obj.searchcondition.selectedIndex;
+        frm_view_obj.ndays.value = frm_filter_obj.ndays.value;
+        frm_view_obj.nfirst.value = frm_filter_obj.nfirst.value;
+
+        frm_view_obj.category.value = frm_filter_obj.category.value;
+        frm_view_obj.categorynum.value = frm_filter_obj.categorynum.value;
+        frm_view_obj.codenum.value = frm_filter_obj.codenum.value;
+
+        frm_view_obj.reply.value = frm_filter_obj.reply.value;
+
+        if (frm_filter_obj.searchcondition.value == "CATEGORYID") {
+            frm_view_obj.searchname.value = frm_filter_obj.category.value;
+        } else if (frm_filter_obj.searchcondition.value == "REPLY") {
+            frm_view_obj.searchname.value = frm_filter_obj.reply.value;
+        }
+
+        var url = "";
+
+        if(securityflag == "Y") {
+            var srcloc='about:blank';
+            var myWin = acubeWindow.open(srcloc, "popview", {width:300, height:200});
+            myWin.focus();
+            frm_view_obj.target = "popview";
+            frm_view_obj.action = "./BB_CheckSecurity.jsp";
+            frm_view_obj.submit();
+        } else {
+            frm_view_obj.target = "_self";
+            frm_view_obj.action = "./BB_BullView.jsp";
+            frm_view_obj.submit();
+        }
+    }
+
+    function changePage(p) {
+        document.filterList.nfirst.value = p;
+        document.filterList.selectnum.value = document.filterList.searchcondition.selectedIndex;
+        if (document.filterList.searchcondition.value == "CATEGORYID") {
+            document.filterList.searchname.value = document.filterList.category.value;
+        } else if (document.filterList.searchcondition.value == "REPLY") {
+            document.filterList.searchname.value = document.filterList.reply.value;
+        }
+        document.all.filterList.submit();
+    }
+
+
+    function clickSort(sortField) {
+        if ("desc" == "desc") {
+            document.filterList.orderby.value="asc";
+        }else if ("desc" == "asc") {
+            document.filterList.orderby.value="desc";
+        }
+        document.filterList.sortby.value = sortField;
+        document.filterList.selectnum.value = document.filterList.searchcondition.selectedIndex;
+        if (document.filterList.searchcondition.value == "CATEGORYID") {
+            document.filterList.searchname.value = document.filterList.category.value;
+        }else if (document.filterList.searchcondition.value == "REPLY") {
+            document.filterList.searchname.value = document.filterList.reply.value;
+        }
+        document.all.filterList.submit();
+    }
+
+    function search_in()
+    {
+        if (event.keyCode == "13") {
+            search(document.filterList);
+        }
+    }
+
+    function search(form)
+    {
+        document.filterList.orderby.value='desc';
+        document.filterList.sortby.value='';
+        document.filterList.nfirst.value = "1";
+        document.filterList.selectnum.value = document.filterList.searchcondition.selectedIndex;
+        if (document.filterList.searchcondition.value == "CATEGORYID") {
+            document.filterList.searchname.value = document.filterList.category.value;
+        }else if (document.filterList.searchcondition.value == "REPLY") {
+            document.filterList.searchname.value = document.filterList.reply.value;
+        }
+
+        document.filterList.searchname.value=VBTrim(document.filterList.searchname.value);
+
+        document.all.filterList.submit();
+    }
+
+    function NewWin_BB_UserInfo(userid, compid) {
+          var srcloc='../../user/jsp/UM_UsrInfo.jsp?id=' + userid + '&compid=' + compid  ;
+
+          wv_boardsel=acubeWindow.open(srcloc, "wn_userinfo", {width:500, height:400});
+          wv_boardsel.focus();
+    }
+
+    function NewWin_BB_UserInfo_rep(strUrl) {
+
+          wv_boardsel=acubeWindow.open(strUrl, "wn_userinfo", {width:500, height:420});
+          wv_boardsel.focus();
+    }
+
+    var check =0;
+    var check2 =0;
+
+    function showsub() {
+        if (check == 0) {
+            document.all["Layer1"].style.display = "";
+            check = 1;
+        } else {
+            document.all["Layer1"].style.display = "none";
+            check = 0;
+        }
+    }
+
+    function showsub2() {
+        if (check2 == 0) {
+            document.all["Layer1"].style.display = "";
+            check2 = 1;
+        } else {
+            document.all["Layer1"].style.display = "none";
+            check2 = 0;
+        }
+    }
+
+    function ListDuration(day) {
+      document.filterList.ndays.value = day;
+      document.filterList.nfirst.value = "1";
+      document.filterList.selectnum.value = document.filterList.searchcondition.selectedIndex;
+      document.all.filterList.submit();
+    }
+
+    function toggleChild(p, n) {
+
+        nLen = p.length;
+        n = parseInt(n);
+
+        npoint = 0;
+        npoint1 = nLen;
+
+        n2 = n+1
+
+		if(!document.all["ImgChild"+p]) {
+			return;
+		}
+		
+        if (document.all["ImgChild"+p].name == 'Y') {
+
+             document.all["ImgChild"+p].name = 'N';
+             document.all["ImgChild"+p].src = "/EP/image/minus.gif";
+
+             for (i=1;i<document.all.length ;i++) {
+
+                StrId = document.all[i].id ;
+
+                if (StrId.substr(npoint, npoint1) == p && document.all[i].sDepth == n2) {
+                    document.all[StrId].style.display = "";
+                }
+            }
+
+        } else {
+            document.all["ImgChild"+p].name = 'Y';
+            document.all["ImgChild"+p].src = "/EP/image/plus.gif";
+
+            for (i=1;i<document.all.length ;i++) {
+
+                StrId = document.all[i].id ;
+
+                if (StrId.substr(npoint, npoint1) == p && document.all[i].sDepth >= n2) {
+                    document.all[StrId].style.display = "none";
+                    document.all[StrId].name = 'Y';
+
+                    if (document.all["ImgChild"+StrId]) {
+                        document.all["ImgChild"+StrId].name = 'Y';
+                        document.all["ImgChild"+StrId].src = "/EP/image/plus.gif";
+                    }
+                }
+             }
+        }
+    }
+
+    function toggleAllChildren()
+    {
+        if (document.all["Img_reply"].allList=='N') {
+            document.all["Img_reply"].src = "/EP/image/minus.gif";
+            document.all["Img_reply"].allList='Y';
+        } else {
+            document.all["Img_reply"].src = "/EP/image/plus.gif";
+            document.all["Img_reply"].allList='N';
+        }
+
+        for (var i=0; i <document.all.length; i++) {
+
+            if (document.all[i].ImgCheck == "close") {
+                var strImgId=document.all[i].id;
+                document.all[strImgId].src = "/EP/image/minus.gif";
+                document.all[strImgId].name = 'N';
+                document.all[strImgId].ImgCheck = "open";
+
+            } else {
+                if (document.all[i].ImgCheck == "open") {
+                    var strImgId=document.all[i].id;
+                    document.all[strImgId].src = "/EP/image/plus.gif";
+                    document.all[strImgId].name = 'Y';
+                    document.all[strImgId].ImgCheck = "close";
+                }
+            }
+
+            if (document.all[i].CHECK == "close") {
+
+                StrId = document.all[i].id ;
+                document.all[StrId].style.display = "";
+                document.all[StrId].CHECK = "open";
+
+            } else {
+                if (document.all[i].CHECK == "open") {
+
+                        StrId = document.all[i].id ;
+                        document.all[StrId].style.display = "none";
+                        document.all[StrId].CHECK = "close";
+                }
+            }
+        }
+    }
+
+    function win_onLoad() {
+
+        document.filterList.searchcondition[0].selected = true;
+
+        scChanged();
+
+        if (document.filterList.searchcondition.value == "BULLTITLE") {
+            document.filterList.searchname.focus();
+        }
+
+        if ("1" == "1") {
+            document.all.Img_reply.style.visibility = "visible";
+            document.all.Img_reply.style.display = "";
+        }
+
+    
+    }
+
+    function openToChild(childRowID, childDepth, eachIdLength)
+    {
+        for (var i=0; i < childDepth; i++) {
+            toggleChild(childRowID.substring(0, (eachIdLength * (i+1))), i);
+        }
+    }
+
+    function regBulletin(nFlag) {
+        document.filterList.action= "BB_BullReg.jsp?nfileflag="+nFlag;
+        document.filterList.submit();
+    }
+
+    function toggleCheck() {
+        for (var i=0; i<document.filterList.elements.length; i++) {
+            var ele = document.filterList.elements[i];
+            if (ele.name.substring(0, 4) == "ATTO") {
+                if (ele.checked) {
+                    uncheckAll();
+                    break;
+                } else {
+                    checkAll();
+                    break;
+                }   //if
+            }   //if
+        }   //for
+    }
+
+    function checkAll() {
+        for (var i=0; i<document.filterList.elements.length; i++) {
+            var ele = document.filterList.elements[i];
+            if (ele.name.substring(0, 4) == 'ATTO')
+                ele.checked = true;
+        }
+    }
+
+    function uncheckAll() {
+        for (var i=0; i<document.filterList.elements.length; i++) {
+            var ele = document.filterList.elements[i];
+            if (ele.name.substring(0, 4) == 'ATTO')
+                ele.checked = false;
+        }
+    }
+
+    function deleteBulletins() {
+        var sBullidLst = "";
+        for (var i=0; i<document.filterList.elements.length; i++) {
+            var ele = document.filterList.elements[i];
+            if (ele.name.substring(0, 4) == "ATTO") {
+                if (ele.checked) {
+                    sBullidLst += "|" + ele.name.substr(4, ele.name.length);
+                }   //if
+            }   //if
+        }   //for
+
+        sBullidLst = sBullidLst.substring(1, sBullidLst.length);
+        if (sBullidLst == null || sBullidLst == "") {
+            alert("선택된 항목이 없습니다.");
+            return;
+        } else {
+            ans = confirm ("선택된 게시물을 삭제하시겠습니까? \n답변을 가진 게시물은 답변과 함께 삭제됩니다.")
+            if (ans) {
+                document.filterList.bullidlst.value = sBullidLst;
+                document.filterList.action = "./BB_BullDel.jsp";
+                document.filterList.selectnum.value = document.filterList.searchcondition.selectedIndex;
+                document.all.filterList.submit();
+            }else{
+                return;
+            }//if
+        }//if
+    }
+
+    function scChanged() {
+
+        var frm = document.filterList;
+        var idx = frm.searchcondition.selectedIndex;
+
+        if (frm.searchcondition.value == "CATEGORYID") {
+            frm.reply.style.display = "none";
+            frm.searchname.style.display = "none";
+            frm.category.style.display = "";
+            for (i=0;i< frm.length;i++) {
+                if (frm.item(i).name.substring(0, 5)=="CODE_") {
+                    frm.item(i).style.display = "none";
+                }
+            }
+
+        } else if (frm.searchcondition[idx].id.substring(0, 5) == "CODE_") {
+            frm.reply.style.display = "none";
+            frm.searchname.style.display = "none";
+            frm.category.style.display = "none";
+
+            for (i=0;i< frm.length;i++) {
+                if (frm.item(i).name.substring(0, 5)=="CODE_") {
+                    if (frm.item(i).name == frm.searchcondition[idx].id) {
+                        frm.item(i).style.display = "";
+                    } else {
+                        frm.item(i).style.display = "none";
+                    }
+                }
+            }
+
+        } else if (frm.searchcondition.value == "REPLY") {
+            frm.reply.style.display = "";
+            frm.searchname.style.display = "none";
+            frm.category.style.display = "none";
+            for (i=0;i< frm.length;i++) {
+                if (frm.item(i).name.substring(0, 5)=="CODE_") {
+                    frm.item(i).style.display = "none";
+                }
+            }
+        } else {
+            frm.reply.style.display = "none";
+            frm.searchname.style.display = "";
+            frm.category.style.display = "none";
+            frm.category[0].selected = true;
+            for (i=0;i< frm.length;i++) {
+                if (frm.item(i).name.substring(0, 5)=="CODE_") {
+                    frm.item(i).style.display = "none";
+                }
+            }
+        }
+    }
+
+    function selectedChange(selIdx) {
+
+        document.filterList.categorynum.value= selIdx;
+        search(document.filterList);
+    }
+
+    function selectedChangeCode(obj, selIdx) {
+
+        document.filterList.code.value= obj.value;
+        document.filterList.codenum.value= selIdx;
+        document.filterList.searchname.value = obj.value;
+        search(document.filterList);
+    }
+
+</SCRIPT>
+ 
+<SCRIPT language="VBScript">
+    Function VBTrim(str)
+        VBTrim = Trim(str)
+    End Function
+</SCRIPT>
+ <TITLE></TITLE> 
+<META name="GENERATOR" content="MSHTML 11.00.10570.1001"></HEAD> 
+<BODY topmargin="0" leftmargin="0" onload="javascript:win_onLoad();" 
+marginheight="0" marginwidth="0">
+<FORM name="filterList" id="filterList" action="BB_BullLst.jsp" 
+method="POST"><INPUT name="sortby" type="HIDDEN" value="REGDATE"> <INPUT name="orderby" type="HIDDEN" value="desc"> 
+<INPUT name="searchby" type="HIDDEN"> <INPUT name="nfirst" type="HIDDEN" value="1"> 
+<INPUT name="boardid" type="HIDDEN" value="B200811171325597111029"> <INPUT name="ndays" type="HIDDEN" value="0"> 
+<INPUT name="selectnum" type="HIDDEN"> <INPUT name="bullidlst" type="HIDDEN"> 
+<TABLE width="100%" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD height="10" colspan="3"></TD></TR>
+  <TR>
+    <TD width="10"></TD>
+    <TD>
+      <TABLE width="100%" border="0" cellspacing="0" cellpadding="0">
+        <TBODY>
+        <TR>
+          <TD><!-- title -->     
+            <TABLE width="100%" border="0" cellspacing="0" cellpadding="0">
+              <TBODY>
+              <TR>
+                <TD width="30"><IMG width="30" height="30" src="BB_BullLst_files/title1.gif"></TD>
+                <TD background="BB_BullLst_files/titlebg.gif">
+                  <TABLE border="0" cellspacing="0" cellpadding="0">
+                    <TBODY>
+                    <TR>
+                      <TD 
+            class="title">학사공지</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD height="10"></TD></TR>
+        <TR>
+          <TD>&nbsp;    </TD></TR>
+        <TR>
+          <TD height="2"></TD></TR>
+        <TR>
+          <TD>
+            <TABLE width="100%" border="0" cellspacing="0" cellpadding="0">
+              <TBODY>
+              <TR>
+                <TD height="2" bgcolor="#6891cb"></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD>
+            <TABLE width="100%" border="0" cellspacing="0" cellpadding="0">
+              <TBODY>
+              <TR>
+                <TD height="3" 
+                background="BB_BullLst_files/dot_search1.gif"></TD></TR>
+              <TR class="search">
+                <TD height="7"></TD></TR>
+              <TR class="search">
+                <TD>
+                  <TABLE width="100%" bordercolor="pink" border="0" cellspacing="1" 
+                  cellpadding="0">
+                    <TBODY>
+                    <TR>
+                      <TD width="10"></TD>
+                      <TD width="100"><SELECT name="searchcondition" style="width: 100%;" 
+                        onclick="javascript:document.filterList.searchname.value=''" 
+                        onchange="javascript:scChanged();"><OPTION value="BULLTITLE">제목</OPTION> 
+                                                      <OPTION 
+                          value="REGNAME">작성자</OPTION>                           
+                            <OPTION value="REGDATE">게시일</OPTION>                 
+                                                  <OPTION 
+                          value="REPLY">답변여부</OPTION>                     
+                        </SELECT>      </TD>
+                      <TD width="10"></TD>
+                      <TD><INPUT name="searchname" class="input_ime" style="width: 100%; display: none;" onkeydown="javascript:return search_in();" onkeyup="cmCheckSearchName(this);" type="TEXT" maxlength="50"> 
+                                <SELECT name="category" id="id_category" style="width: 150px; display: none;" 
+                        onchange="javascript:selectedChange(this.selectedIndex);"><OPTION 
+                          value="" selected="">등록된 카테고리가 없습니다.</OPTION>          
+                                  </SELECT>         <INPUT name="code" type="hidden"> 
+                                <INPUT name="categorynum" type="hidden">         
+<INPUT name="codenum" type="hidden">         <SELECT 
+                        name="reply" id="id_reply" style="width: 150px; display: none;" 
+                        onchange="javascript:search(this.form);"><OPTION 
+                          value="" selected="">&nbsp;</OPTION>                
+                          <OPTION value="1">답변</OPTION>                <OPTION 
+                          value="0">미답변</OPTION>         </SELECT>         </TD>
+                      <TD width="10"></TD>
+                      <TD width="40" align="right">
+                        <TABLE border="0" cellspacing="0" cellpadding="0">
+                          <TBODY>
+                          <TR>
+                            <TD><IMG src="BB_BullLst_files/bu3_search.gif"></TD>
+                            <TD class="text_center" background="BB_BullLst_files/bu2_bg.gif" 
+                            style="white-space: nowrap;"><A style="width: 100%;" 
+                              href="javascript:search();">검색</A> </TD>
+                            <TD><IMG width="8" height="20" src="BB_BullLst_files/bu2_right.gif"></TD></TR></TBODY></TABLE></TD>
+                      <TD width="10"></TD></TR></TBODY></TABLE></TD></TR>
+              <TR class="search">
+                <TD height="7"></TD></TR>
+              <TR>
+                <TD height="1" 
+                background="BB_BullLst_files/dot_search2.gif"></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD height="4"></TD></TR>
+        <TR>
+          <TD>
+            <TABLE width="100%" class="table" border="0" cellspacing="1" 
+            cellpadding="0">
+              <TBODY>
+              <TR bgcolor="#ffffff">
+                <TD width="20" class="ltb_head"><NOBR><A href="javascript:toggleCheck()"><IMG 
+                  width="13" height="14" src="BB_BullLst_files/icon_allcheck.gif" 
+                  border="0"></A></NOBR></TD>
+                <TD width="40" class="ltb_head"><NOBR>번호</NOBR></TD>
+                <TD width="20" class="ltb_head"><NOBR><IMG width="9" height="9" 
+                  id="Img_reply" style="display: none; visibility: hidden; cursor: pointer;" 
+                  onclick="javascript:toggleAllChildren();" src="BB_BullLst_files/plus.gif" 
+                  alllist="N">&nbsp;</NOBR></TD>
+                <TD width="*" class="ltb_head" style="cursor: pointer;" onclick="javascript:clickSort('BULLTITLE');"><NOBR>제목</NOBR></TD>
+                <TD width="100" class="ltb_head"><NOBR>부서</NOBR></TD>
+                <TD width="80" class="ltb_head" style="cursor: pointer;" 
+                onclick="javascript:clickSort('REGNAME');"><NOBR>게시자</NOBR></TD>
+                <TD width="80" class="ltb_head" style="cursor: pointer;" 
+                onclick="javascript:clickSort('REGDATE');"><NOBR>게시일</NOBR></TD>
+                <TD width="40" class="ltb_head"><NOBR>조회수</NOBR></TD>
+                <TD width="50" class="ltb_head"><NOBR>첨부</NOBR></TD></TR>
+              <TR onmouseover="this.style.backgroundColor='#F2F2F4'" onmouseout="this.style.backgroundColor=''" 
+              bgcolor="#ffffff">
+                <TD class="ltb_check"><NOBR><INPUT name="ATTOBB201712051024251164297" 
+                  type="checkbox"></NOBR></TD>
+                <TD class="ltb_center" style="height: auto;"><NOBR><IMG src="BB_BullLst_files/light_icon.gif"></NOBR></TD>
+                <TD title="본교 사용 가능 공용 소프트웨어 목록 및 설치 방법" class="ltb_center" 
+                style="text-align: left;" colspan="2"><NOBR>&nbsp;<A href="javascript:clickBulletin('BB201712051024251164297', 'BB201712051024251164297', 'BB201712051024251164297', '0', 'N');"><FONT 
+                  color="">본교 사용 가능 공용 소프트웨어 목록 및 설치 방법</FONT></A></NOBR></TD>
+                <TD title="정보통신팀" class="ltb_center"><NOBR>정보통신팀</NOBR></TD>
+                <TD title="권혁민" class="ltb_center"><NOBR>권혁민</NOBR></TD>
+                <TD title="2017.12.05" 
+                  class="ltb_center"><NOBR>2017.12.05</NOBR></TD>
+                <TD title="" class="ltb_center"><NOBR>3367</NOBR></TD>
+                <TD title="" class="ltb_center"><NOBR><IMG name="ImgAttach" 
+                  width="9" height="12" 
+                  src="BB_BullLst_files/icon_clip.gif"></NOBR></TD></TR>
+              <TR onmouseover="this.style.backgroundColor='#F2F2F4'" onmouseout="this.style.backgroundColor=''" 
+              bgcolor="#ffffff">
+                <TD class="ltb_check"><NOBR><INPUT name="ATTOBB201711251215360404541" 
+                  type="checkbox"></NOBR></TD>
+                <TD class="ltb_center" style="height: auto;"><NOBR><IMG src="BB_BullLst_files/light_icon.gif"></NOBR></TD>
+                <TD title="2018학년도 1학기 수강신청 일정 안내" class="ltb_center" style="text-align: left;" 
+                colspan="2"><NOBR>&nbsp;<A href="javascript:clickBulletin('BB201711251215360404541', 'BB201711251215360404541', 'BB201711251215360404541', '0', 'N');"><FONT 
+                  color="">2018학년도 1학기 수강신청 일정 안내</FONT></A></NOBR></TD>
+                <TD title="교무팀" class="ltb_center"><NOBR>교무팀</NOBR></TD>
+                <TD title="박찬우" class="ltb_center"><NOBR>박찬우</NOBR></TD>
+                <TD title="2017.11.25" 
+                  class="ltb_center"><NOBR>2017.11.25</NOBR></TD>
+                <TD title="" class="ltb_center"><NOBR>5803</NOBR></TD>
+                <TD title="" class="ltb_center"><NOBR><IMG name="ImgAttach" 
+                  width="9" height="12" 
+                  src="BB_BullLst_files/icon_clip.gif"></NOBR></TD></TR>
+              <TR onmouseover="this.style.backgroundColor='#F2F2F4'" onmouseout="this.style.backgroundColor=''" 
+              bgcolor="#ffffff">
+                <TD class="ltb_check"><NOBR><INPUT name="ATTOBB201711151539043006260" 
+                  type="checkbox"></NOBR></TD>
+                <TD class="ltb_center" style="height: auto;"><NOBR><IMG src="BB_BullLst_files/light_icon.gif"></NOBR></TD>
+                <TD title="2017학년도 2학기 복수전공 신청 안내" class="ltb_center" style="text-align: left;" 
+                colspan="2"><NOBR>&nbsp;<A href="javascript:clickBulletin('BB201711151539043006260', 'BB201711151539043006260', 'BB201711151539043006260', '0', 'N');"><FONT 
+                  color="">2017학년도 2학기 복수전공 신청 안내</FONT></A></NOBR></TD>
+                <TD title="교무팀" class="ltb_center"><NOBR>교무팀</NOBR></TD>
+                <TD title="최재혁" class="ltb_center"><NOBR>최재혁</NOBR></TD>
+                <TD title="2017.11.15" 
+                  class="ltb_center"><NOBR>2017.11.15</NOBR></TD>
+                <TD title="" class="ltb_center"><NOBR>2340</NOBR></TD>
+                <TD title="" class="ltb_center"><NOBR>&nbsp;</NOBR></TD></TR>
+              <TR onmouseover="this.style.backgroundColor='#F2F2F4'" onmouseout="this.style.backgroundColor=''" 
+              bgcolor="#ffffff">
+                <TD class="ltb_check"><NOBR><INPUT name="ATTOBB201710270919483586924" 
+                  type="checkbox"></NOBR></TD>
+                <TD class="ltb_center" style="height: auto;"><NOBR><IMG src="BB_BullLst_files/light_icon.gif"></NOBR></TD>
+                <TD title="2017학년도 동계 계절수업 안내" class="ltb_center" style="text-align: left;" 
+                colspan="2"><NOBR>&nbsp;<A href="javascript:clickBulletin('BB201710270919483586924', 'BB201710270919483586924', 'BB201710270919483586924', '0', 'N');"><FONT 
+                  color="">2017학년도 동계 계절수업 안내</FONT></A></NOBR></TD>
+                <TD title="교무팀" class="ltb_center"><NOBR>교무팀</NOBR></TD>
+                <TD title="박찬우" class="ltb_center"><NOBR>박찬우</NOBR></TD>
+                <TD title="2017.10.27" 
+                  class="ltb_center"><NOBR>2017.10.27</NOBR></TD>
+                <TD title="" class="ltb_center"><NOBR>13176</NOBR></TD>
+                <TD title="" class="ltb_center"><NOBR><IMG name="ImgAttach" 
+                  width="9" height="12" 
+                  src="BB_BullLst_files/icon_clip.gif"></NOBR></TD></TR>
+              <TR onmouseover="this.style.backgroundColor='#F2F2F4'" onmouseout="this.style.backgroundColor=''" 
+              bgcolor="#ffffff">
+                <TD class="ltb_check"><NOBR><INPUT name="ATTOBB201712291757126778178" 
+                  type="checkbox"></NOBR></TD>
+                <TD class="ltb_center" 
+                style="height: auto;"><NOBR>3095</NOBR></TD>
+                <TD title="2018학년도 1학기 본교생 → 타 대학 학점교류 수강안내" class="ltb_center" 
+                style="text-align: left;" colspan="2"><NOBR>&nbsp;<A href="javascript:clickBulletin('BB201712291757126778178', 'BB201712291757126778178', 'BB201712291757126778178', '0', 'N');"><FONT 
+                  color="">2018학년도 1학기 본교생 → 타 대학 학점교류 수강안내</FONT></A></NOBR></TD>
+                <TD title="교무팀" class="ltb_center"><NOBR>교무팀</NOBR></TD>
+                <TD title="박찬우" class="ltb_center"><NOBR>박찬우</NOBR></TD>
+                <TD title="2017.12.29" 
+                  class="ltb_center"><NOBR>2017.12.29</NOBR></TD>
+                <TD title="" class="ltb_center"><NOBR>66</NOBR></TD>
+                <TD title="" class="ltb_center"><NOBR><IMG name="ImgAttach" 
+                  width="9" height="12" 
+                  src="BB_BullLst_files/icon_clip.gif"></NOBR></TD></TR>
+              <TR onmouseover="this.style.backgroundColor='#F2F2F4'" onmouseout="this.style.backgroundColor=''" 
+              bgcolor="#ffffff">
+                <TD class="ltb_check"><NOBR><INPUT name="ATTOBB201712260949084075756" 
+                  type="checkbox"></NOBR></TD>
+                <TD class="ltb_center" 
+                style="height: auto;"><NOBR>3094</NOBR></TD>
+                <TD title="[공과대학] 2017학년도 2학기 건축학과 복수전공 사전심사 안내" class="ltb_center" 
+                style="text-align: left;" colspan="2"><NOBR>&nbsp;<A href="javascript:clickBulletin('BB201712260949084075756', 'BB201712260949084075756', 'BB201712260949084075756', '0', 'N');"><FONT 
+                  color="">[공과대학] 2017학년도 2학기 건축학과 복수전공 사전심사 
+                안내</FONT></A></NOBR></TD>
+                <TD title="공과대학행정실" class="ltb_center"><NOBR>공과대학행정실</NOBR></TD>
+                <TD title="서호준" class="ltb_center"><NOBR>서호준</NOBR></TD>
+                <TD title="2017.12.26" 
+                  class="ltb_center"><NOBR>2017.12.26</NOBR></TD>
+                <TD title="" class="ltb_center"><NOBR>66</NOBR></TD>
+                <TD title="" class="ltb_center"><NOBR>&nbsp;</NOBR></TD></TR>
+              <TR onmouseover="this.style.backgroundColor='#F2F2F4'" onmouseout="this.style.backgroundColor=''" 
+              bgcolor="#ffffff">
+                <TD class="ltb_check"><NOBR><INPUT name="ATTOBB201712121607056765266" 
+                  type="checkbox"></NOBR></TD>
+                <TD class="ltb_center" 
+                style="height: auto;"><NOBR>3093</NOBR></TD>
+                <TD title="[예술대학] 복수전공 사전심사 안내(미술,디자인,무용,영상,연기예술,의상학과)" class="ltb_center" 
+                style="text-align: left;" colspan="2"><NOBR>&nbsp;<A href="javascript:clickBulletin('BB201712121607056765266', 'BB201712121607056765266', 'BB201712121607056765266', '0', 'N');"><FONT 
+                  color="">[예술대학] 복수전공 사전심사 
+                  안내(미술,디자인,무용,영상,연기예술,의상학과)</FONT></A></NOBR></TD>
+                <TD title="사회과학/예술대학행정실" 
+                  class="ltb_center"><NOBR>사회과학/예술대학행정실</NOBR></TD>
+                <TD title="이은혜" class="ltb_center"><NOBR>이은혜</NOBR></TD>
+                <TD title="2017.12.12" 
+                  class="ltb_center"><NOBR>2017.12.12</NOBR></TD>
+                <TD title="" class="ltb_center"><NOBR>211</NOBR></TD>
+                <TD title="" class="ltb_center"><NOBR>&nbsp;</NOBR></TD></TR>
+              <TR onmouseover="this.style.backgroundColor='#F2F2F4'" onmouseout="this.style.backgroundColor=''" 
+              bgcolor="#ffffff">
+                <TD class="ltb_check"><NOBR><INPUT name="ATTOBB201712110914349267063" 
+                  type="checkbox"></NOBR></TD>
+                <TD class="ltb_center" 
+                style="height: auto;"><NOBR>3092</NOBR></TD>
+                <TD title="졸업예정자 및 졸업관련자 동계 계절수업 수강신청 안내" class="ltb_center" 
+                style="text-align: left;" colspan="2"><NOBR>&nbsp;<A href="javascript:clickBulletin('BB201712110914349267063', 'BB201712110914349267063', 'BB201712110914349267063', '0', 'N');"><FONT 
+                  color="">졸업예정자 및 졸업관련자 동계 계절수업 수강신청 안내</FONT></A></NOBR></TD>
+                <TD title="교무팀" class="ltb_center"><NOBR>교무팀</NOBR></TD>
+                <TD title="박찬우" class="ltb_center"><NOBR>박찬우</NOBR></TD>
+                <TD title="2017.12.11" 
+                  class="ltb_center"><NOBR>2017.12.11</NOBR></TD>
+                <TD title="" class="ltb_center"><NOBR>541</NOBR></TD>
+                <TD title="" class="ltb_center"><NOBR>&nbsp;</NOBR></TD></TR>
+              <TR onmouseover="this.style.backgroundColor='#F2F2F4'" onmouseout="this.style.backgroundColor=''" 
+              bgcolor="#ffffff">
+                <TD class="ltb_check"><NOBR><INPUT name="ATTOBB201712091104561752206" 
+                  type="checkbox"></NOBR></TD>
+                <TD class="ltb_center" 
+                style="height: auto;"><NOBR>3091</NOBR></TD>
+                <TD title="[긴급]동계 방중  창의품 학내 시행 시험 일정 안내(2018년 2월 졸업예정자 응시가능)-재?店? 일정 약간 조정" 
+                class="ltb_center" style="text-align: left;" 
+                  colspan="2"><NOBR>&nbsp;<A href="javascript:clickBulletin('BB201712091104561752206', 'BB201712091104561752206', 'BB201712091104561752206', '0', 'N');"><FONT 
+                  color="red">[긴급]동계 방중  창의품 학내 시행 시험 일정 안내(2018년 2월 졸업예정자 
+                  응시가능)-재?店? 일정 약간 조정</FONT></A></NOBR></TD>
+                <TD title="정보통신팀" class="ltb_center"><NOBR>정보통신팀</NOBR></TD>
+                <TD title="권혁민" class="ltb_center"><NOBR>권혁민</NOBR></TD>
+                <TD title="2017.12.09" 
+                  class="ltb_center"><NOBR>2017.12.09</NOBR></TD>
+                <TD title="" class="ltb_center"><NOBR>825</NOBR></TD>
+                <TD title="" class="ltb_center"><NOBR><IMG name="ImgAttach" 
+                  width="9" height="12" 
+                  src="BB_BullLst_files/icon_clip.gif"></NOBR></TD></TR>
+              <TR onmouseover="this.style.backgroundColor='#F2F2F4'" onmouseout="this.style.backgroundColor=''" 
+              bgcolor="#ffffff">
+                <TD class="ltb_check"><NOBR><INPUT name="ATTOBB201712081201585771222" 
+                  type="checkbox"></NOBR></TD>
+                <TD class="ltb_center" 
+                style="height: auto;"><NOBR>3090</NOBR></TD>
+                <TD title="[학부대학] 2017 동계 계절수업 <일반물리학1> 과목 증원 안내" class="ltb_center" 
+                style="text-align: left;" colspan="2"><NOBR>&nbsp;<A href="javascript:clickBulletin('BB201712081201585771222', 'BB201712081201585771222', 'BB201712081201585771222', '0', 'N');"><FONT 
+                  color="">[학부대학] 2017 동계 계절수업 &lt;일반물리학1&gt; 과목 증원 
+                  안내</FONT></A></NOBR></TD>
+                <TD title="학부대학/사범대학행정실" 
+                  class="ltb_center"><NOBR>학부대학/사범대학행정실</NOBR></TD>
+                <TD title="이기쁨" class="ltb_center"><NOBR>이기쁨</NOBR></TD>
+                <TD title="2017.12.08" 
+                  class="ltb_center"><NOBR>2017.12.08</NOBR></TD>
+                <TD title="" class="ltb_center"><NOBR>68</NOBR></TD>
+                <TD title="" class="ltb_center"><NOBR>&nbsp;</NOBR></TD></TR>
+              <TR onmouseover="this.style.backgroundColor='#F2F2F4'" onmouseout="this.style.backgroundColor=''" 
+              bgcolor="#ffffff">
+                <TD class="ltb_check"><NOBR><INPUT name="ATTOBB201712071555089569239" 
+                  type="checkbox"></NOBR></TD>
+                <TD class="ltb_center" 
+                style="height: auto;"><NOBR>3089</NOBR></TD>
+                <TD title="킹고(Kingo) 챗봇 서비스 오픈 안내" class="ltb_center" style="text-align: left;" 
+                colspan="2"><NOBR>&nbsp;<A href="javascript:clickBulletin('BB201712071555089569239', 'BB201712071555089569239', 'BB201712071555089569239', '0', 'N');"><FONT 
+                  color="">킹고(Kingo) 챗봇 서비스 오픈 안내</FONT></A></NOBR></TD>
+                <TD title="정보통신팀" class="ltb_center"><NOBR>정보통신팀</NOBR></TD>
+                <TD title="윤대우" class="ltb_center"><NOBR>윤대우</NOBR></TD>
+                <TD title="2017.12.07" 
+                  class="ltb_center"><NOBR>2017.12.07</NOBR></TD>
+                <TD title="" class="ltb_center"><NOBR>89</NOBR></TD>
+                <TD title="" class="ltb_center"><NOBR>&nbsp;</NOBR></TD></TR>
+              <TR onmouseover="this.style.backgroundColor='#F2F2F4'" onmouseout="this.style.backgroundColor=''" 
+              bgcolor="#ffffff">
+                <TD class="ltb_check"><NOBR><INPUT name="ATTOBB201712071415339184055" 
+                  type="checkbox"></NOBR></TD>
+                <TD class="ltb_center" 
+                style="height: auto;"><NOBR>3088</NOBR></TD>
+                <TD title="2017학년도 동계 계절수업 창의적글쓰기 추가개설 안내" class="ltb_center" 
+                style="text-align: left;" colspan="2"><NOBR>&nbsp;<A href="javascript:clickBulletin('BB201712071415339184055', 'BB201712071415339184055', 'BB201712071415339184055', '0', 'N');"><FONT 
+                  color="">2017학년도 동계 계절수업 창의적글쓰기 추가개설 안내</FONT></A></NOBR></TD>
+                <TD title="학부대학/사범대학행정실" 
+                  class="ltb_center"><NOBR>학부대학/사범대학행정실</NOBR></TD>
+                <TD title="박수현" class="ltb_center"><NOBR>박수현</NOBR></TD>
+                <TD title="2017.12.07" 
+                  class="ltb_center"><NOBR>2017.12.07</NOBR></TD>
+                <TD title="" class="ltb_center"><NOBR>80</NOBR></TD>
+                <TD title="" class="ltb_center"><NOBR>&nbsp;</NOBR></TD></TR>
+              <TR onmouseover="this.style.backgroundColor='#F2F2F4'" onmouseout="this.style.backgroundColor=''" 
+              bgcolor="#ffffff">
+                <TD class="ltb_check"><NOBR><INPUT name="ATTOBB201712061736342047803" 
+                  type="checkbox"></NOBR></TD>
+                <TD class="ltb_center" 
+                style="height: auto;"><NOBR>3087</NOBR></TD>
+                <TD title="동계계절수업 선형대수학 증원 안내" class="ltb_center" style="text-align: left;" 
+                colspan="2"><NOBR>&nbsp;<A href="javascript:clickBulletin('BB201712061736342047803', 'BB201712061736342047803', 'BB201712061736342047803', '0', 'N');"><FONT 
+                  color="">동계계절수업 선형대수학 증원 안내</FONT></A></NOBR></TD>
+                <TD title="학부대학/사범대학행정실" 
+                  class="ltb_center"><NOBR>학부대학/사범대학행정실</NOBR></TD>
+                <TD title="박수현" class="ltb_center"><NOBR>박수현</NOBR></TD>
+                <TD title="2017.12.06" 
+                  class="ltb_center"><NOBR>2017.12.06</NOBR></TD>
+                <TD title="" class="ltb_center"><NOBR>93</NOBR></TD>
+                <TD title="" class="ltb_center"><NOBR>&nbsp;</NOBR></TD></TR>
+              <TR onmouseover="this.style.backgroundColor='#F2F2F4'" onmouseout="this.style.backgroundColor=''" 
+              bgcolor="#ffffff">
+                <TD class="ltb_check"><NOBR><INPUT name="ATTOBB201712061151387852118" 
+                  type="checkbox"></NOBR></TD>
+                <TD class="ltb_center" 
+                style="height: auto;"><NOBR>3086</NOBR></TD>
+                <TD title="2017학년도 동계 계절수업 교강사 변경안내 (미분적분학 1 42,44분반)" class="ltb_center" 
+                style="text-align: left;" colspan="2"><NOBR>&nbsp;<A href="javascript:clickBulletin('BB201712061151387852118', 'BB201712061151387852118', 'BB201712061151387852118', '0', 'N');"><FONT 
+                  color="">2017학년도 동계 계절수업 교강사 변경안내 (미분적분학 1 
+                  42,44분반)</FONT></A></NOBR></TD>
+                <TD title="자연과학/약학/생명공학/스포츠과학대학행정실" 
+                  class="ltb_center"><NOBR>자연과학/약학/생명공학/스포츠과학대학행정실</NOBR></TD>
+                <TD title="김지영" class="ltb_center"><NOBR>김지영</NOBR></TD>
+                <TD title="2017.12.06" 
+                  class="ltb_center"><NOBR>2017.12.06</NOBR></TD>
+                <TD title="" class="ltb_center"><NOBR>70</NOBR></TD>
+                <TD title="" class="ltb_center"><NOBR>&nbsp;</NOBR></TD></TR>
+              <TR onmouseover="this.style.backgroundColor='#F2F2F4'" onmouseout="this.style.backgroundColor=''" 
+              bgcolor="#ffffff">
+                <TD class="ltb_check"><NOBR><INPUT name="ATTOBB201712041643347933317" 
+                  type="checkbox"></NOBR></TD>
+                <TD class="ltb_center" 
+                style="height: auto;"><NOBR>3085</NOBR></TD>
+                <TD title="2017학년도 동계 계절수업 폐반 안내" class="ltb_center" style="text-align: left;" 
+                colspan="2"><NOBR>&nbsp;<A href="javascript:clickBulletin('BB201712041643347933317', 'BB201712041643347933317', 'BB201712041643347933317', '0', 'N');"><FONT 
+                  color="">2017학년도 동계 계절수업 폐반 안내</FONT></A></NOBR></TD>
+                <TD title="교무팀" class="ltb_center"><NOBR>교무팀</NOBR></TD>
+                <TD title="박찬우" class="ltb_center"><NOBR>박찬우</NOBR></TD>
+                <TD title="2017.12.04" 
+                  class="ltb_center"><NOBR>2017.12.04</NOBR></TD>
+                <TD title="" class="ltb_center"><NOBR>1840</NOBR></TD>
+                <TD title="" class="ltb_center"><NOBR>&nbsp;</NOBR></TD></TR>
+              <TR align="center">
+                <TD class="paging_bg" colspan="9">
+                  <TABLE width="100%" border="0" cellspacing="0" 
+cellpadding="0">
+                    <TBODY>
+                    <TR>
+                      <TD width="25%">
+                        <TABLE border="0" cellspacing="0" cellpadding="0">
+                          <TBODY>
+                          <TR>
+                            <TD width="5"></TD>
+                            <TD class="paging_result">Page:1/207 </TD>
+                            <TD width="5"></TD>
+                            <TD style="padding-bottom: 2px;"><INPUT name="userinputpage" class="inputpage" id="userinputpage" style="-ms-ime-mode: inactive;" onkeydown='javascript:var kc = event.keyCode || event.which; if(kc=="13") { document.getElementById("userinputbutton").onclick();}' onkeyup='javascript:if(isNaN(this.value)){ this.value=""; this.focus(); }' type="text" size="3" maxlength="6"></TD>
+                            <TD><A id="userinputbutton" onclick="javascript:if(document.getElementById('userinputpage').value<1) document.getElementById('userinputpage').value=1; if(document.getElementById('userinputpage').value>207) {document.getElementById('userinputpage').value=207;}changePage(document.getElementById('userinputpage').value);"><IMG 
+                              src="BB_BullLst_files/btn_pagego.gif" 
+                              border="0"></A></TD></TR></TBODY></TABLE></TD>
+                      <TD width="50%" align="center" class="paging_bg">
+                        <TABLE width="100%" height="21" border="0" cellspacing="0" 
+                        cellpadding="0">
+                          <TBODY>
+                          <TR>
+                            <TD style="padding-top: 3px;">
+                              <TABLE align="center" border="0" cellspacing="0" 
+                              cellpadding="0">
+                                <TBODY>
+                                <TR class="paging_bg">
+                                <TD><IMG width="20" height="16" src="BB_BullLst_files/btn_pag1.gif" 
+                                border="0">          </TD>
+                                <TD><IMG width="20" height="16" src="BB_BullLst_files/btn_pag5.gif" 
+                                border="0">          </TD>
+                                <TD><IMG width="28" height="16" src="BB_BullLst_files/btn_pag2.gif" 
+                                border="0">          </TD>
+                                <TD>
+                                <TABLE border="0" cellspacing="0" cellpadding="0">
+                                <TBODY>
+                                <TR class="paging_bg">
+                                <TD class="paging"><SPAN 
+                                class="paging_select">1</SPAN><IMG width="5" 
+                                height="10" 
+                                src="BB_BullLst_files/page_line.gif"><A href="javascript:changePage(2);">2</A><IMG 
+                                width="5" height="10" src="BB_BullLst_files/page_line.gif"><A 
+                                href="javascript:changePage(3);">3</A><IMG 
+                                width="5" height="10" src="BB_BullLst_files/page_line.gif"><A 
+                                href="javascript:changePage(4);">4</A><IMG 
+                                width="5" height="10" src="BB_BullLst_files/page_line.gif"><A 
+                                href="javascript:changePage(5);">5</A><IMG 
+                                width="5" height="10" src="BB_BullLst_files/page_line.gif"><A 
+                                href="javascript:changePage(6);">6</A><IMG 
+                                width="5" height="10" src="BB_BullLst_files/page_line.gif"><A 
+                                href="javascript:changePage(7);">7</A><IMG 
+                                width="5" height="10" src="BB_BullLst_files/page_line.gif"><A 
+                                href="javascript:changePage(8);">8</A><IMG 
+                                width="5" height="10" src="BB_BullLst_files/page_line.gif"><A 
+                                href="javascript:changePage(9);">9</A><IMG 
+                                width="5" height="10" src="BB_BullLst_files/page_line.gif"><A 
+                                href="javascript:changePage(10);">10</A></TD></TR></TBODY></TABLE></TD>
+                                <TD><IMG width="29" height="16" style="cursor: pointer;" 
+                                onclick="changePage('2');" src="BB_BullLst_files/btn_pag3.gif" 
+                                border="0">          </TD>
+                                <TD><IMG width="20" height="16" style="cursor: pointer;" 
+                                onclick="changePage('11');" src="BB_BullLst_files/btn_pag6.gif" 
+                                border="0">          </TD>
+                                <TD><IMG width="20" height="16" style="cursor: pointer;" 
+                                onclick="changePage('207');" src="BB_BullLst_files/btn_pag4.gif" 
+                                border="0">          
+                          </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD>
+                      <TD width="25%" align="right">
+                        <TABLE border="0" cellspacing="0" cellpadding="0">
+                          <TBODY>
+                          <TR>
+                            <TD class="paging_result">Total:3099</TD>
+                            <TD 
+                  width="5"></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD height="4"></TD></TR></TBODY></TABLE></TD>
+    <TD width="10"></TD></TR></TBODY></TABLE></FORM>
+<FORM name="FRM_VIEW" action="" method="POST" 
+target=""><INPUT name="boardid" type="hidden">     <INPUT name="bullid" type="hidden"> 
+    <INPUT name="sortby" type="hidden">     <INPUT name="orderby" type="hidden"> 
+    <INPUT name="searchby" type="hidden">     <INPUT name="searchname" type="hidden"> 
+    <INPUT name="searchcondition" type="hidden">     
+<INPUT name="selectnum" type="hidden">     <INPUT name="ndays" type="hidden">    
+ <INPUT name="nkid" type="hidden">     <INPUT name="rkid" type="hidden">     
+<INPUT name="ndepth" type="hidden">     <INPUT name="nfirst" type="hidden">     
+<INPUT name="sflag" type="hidden" value="1">     <INPUT name="categorynum" type="hidden"> 
+    <INPUT name="category" type="hidden">     <INPUT name="code" type="hidden">  
+   <INPUT name="codenum" type="hidden">     <INPUT name="reply" type="hidden"> 
+</FORM></BODY></HTML>

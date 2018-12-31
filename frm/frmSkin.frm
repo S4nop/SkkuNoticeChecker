@@ -180,6 +180,7 @@ Attribute VB_Exposed = False
 '*                Sunkyunkwan University
 '*
 '* Verseion     : 2.0.0
+'* Github       : http://github.com/s4nop
 '*
 '* J.Nakim's form skin is used.
 '*************************************************************************************************
@@ -406,17 +407,17 @@ End If
 '//앰피제로님의 아이콘 적용소스
 'ApplyIcon hWnd
 
-'W.Open "GET", ""
-'W.Send
-'W.WaitForResponse
+W.Open "GET", "https://s4nop.github.io/SkkuNoticeChecker/"
+W.Send
+W.WaitForResponse
 firstrun = True
 'Dim upinfo As String, uptmp As String
-'uptmp = Replace(Replace(Replace(Split(Split(W.ResponseText, "<div class=""tt_article_useless_p_margin""><p>")(1), "</p><div")(0), "&gt;", ">"), "&quot", """"), "&amp;", "&")
-'Clipboard.Clear
-'Clipboard.SetText uptmp
-'upinfo = cDecode(uptmp, "skku@ncsft17")
-'If Split(Split(upinfo, vbCrLf)(0), " : ")(1) <> nowver Then
-'If MsgBox("새로운 버전이 발견되었습니다. 새로운 버전을 다운로드 받으시겠습니까?", vbYesNo) = vbYes Then Shell "explorer " & Split(Split(upinfo, vbCrLf)(1), " : ")(1)
+If Split(W.ResponseText, "[ver]")(1) <> nowver Then
+    If MsgBox("새로운 버전이 발견되었습니다. 새로운 버전을 다운로드 받으시겠습니까?", vbYesNo) = vbYes Then
+        Shell "explorer " & Split(W.ResponseText, "[link]")(1)
+        End
+    End If
+End If
 'End If
 End Sub
 
